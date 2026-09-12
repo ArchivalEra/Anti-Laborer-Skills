@@ -18,7 +18,10 @@
 !/README.md
 !/README.en.md
 
-# 4. skills/source-evaluator 绝对路径白名单
+# 4. 采集工具白名单
+!/scripts/harvest.mjs
+
+# 5. skills/source-evaluator 绝对路径白名单
 !/skills/source-evaluator/SKILL.md
 !/skills/source-evaluator/SKILL.en.md
 !/skills/source-evaluator/RUBRIC.md
