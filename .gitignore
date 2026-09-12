@@ -37,9 +37,3 @@
 !/skills/source-evaluator/RUBRIC.en.md
 !/skills/source-evaluator/scripts/filter.py
 
-# 6. skills/anti-anthropoid-lifecycle 绝对路径白名单
-!/skills/anti-anthropoid-lifecycle/SKILL.md
-!/skills/anti-anthropoid-lifecycle/SKILL.en.md
-!/skills/anti-anthropoid-lifecycle/TAXONOMY.md
-!/skills/anti-anthropoid-lifecycle/TAXONOMY.en.md
-!/skills/anti-anthropoid-lifecycle/scripts/deconstruct.py
