@@ -51,7 +51,7 @@ To maintain structural integrity and relentless consistency, this repository imp
 
 | Skill Name | Description | Chinese Spec | English Spec | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| *Pending* | *Initial set of scientific-flavored anti-laborer skills is being systematically compiled.* | - | - | Planned |
+| **`source-evaluator`** | Content evaluation & multi-tier sieve skill: 3-tier Sieve architecture purging political bickering & emotional noise to extract high-SNR empirical raw material and laborer fallacy cards. | [SKILL.md](./skills/source-evaluator/SKILL.md) | [SKILL.en.md](./skills/source-evaluator/SKILL.en.md) | ✅ Ready |
 
 ---
 

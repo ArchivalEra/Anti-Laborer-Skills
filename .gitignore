@@ -17,3 +17,10 @@
 !/.githooks/pre-commit
 !/README.md
 !/README.en.md
+
+# 4. skills/source-evaluator 绝对路径白名单
+!/skills/source-evaluator/SKILL.md
+!/skills/source-evaluator/SKILL.en.md
+!/skills/source-evaluator/RUBRIC.md
+!/skills/source-evaluator/RUBRIC.en.md
+!/skills/source-evaluator/scripts/filter.py
