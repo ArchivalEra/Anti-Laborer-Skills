@@ -19,6 +19,14 @@ domains:
     name: Cognitive Biases & Persuasion Mechanics of Lifecycle Control
     path: knowledge/cognitive-bias/
     description: Behavioral economics and cognitive psychology analysis of why age-stage determinism discourse is cognitively persuasive — availability heuristic, loss aversion, and hyperbolic discounting.
+  - id: innovation-economics
+    name: Innovation Economics & Diversity Portfolio
+    path: knowledge/innovation-economics/
+    description: Exploration-exploitation trade-offs, knowledge spillovers, and antifragile lifecourse design.
+  - id: comparative-global-models
+    name: Global Comparative Lifecourse Models
+    path: knowledge/comparative-global-models/
+    description: Cross-cultural comparative lifecourse institutional analysis from Japan's Shukatsu to Nordic Flexicurity and US Returnships.
 ---
 
 
@@ -46,7 +54,8 @@ The foundational engineering principle of this repository is the **absolute arch
 | `anthropoid-lifecycle` | Anthropoid Lifecycle Control & Age-Stage Determinism | Cybernetics, Operations Research, Cognitive Neuroscience, Chrononormativity Sociology | `active` | [`knowledge/anthropoid-lifecycle/`](./anthropoid-lifecycle/index.en.md) |
 | `labor-system` | Labor System Design & Institutional Age Gates | Institutional Economics, Comparative Labor Law, Policy Analysis | `active` | [`knowledge/labor-system/`](./labor-system/index.en.md) |
 | `cognitive-bias` | Cognitive Biases & Persuasion Mechanics of Lifecycle Control | Behavioral Economics, Cognitive Psychology, Prospect Theory | `active` | [`knowledge/cognitive-bias/`](./cognitive-bias/index.en.md) |
-| `innovation-economics` | 创新经济学与多样性组合论 | Innovation Economics, Complexity Theory, Multi-Armed Bandit Optimization | `active` | [`knowledge/innovation-economics/`](./innovation-economics/index.en.md
+| `innovation-economics` | Innovation Economics & Diversity Portfolio | Innovation Economics, Complexity Theory, Multi-Armed Bandit Optimization | `active` | [`knowledge/innovation-economics/`](./innovation-economics/index.en.md) |
+| `comparative-global-models` | Global Comparative Lifecourse Models | Comparative Sociology, Comparative Policy Analysis, Labor Market Institutions | `active` | [`knowledge/comparative-global-models/`](./comparative-global-models/index.en.md) |
 
 ### anthropoid-lifecycle Concept Registry (Complete)
 
@@ -82,6 +91,14 @@ The foundational engineering principle of this repository is the **absolute arch
 | :--- | :--- | :--- |
 | `exploration-exploitation` | Exploration-Exploitation Trade-off & Macroeconomic Innovative Capacity | `innovation-economics/exploration-exploitation.en.md` |
 | `antifragility-nonlinear-career` | Antifragility and Non-Linear Career Paths | `innovation-economics/antifragility-nonlinear-career.en.md` |
+
+### comparative-global-models Concept Registry (Complete)
+
+| Concept ID | Name | File |
+| :--- | :--- | :--- |
+| `japan-shukatsu` | Japan's Shukatsu System — Genesis and Consequences of Ultra-Synchronous Hiring Pipelines | `comparative-global-models/japan-shukatsu.en.md` |
+| `nordic-flexicurity` | Nordic Flexicurity — Coordinating High Mobility with Robust Social Security | `comparative-global-models/nordic-flexicurity.en.md` |
+| `returnship-programs` | Returnship Programs — Institutional Re-entry Mechanisms for Mid-Career Disruptions | `comparative-global-models/returnship-programs.en.md` |
 
 ## Governance and Quality Assurance
 

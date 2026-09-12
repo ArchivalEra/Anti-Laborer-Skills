@@ -19,6 +19,14 @@ domains:
     name: Cognitive Biases & Persuasion Mechanics of Lifecycle Control
     path: knowledge/cognitive-bias/
     description: 行为经济学与认知心理学视角下的"人猿生命周期控制"话语可说服性机制：可用性启发式、损失厌恶与双曲折现。
+  - id: innovation-economics
+    name: Innovation Economics & Diversity Portfolio
+    path: knowledge/innovation-economics/
+    description: 复杂系统视角下的探索-利用权衡、知识溢出与反脆弱性生涯设计。
+  - id: comparative-global-models
+    name: Global Comparative Lifecourse Models
+    path: knowledge/comparative-global-models/
+    description: 全球生命历程制度比较研究：从日本就活超刚性流水线到北欧弹性安全制及美国回归实习机制。
 ---
 
 
@@ -46,7 +54,8 @@ domains:
 | `anthropoid-lifecycle` | 人猿生命周期控制与年龄阶段宿命论 | 控制论、运筹学、认知神经科学、社会时钟社会学 | `active` | [`knowledge/anthropoid-lifecycle/`](./anthropoid-lifecycle/index.md) |
 | `labor-system` | 劳动制度设计与年龄性制度门槛 | 制度经济学、比较劳动法、政策分析 | `active` | [`knowledge/labor-system/`](./labor-system/index.md) |
 | `cognitive-bias` | 认知偏差与生命周期控制话语可说服性机制 | 行为经济学、认知心理学、前景理论 | `active` | [`knowledge/cognitive-bias/`](./cognitive-bias/index.md) |
-| `innovation-economics` | 创新经济学与多样性组合论 | 创新经济学、复杂系统理论、多臂老虎机 | `active` | [`knowledge/innovation-economics/`](./innovation-economics/index.md)
+| `innovation-economics` | 创新经济学与多样性组合论 | 创新经济学、复杂系统理论、多臂老虎机 | `active` | [`knowledge/innovation-economics/`](./innovation-economics/index.md) |
+| `comparative-global-models` | 全球生命历程制度比较 | 比较社会学、比较劳动政策、制度分析 | `active` | [`knowledge/comparative-global-models/`](./comparative-global-models/index.md) |
 
 ### anthropoid-lifecycle 概念注册表（完整）
 
@@ -82,6 +91,14 @@ domains:
 | :--- | :--- | :--- |
 | `exploration-exploitation` | 探索-利用权衡与宏观创新能力 | `innovation-economics/exploration-exploitation.md` |
 | `antifragility-nonlinear-career` | 反脆弱性与非线性生涯路径 | `innovation-economics/antifragility-nonlinear-career.md` |
+
+### comparative-global-models 概念注册表（完整）
+
+| 概念 ID | 概念名称 | 文件 |
+| :--- | :--- | :--- |
+| `japan-shukatsu` | 日本就活制度（就職活動）：同步化超刚性招聘流水线的生成与后果 | `comparative-global-models/japan-shukatsu.md` |
+| `nordic-flexicurity` | 北欧弹性安全制度（Flexicurity）：高流动性与强保障的协调机制 | `comparative-global-models/nordic-flexicurity.md` |
+| `returnship-programs` | 回归实习计划（Returnship）：美国制度对职业中断者的重新接纳机制 | `comparative-global-models/returnship-programs.md` |
 
 ## 知识库治理与检验规范
 
