@@ -15,6 +15,10 @@ domains:
     name: Labor System Design & Institutional Age Gates
     path: knowledge/labor-system/
     description: Institutional economics, comparative labor law, and policy analysis of forced linear labor pipeline design and age-based institutional gatekeeping.
+  - id: cognitive-bias
+    name: Cognitive Biases & Persuasion Mechanics of Lifecycle Control
+    path: knowledge/cognitive-bias/
+    description: Behavioral economics and cognitive psychology analysis of why age-stage determinism discourse is cognitively persuasive — availability heuristic, loss aversion, and hyperbolic discounting.
 ---
 
 
@@ -41,6 +45,7 @@ The foundational engineering principle of this repository is the **absolute arch
 | :--- | :--- | :--- | :--- | :--- |
 | `anthropoid-lifecycle` | Anthropoid Lifecycle Control & Age-Stage Determinism | Cybernetics, Operations Research, Cognitive Neuroscience, Chrononormativity Sociology | `active` | [`knowledge/anthropoid-lifecycle/`](./anthropoid-lifecycle/index.en.md) |
 | `labor-system` | Labor System Design & Institutional Age Gates | Institutional Economics, Comparative Labor Law, Policy Analysis | `active` | [`knowledge/labor-system/`](./labor-system/index.en.md) |
+| `cognitive-bias` | Cognitive Biases & Persuasion Mechanics of Lifecycle Control | Behavioral Economics, Cognitive Psychology, Prospect Theory | `active` | [`knowledge/cognitive-bias/`](./cognitive-bias/index.en.md) |
 
 ### anthropoid-lifecycle Concept Registry (Complete)
 
@@ -62,9 +67,16 @@ The foundational engineering principle of this repository is the **absolute arch
 | `china-institutional-gates` | China's Institutional Age Gates in Labor Markets | `labor-system/china-institutional-gates.en.md` |
 | `global-age-discrimination-law` | Global Age Discrimination Law Comparative Study | `labor-system/global-age-discrimination-law.en.md` |
 
+### cognitive-bias Concept Registry (Complete)
+
+| Concept ID | Name | File |
+| :--- | :--- | :--- |
+| `availability-heuristic` | Availability Heuristic & Peer-Comparison Anxiety Amplification | `cognitive-bias/availability-heuristic.en.md` |
+| `status-quo-loss-aversion` | Status Quo Bias & Loss Aversion: Manufacturing Compliance | `cognitive-bias/status-quo-loss-aversion.en.md` |
+| `temporal-discounting` | Temporal Discounting Distortion & Enforced Myopia | `cognitive-bias/temporal-discounting.en.md` |
+
 ## Governance and Quality Assurance
 
 - **Concept Atomicity**: Each concept file represents an isolated, unambiguous scientific proposition or system mechanism.
 - **Provenance & Falsifiability**: Concepts must include explicit `sources` fields citing authoritative peer-reviewed papers, empirical surveys, statutory data, or primary field samples.
 - **Bilingual Parity**: Per repository rules, every `.md` file must be strictly mirrored by a corresponding `.en.md` file.
-

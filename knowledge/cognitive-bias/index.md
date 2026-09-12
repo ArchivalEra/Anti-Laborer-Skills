@@ -1,0 +1,43 @@
+---
+id: okf.knowledge.cognitive_bias.index
+name: 认知偏差与人猿生命周期控制的可说服性机制
+type: DomainIndex
+spec_version: "0.2"
+status: active
+last_updated: "2026-09-12"
+stewards:
+  - team: Anti-Laborer Architecture & Knowledge Engineering Team
+tags:
+  - cognitive-psychology
+  - behavioral-economics
+  - cognitive-bias
+  - heuristics
+  - prospect-theory
+  - temporal-discounting
+concepts:
+  - id: okf.knowledge.cognitive_bias.availability_heuristic
+    file: availability-heuristic.md
+    name: 可用性启发式与同辈比较焦虑的放大机制
+  - id: okf.knowledge.cognitive_bias.status_quo_loss_aversion
+    file: status-quo-loss-aversion.md
+    name: 现状偏误与损失厌恶：年龄门槛话语的顺应性制造
+  - id: okf.knowledge.cognitive_bias.temporal_discounting
+    file: temporal-discounting.md
+    name: 时间折现失真：为何强制加速令人高估短期成本
+---
+
+# 领域总览：认知偏差与规训可说服性
+
+## 1. 领域定义
+
+本领域从**行为经济学（Behavioral Economics）**与**认知心理学（Cognitive Psychology）**视角，识别并拆解"人猿生命周期控制"话语体系的**认知技术性机制（Cognitive Persuasion Mechanisms）**——即该控制系统借助哪些人类固有的认知偏差与启发式思维，使被控制者自愿接受、内化甚至传播"必须按时间表生活"的规范信条。
+
+## 2. 分析框架
+
+认知偏差并非证明人类"非理性"——而是理性在有限信息与有限计算资源下的合理适应。然而，控制体系恰恰利用了这些偏差的系统性可预测性，将规训话语设计为高度兼容于认知捷径的形式，从而降低个体对其中权力运作的觉察门槛。
+
+## 3. 概念清单
+
+1. **[availability-heuristic.md](./availability-heuristic.md)**：可用性启发式与同辈比较焦虑
+2. **[status-quo-loss-aversion.md](./status-quo-loss-aversion.md)**：现状偏误、损失厌恶与从众社会证明
+3. **[temporal-discounting.md](./temporal-discounting.md)**：时间折现失真与强制短视

@@ -15,7 +15,12 @@ domains:
     name: Labor System Design & Institutional Age Gates
     path: knowledge/labor-system/
     description: 劳动制度设计、年龄歧视立法比较与强制线性流水线的制度经济学分析。
+  - id: cognitive-bias
+    name: Cognitive Biases & Persuasion Mechanics of Lifecycle Control
+    path: knowledge/cognitive-bias/
+    description: 行为经济学与认知心理学视角下的"人猿生命周期控制"话语可说服性机制：可用性启发式、损失厌恶与双曲折现。
 ---
+
 
 # 知识库索引 (Open Knowledge Format v0.2)
 
@@ -40,6 +45,7 @@ domains:
 | :--- | :--- | :--- | :--- | :--- |
 | `anthropoid-lifecycle` | 人猿生命周期控制与年龄阶段宿命论 | 控制论、运筹学、认知神经科学、社会时钟社会学 | `active` | [`knowledge/anthropoid-lifecycle/`](./anthropoid-lifecycle/index.md) |
 | `labor-system` | 劳动制度设计与年龄性制度门槛 | 制度经济学、比较劳动法、政策分析 | `active` | [`knowledge/labor-system/`](./labor-system/index.md) |
+| `cognitive-bias` | 认知偏差与生命周期控制话语可说服性机制 | 行为经济学、认知心理学、前景理论 | `active` | [`knowledge/cognitive-bias/`](./cognitive-bias/index.md) |
 
 ### anthropoid-lifecycle 概念注册表（完整）
 
@@ -61,8 +67,17 @@ domains:
 | `china-institutional-gates` | 中国劳动制度年龄性制度门槛体制分析 | `labor-system/china-institutional-gates.md` |
 | `global-age-discrimination-law` | 全球年龄歧视法规比较研究 | `labor-system/global-age-discrimination-law.md` |
 
+### cognitive-bias 概念注册表（完整）
+
+| 概念 ID | 概念名称 | 文件 |
+| :--- | :--- | :--- |
+| `availability-heuristic` | 可用性启发式与同辈比较焦虑的放大机制 | `cognitive-bias/availability-heuristic.md` |
+| `status-quo-loss-aversion` | 现状偏误与损失厌恶：年龄门槛话语的顺应性制造 | `cognitive-bias/status-quo-loss-aversion.md` |
+| `temporal-discounting` | 时间折现失真与强制加速：为何生命周期控制令人高估短期成本 | `cognitive-bias/temporal-discounting.md` |
+
 ## 知识库治理与检验规范
 
 - **单概念原子性（Concept Atomicity）**：每个概念文件独立承载单一学术命题或控制论机制。
 - **可证伪与溯源（Provenance & Falsifiability）**：所有概念必须具备 `sources` 属性，标明权威论文、法条、调查数据或信源采样。
 - **双语对齐（Bilingual Parity）**：遵循仓库硬性约束，每个 `.md` 文件必须严格配备对应的 `.en.md` 英文版本。
+
