@@ -77,17 +77,21 @@ Refer to the master knowledge index at [`knowledge/index.en.md`](./knowledge/ind
 
 | Domain ID | Domain Name | Key Registered Concepts | Status | Directory |
 | :--- | :--- | :--- | :--- | :--- |
-| **`anthropoid-lifecycle`** | Anthropoid Lifecycle Control & Age-Stage Determinism | • Formal Ontological Definition & Boundary<br>• Neugarten Social Clock & 35-Year Barrier Phenomenology<br>• Ashby's Law of Requisite Variety & Pipeline Deadlocks<br>• Asynchronous Event-Driven State Machines & Neurogenesis | `active` | [`knowledge/anthropoid-lifecycle/`](./knowledge/anthropoid-lifecycle/index.en.md) |
+| **`anthropoid-lifecycle`** | Anthropoid Lifecycle Control & Age-Stage Determinism | • Formal Ontological Definition & Boundary<br>• Neugarten Social Clock & 35-Year Barrier Phenomenology<br>• Ashby's Law of Requisite Variety & Pipeline Deadlocks<br>• Asynchronous Event-Driven State Machines & Neurogenesis<br>• Real Options Value & Premature Lock-in Economics<br>• Spence Signaling vs Deliberate Practice Mastery<br>• Panopticon & Learned Helplessness Internalization<br>• Non-Linear High-Achievement Empirical Case Library | `active` | [`knowledge/anthropoid-lifecycle/`](./knowledge/anthropoid-lifecycle/index.en.md) |
+| **`labor-system`** | Labor System Design & Institutional Age Gates | • Systemic Analysis of PRC Labor Market Age Gates<br>• Global Age Discrimination Law Comparative Study (ADEA/EU) | `active` | [`knowledge/labor-system/`](./knowledge/labor-system/index.en.md) |
+| **`cognitive-bias`** | Cognitive Biases & Persuasion Mechanics | • Availability Heuristic & Peer Anxiety Amplification<br>• Status Quo Bias, Loss Aversion & Social Proof Cascades<br>• Hyperbolic Discounting & Enforced Myopia | `active` | [`knowledge/cognitive-bias/`](./knowledge/cognitive-bias/index.en.md) |
+| **`innovation-economics`** | Innovation Economics & Diversity Portfolio | • Exploration-Exploitation Trade-off & Multi-Armed Bandit Failure<br>• Antifragility & Non-Linear Career Barbell Strategy | `active` | [`knowledge/innovation-economics/`](./knowledge/innovation-economics/index.en.md) |
+| **`comparative-global-models`** | Global Comparative Lifecourse Models | • Japan's Shukatsu Pipeline & Lost Generation Scars<br>• Nordic Flexicurity Golden Triangle & Lifelong Education<br>• US Returnship Institutional Re-entry Ecosystems | `active` | [`knowledge/comparative-global-models/`](./knowledge/comparative-global-models/index.en.md) |
 
 ---
 
 ## 📂 Skills Index
 
-> The repository is currently establishing foundational skill specifications and the initial batch of core skills. This index is dynamically synchronized with each skill iteration:
-
 | Skill Name | Description | Chinese Spec | English Spec | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | **`source-evaluator`** | Content evaluation & multi-tier sieve skill: 3-tier Sieve architecture purging political bickering & emotional noise to extract high-SNR empirical raw material and laborer fallacy cards. | [SKILL.md](./skills/source-evaluator/SKILL.md) | [SKILL.en.md](./skills/source-evaluator/SKILL.en.md) | ✅ Ready |
+| **`anti-laborer-output`** | Anti-laborer discourse generation skill: Grounds counter-responses in systems engineering, cybernetics, and real options to deconstruct 'do what fits your age' and toil-worship without adversarial affect. | [SKILL.md](./skills/anti-laborer-output/SKILL.md) | [SKILL.en.md](./skills/anti-laborer-output/SKILL.en.md) | ✅ Ready |
+
 
 ---
 

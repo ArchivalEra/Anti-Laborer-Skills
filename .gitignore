@@ -30,12 +30,14 @@
 !/scripts/harvester/platforms/international/social_video.mjs
 !/scripts/harvester/platforms/international/messaging_newsletters.mjs
 
-# 5. skills/source-evaluator 绝对路径白名单
+# 5. skills 绝对路径白名单
 !/skills/source-evaluator/SKILL.md
 !/skills/source-evaluator/SKILL.en.md
 !/skills/source-evaluator/RUBRIC.md
 !/skills/source-evaluator/RUBRIC.en.md
 !/skills/source-evaluator/scripts/filter.py
+!/skills/anti-laborer-output/SKILL.md
+!/skills/anti-laborer-output/SKILL.en.md
 
 # 6. Open Knowledge Format (OKF v0.2) 知识库绝对路径白名单
 !/knowledge/index.md
