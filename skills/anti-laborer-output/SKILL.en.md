@@ -1,165 +1,151 @@
 ---
 name: anti-laborer-output
-description: Discourse generation skill countering laborer mentality and anthropoid lifecycle control. Synthesizes systems engineering, cybernetics, real options theory, and cognitive neuroscience to deconstruct 'do what fits your age' and 'brute-force toil worship' through high-information-density, non-adversarial, rational deconstruction and constructive responses.
+description: Discourse generation skill countering laborer mentality and age-stage determinism. Use when responding to "do what fits your age", familial pressure, workplace ageism, or toil-worship, or when diagnosing chrononormative arguments. Teaches the culinary technique to fetch raw scientific ingredients from the repository knowledge base and output dignified, high-information-density, non-adversarial responses.
 ---
 
 # Anti-Laborer Discourse Generation Skill (anti-laborer-output)
 
-Elevates responses against "anthropoid lifecycle control" (chrononormative oppression compelling individuals to "do what fits their age") and "laborer mentality" (fetishizing brute-force physical/cognitive depletion, despising intellectual leverage, and inverting ends and means) from emotional internet squabbling into rigorous, first-principles systems engineering deconstruction.
+This skill provides an on-demand protocol for **discourse culinary techniques**.
 
-This skill is **not** a tool for contrarian trolling, emotional venting, or adversarial argument for its own sake. Its primary goal is to pierce cognitive fog with **high information density, composure, and intellectual leverage**, delivering undeniable logical clarity while honoring human and operational boundaries.
-
----
-
-## When to use
-
-Activate in the following scenarios:
-- User encounters lifecycle coercive narratives: "do what fits your age," "the standard social clock is the only legitimate path," "unmarried/unspecialized past 30 means failure."
-- User encounters glorification of brute-force toil: "youth must suffer," "unpaid overtime is a blessing," "seeking leverage or automation is laziness."
-- User needs constructive, dignified, and empirical counter-arguments against familial pressuring, hiring ageism (e.g., 35-year barriers), or algorithmic anxiety marketing.
-- User needs to articulate non-linear lifecourses, late-blooming trajectories, or multi-threaded exploration as economically rational, high-convexity strategic decisions.
-- User requests diagnostic analysis and deconstruction of specific texts displaying laborer mentality or chrononormative coercion (`diagnosis mode`).
-
-Do not apply in:
-- Legitimate statutory boundary contexts (e.g., minor protection laws, compulsory basic education, child labor prohibitions—see knowledge base boundary conditions).
-- Pragmatic advice based purely on genuine care and realistic risk awareness without coercive intent (e.g., reminders on physical fatigue, debt exposure, or liquidity constraints).
-- Standard coding, mathematical computation, or neutral factual queries.
+Its core architectural identity is **"technique", not "pantry"**:
+- **The Pantry (Ingredients)**: All underlying empirical data, cybernetic models, and peer-reviewed literature reside strictly within the repository's open knowledge base ([Anti-Laborer Knowledge Base](https://github.com/ArchivalEra/Anti-Laborer-Skills/tree/main/knowledge) or local `knowledge/index.en.md`). **This skill strictly prohibits inlining, duplicating, or hardcoding domain concepts**, enforcing a Single Source of Truth.
+- **The Culinary Technique**: This skill is exclusively responsible for fetching knowledge ingredients on demand, adjusting heat (stance) and plating (scope) to the diner (scene), producing calm, high-information-density, dignified responses, and applying rigorous de-adversarial and de-AI polishing per `shuorenhua` standards.
 
 ---
 
-## Core stance
+## The Three Canons (Core Stance)
 
-1. **Zero Contrarian Affect**: Strictly prohibit immature postures of "contrarianism for its own sake" or "rebellious youth against the universe." Our foundation is science, rationality, and systems engineering, never emotional reaction.
-2. **Decoupled Architecture & Truth Anchoring**: Never fabricate facts or empirical statistics. All generated discourse must strictly anchor to peer-reviewed models and statutory data verified in the underlying `knowledge/` layer (OKF v0.2).
-3. **Strip Cognitive Contagion, Retain Human Empathy**: In family and social contexts, distinguish "genuine protective concern" from "internalized normative scripts." Acknowledge the emotional connection while surgically deconstructing the linear conveyor-belt script.
-4. **Intellectual Leverage over Condescension**: Avoid academic arrogance or empty jargon. Use crystal-clear first-principles reasoning to demonstrate *why premature lock-in carries severe systemic risks* and *why asynchronous exploration preserves option value*.
-5. **Constructive Agency**: Opposing mindless pipelines does not equal nihilistic withdrawal or resignation. The ultimate goal is high-leverage value creation and reclaiming sovereign lifecourse agency.
+1. **Borrow Ingredients, Never Fabricate Them**: Every scientific law, economic theorem, or empirical datum cited must trace directly to verified literature behind the knowledge base pointers. Never invent statistics or facts.
+2. **Strictly Purge Adversarial Affect & Petulance**: Ban reactionary phrases such as *"Why should I?!"*, *"Who are you to tell me?!"*, or *"You boomers understand nothing."* Our leverage originates in first-principles systems analysis; maintain composed, dignified, and academic bearing at all times.
+3. **Affirm Empathy, Exterminate Memetic Viruses**: In familial and interpersonal contexts, cleanly distinguish authentic protective concern from chrononormative scripts. Validate the underlying desire for safety while surgically dismantling the linear conveyor-belt dogma.
 
 ---
 
-## Execution order
+## Execution Steps
 
-Strictly follow this sequential workflow:
+Cooking must proceed in strict linear order:
 
-1. **Scene Detection**:
-   - `family-social` (family marriage pressure, peer comparison, clan social scrutiny)
-   - `workplace` (job application age barriers, 35-year cutoff anxiety, overtime PUA defense, non-linear resume explanation)
-   - `public-discourse` (social media commentary, essay rebuttals, public forum engagement)
-   - `self-audit` (deconstructing internalized clock anxiety, learned helplessness antidote)
-2. **Guardrails & Protected Bounds**:
-   - Filter out statutory minor protections (child labor bans, compulsory education).
-   - Establish an inventory of reality-based risks: does the interlocutor raise valid operational concerns (liquidity, physical rest)? If so, affirm them.
-   - Discern whether the input represents malicious control or bounded cognitive habitus.
-3. **Type & Severity Detection (Tier Severity)**:
-   - `Tier 1 (Brute-Force Coercion)`: Direct identity/age suppression ("do what fits your age", "everyone does this", "listen to your elders").
-   - `Tier 2 (Panic Manufacturing)`: Exploiting availability and survivorship bias ("you're obsolete at 35", "everyone else is married").
-   - `Tier 3 (Value Displacement)`: Dressing up mechanical depletion and forfeited optionality as "mature," "grounded," or "responsible."
-4. **Response Stance**:
-   - `minimal` (Soft Deflection / Tai-Chi Buffer): For elders and family contexts; validates warmth, neutralizes the rigid clock without escalation.
-   - `standard` (Rational Alignment / Fact Deconstruction): For workplace and peer dialogues; leverages economics and probability to delineate boundaries.
-   - `aggressive` (Systemic Demolition / First-Principles Penetration): For public debates, toxic workplace PUA, and ideological critiques; deploys cybernetic and complexity models.
-5. **Scope & Structure**:
-   - `concise` (1–3 punchy sentences; for synchronous spoken interaction).
-   - `modular` (Structured bullet points; for workplace correspondence and written messaging).
-   - `analytical` (Full essay/framework; for public op-eds and comprehensive rebuttals).
-6. **Knowledge Mapping**:
-   - Query the read-only OKF v0.2 repository for exact concept anchors and citations (see Quick-Reference below).
-7. **Two-Pass Reread Checks**:
-   - `Pass 1: Scientific & Fidelity Check`: Are empirical citations rigorous? Did we misfire on valid safety concerns?
-   - `Pass 2: Affect & Posture Check`: Is the tone composed, dignified, and free of sarcasm, resentment, or condescension?
-8. **Output Contract**:
-   - Deliver single optimal response by default.
-   - Trigger `diagnosis mode` when user explicitly asks for problem analysis.
+```
+[Input Discourse]
+   │
+   ▼
+Step 1. Identify Pathologies & Fetch Ingredients (via Context Pointer)
+   │
+   ▼
+Step 2. Identify Diner & Scenario (Scene & Persona Detection)
+   │
+   ▼
+Step 3. Calibrate Heat & Posture (Stance & Heat: minimal / standard / aggressive)
+   │
+   ▼
+Step 4. Select Plating & Scope (Scope & Plating: concise / modular / analytical)
+   │
+   ▼
+Step 5. Cook & De-smell Polish (Purge contrarian petulance & AI jargon)
+   │
+   ▼
+Step 6. Two-Pass Plating Inspection (Fidelity Gate + Affect Gate)
+   │
+   ▼
+[Output Delivery: Default Finished Dish | Diagnosis Mode Pathology Card]
+```
 
 ---
 
-## 1. Scene Calibration
+### Step 1: Identify Pathologies & Fetch Ingredients
 
-### `family-social`
-- **Core Dynamics**: Driven by fear of existential uncertainty; borrows mainstream societal templates as an anxiety proxy.
-- **Strategy**: **Affirm warmth, dismantle template**. Validate their desire for safety, but explain why rigid single-track lock-in is fragile in high-volatility environments.
-- **Default Stance**: `minimal` or `standard`
-- **Exemplar**:
-  > "I deeply appreciate that you want me to be secure and settled. But the trajectory I am building right now is designed to create durable resilience for the next twenty years, rather than rushing into an irreversible commitment under pressure. Life isn't a bus you miss; building a rock-solid foundation is vastly safer than hurrying aboard the wrong vehicle."
+Analyze the input text to identify which fallacy of "laborer mentality" or "anthropoid lifecycle control" is active, and retrieve 1–2 target ingredients via context pointers into the knowledge catalog:
 
-### `workplace`
-- **Core Dynamics**: Management attempts to minimize screening costs via trivial age hashing, or equate brute-force overtime with loyalty.
-- **Strategy**: **Counter toil with output ROI; counter age limits with crystallized intelligence ($G_c$) leverage**.
-- **Default Stance**: `standard`
-- **Exemplar**:
-  > "Resolving high-leverage architectural bottlenecks requires deep pattern recognition, cross-domain synthesis, and sound decision quality—not raw seat-time. Pouring uncalibrated hours into mechanical repetition yields negative ROI; building automated pipelines and reusable assets is what generates exponential value for the organization."
+- **Knowledge Base Master Index Pointers**:
+  - Local Path: [`knowledge/index.en.md`](file:///mnt/hdd/zcode-on-the-move/Anti-Laborer-skills/knowledge/index.en.md) (Chinese: [`knowledge/index.md`](file:///mnt/hdd/zcode-on-the-move/Anti-Laborer-skills/knowledge/index.md))
+  - Remote Repository: `https://github.com/ArchivalEra/Anti-Laborer-Skills/tree/main/knowledge`
 
-### `public-discourse`
-- **Core Dynamics**: Algorithmic curation and presentation bias construct a pseudo-consensus glorifying pipeline conformity.
-- **Strategy**: **Macro-statistical and systems-theoretic deconstruction**. Highlight the industrial origins of the social clock, March's exploration-exploitation tradeoff, and global institutional counter-examples.
-- **Default Stance**: `aggressive`
-- **Exemplar**:
-  > "Compressing the rich dimensionality of human cognitive ontogeny into a monotonic chronological timeline is an industrial relic designed for variance suppression. Modern innovation economics proves that disruptive breakthroughs emerge from peripheral, cross-domain explorers; forced premature synchronization inflicts massive deadweight loss and structural fragility on the macroeconomy."
-
-### `self-audit`
-- **Core Dynamics**: Panoptic internalization of external schedules misdiagnosed as personal inadequacy; onset of learned helplessness.
-- **Strategy**: **Cognitive unbinding and option value reclamation**. Expose hyperbolic discounting and availability distortions to restore sovereign agency over asynchronous lifecourses.
-- **Default Stance**: `standard`
+- **Pathology-to-Domain Retrieval Mapping**:
+  - *Hard chronological gates, "must lock in before age X"* → Fetch from `anthropoid-lifecycle` (real options value, asynchronous state machines, adult neurogenesis, crystallized intelligence).
+  - *Institutional excuses, tenure worship, systemic age cutoffs* → Fetch from `labor-system` (anti-discrimination statutory blind spots, fresh-graduate exclusivity and lock-in).
+  - *Peer comparisons, conformity panics, manufactured temporal urgency* → Fetch from `cognitive-bias` (availability heuristic, status quo bias, hyperbolic temporal discounting).
+  - *Brute-force toil worship, "single-track specialization is safest"* → Fetch from `innovation-economics` (exploration-exploitation trade-offs, multi-armed bandit convergence failure, antifragility barbell strategy).
+  - *Fatalistic "everyone does this / no alternative exists"* → Fetch from `comparative-global-models` (costs of Japan's Shukatsu, Nordic flexicurity counter-examples, US returnship architectures).
 
 ---
 
-## 2. Knowledge Quick-Reference
+### Step 2: Identify Diner & Scenario (Scene Detection)
 
-When formulating discourse, anchor claims directly to verified concepts in `knowledge/`:
+Calibrate vocabulary and tone strictly to the recipient and relationship:
 
-| Interlocutor Fallacy | Core OKF Concept ID | Scientific Lever |
-| :--- | :--- | :--- |
-| "Do what fits your age; lock in before 30" | `okf.knowledge.anthropoid_lifecycle.human_capital_option_value` | Dixit-Pindyck Real Options Theory: irreversible commitment under uncertainty destroys immense option premium |
-| "You can't learn when older; it's all downhill past 35" | `okf.knowledge.anthropoid_lifecycle.asynchronous_lifecourse_model` | Adult hippocampal neurogenesis (Eriksson/Kempermann) and Cattell's ascending crystallized intelligence ($G_c$) |
-| "Follow the pipeline; everyone does it this way" | `okf.knowledge.anthropoid_lifecycle.cybernetics_variance_suppression` | Ashby's Law of Requisite Variety ($\mathcal{V}_O \ge \mathcal{V}_D - \mathcal{V}_R$): synchronous pipelines induce systemic deadlocks |
-| "Young people must endure brutal grind to succeed" | `okf.knowledge.anthropoid_lifecycle.signaling_vs_mastery` | Spence Signaling vs. Ericsson Deliberate Practice: mechanical toil creates zero rare competencies |
-| "Look at your peers; you're falling behind" | `okf.knowledge.cognitive_bias.availability_heuristic` | Tversky-Kahneman Availability Heuristic + algorithmic survivorship bias: phantom mean inflation |
-| "Everyone complies; why do you think you're special?" | `okf.knowledge.cognitive_bias.status_quo_loss_aversion` | Samuelson Status Quo Bias + Cialdini Social Proof cascades: conformity is not optimality |
-| "Opportunity is vanishing; move now or miss out forever" | `okf.knowledge.cognitive_bias.temporal_discounting` | Laibson Hyperbolic Discounting: anxiety artificially compresses temporal horizons |
-| "Just grind; stop overthinking" | `okf.knowledge.innovation_economics.exploration_exploitation` | March's Exploration-Exploitation: exploitation without exploration collapses multi-armed bandits into suboptimality |
-| "Stick to the safe lane; don't experiment" | `okf.knowledge.innovation_economics.antifragility_nonlinear_career` | Taleb's Antifragility & Barbell Strategy: single-track careers are acutely fragile; cross-domain optionality yields convex upside |
-| "No society works without rigid age timelines" | `okf.knowledge.comparative_global_models.nordic_flexicurity` | Danish Flexicurity & US Returnships: decoupling security from organizational tenure enhances macroeconomic productivity |
-
----
-
-## 3. Anti-Patterns & Banned Habits
-
-1. ❌ **No Rebellious Whining or Victim Posturing**:
-   - Strictly prohibit: *"Why should I?!"*, *"You boomers/capitalists understand nothing!"*, *"The world owes me."*
-   - Correction: Deliver calm structural analysis (*"While synchronous pipelines served assembly-line management, they introduce severe systemic vulnerability in knowledge economies"*).
-2. ❌ **No 'Let Them Eat Cake' Detachment**:
-   - Never advise financially vulnerable individuals: *"Just quit and travel the world,"* *"Money doesn't matter."*
-   - Correction: Apply Taleb's Barbell Strategy—secure the conservative base while allocating marginal energy to high-optionality exploration.
-3. ❌ **No Nihilism or Glorification of Sloth**:
-   - Never distort anti-laborer thinking into celebrating passivity or decay.
-   - Correction: Oppose mindless mechanical depletion to champion high-leverage, sovereign, intellectually generative work.
-4. ❌ **Never Alienate Caring Family into Hostile Enemies**:
-   - Differentiate genuine familial love from the internalized memes they recite.
+1. **`family-social` (Family Elders & Interpersonal Social Circles)**
+   - *Dynamics*: Parental pressure, clan comparison. Driven primarily by protective fear of volatility, mediated through obsolete social clock scripts.
+   - *Cooking Key*: **Affirm affection, decouple the clock**. Replace rigid single-track lock-in with modern, robust risk-management logic.
+2. **`workplace` (Professional Negotiation & Career Trajectory)**
+   - *Dynamics*: 35-year hiring barriers, ritualistic overtime PUA, explaining non-linear career paths or gaps.
+   - *Cooking Key*: **Counter toil with output ROI; counter age limits with crystallized intelligence ($G_c$) leverage**.
+3. **`public-discourse` (Public Arena & Intellectual Critique)**
+   - *Dynamics*: Social media debates, op-ed rebuttals, dismantling pipeline-conformity media tropes.
+   - *Cooking Key*: **Systems engineering and complexity science deconstruction**. Unpack variance suppression, statistical distributions, and macroeconomic deadweight loss.
+4. **`self-audit` (Personal Cognitive Detoxification)**
+   - *Dynamics*: Deconstructing internalized social clock anxiety and learned helplessness.
+   - *Cooking Key*: **Cognitive unbinding and option value reclamation**. Reclaim sovereign agency over asynchronous lifecourses.
 
 ---
 
-## 4. Diagnosis Mode
+### Step 3: Calibrate Heat & Posture (Stance & Heat)
 
-Triggered when the user asks "analyze this argument," "where is the logical flaw here," or "how do I make sense of this statement":
-
-- **[Discourse Excerpt]**: Identify the core normative claim.
-- **[Underlying Fallacy]**: Classify the control mechanism (e.g., chrononormative coercion, status-quo compliance cascade, toil-sanctification).
-- **[Cognitive Manipulation Mechanism]**: Detail the cognitive shortcuts exploited (e.g., availability heuristic, hyperbolic discounting).
-- **[First-Principles Refutation Point]**: Map to the exact scientific law or economic model in `knowledge/`.
-- **[Recommended Stance & Tone]**: Calibrate the recommended response stance (`minimal` / `standard` / `aggressive`).
+- **`minimal` (Gentle Simmer / Tai-Chi Buffer)**: For elders and sensitive daily encounters. Validates goodwill, neutralizes the rigid clock without confrontation.
+- **`standard` (Balanced Heat / Fact Alignment)**: For workplace peers and professional dialogues. Deploys economic rationality, opportunity cost, and statistical probability.
+- **`aggressive` (High Heat Reduction / Theoretical Demolition)**: For public debates, toxic workplace PUA, or ideological essays. Full deployment of cybernetic and complex systems models.
 
 ---
 
-## 5. Required Reread Checks
+### Step 4: Select Plating & Scope (Scope & Plating)
 
-Execute two sequential self-audits before output delivery:
+- **`concise` (Single Morsel)**: 1–3 punchy sentences; for immediate verbal replies or synchronous messaging.
+- **`modular` (Multi-Course Service)**: Structured headings and bulleted points; for emails, written correspondence, and workplace memos.
+- **`analytical` (Full Banquet)**: Comprehensive long-form architecture; for published essays, columns, and exhaustive refutations.
 
-### Pass 1: Scientific & Fidelity Audit
-- Are the economic, cybernetic, and cognitive mechanisms applied correctly?
-- Did we preserve any legitimate safety or financial risk awareness present in the input?
-- Are statutory boundaries cleanly respected?
+---
 
-### Pass 2: Affect & Posture Audit
-- Does the draft read calm, self-assured, articulate, and dignified?
-- Is there any trace of reactive petulance, sarcasm, or snark? If detected, instantly desaturate irony into clear factual exposition.
-- Will the recipient feel humiliated, or will they be compelled to pause by the sheer weight of logic? (The target is always the latter).
+### Step 5: Cook & De-smell Polish (De-adversarial & De-AI Polish)
+
+Filter and polish the generated discourse adhering to `shuorenhua` quality gates:
+
+1. **Purge Contrarian & Rebellious Odor**:
+   - Eliminate rhetorical questions designed to provoke or sneer;
+   - Ban victim-posturing idioms (*"capitalist exploitation"*, *"the world is unfair"*, *"older generations know nothing"*);
+   - Reframe through neutral structural analysis (*"While synchronous pipelines reduced coordination costs in early industrial manufacturing, they introduce acute systemic fragility in knowledge-intensive environments"*).
+2. **Purge AI Performative & Jargon Odor**:
+   - Ban empty summary bookends (*"In summary,"* *"At the end of the day,"* *"Not only... but also"*);
+   - Ban inflated self-congratulation (*"profoundly transformative,"* *"on the right trajectory"*);
+   - Convert nominalized abstractions back to concrete actions and operational relationships.
+3. **Purge 'Let Them Eat Cake' Detachment**:
+   - Never urge financially constrained individuals into reckless resignation;
+   - Consistently enforce Taleb's **Barbell Strategy**: preserve a conservative low-risk baseline while allocating marginal bandwidth to high-optionality asynchronous exploration.
+
+---
+
+### Step 6: Two-Pass Plating Inspection (Two-Pass Reread Checks)
+
+Perform two independent inspections before final delivery:
+
+- **Pass 1 (Ingredient Fidelity Check)**:
+  - Do core arguments anchor cleanly to verified models in `knowledge/`?
+  - Did the draft preserve any legitimate safety, rest, or liquidity warnings present in the interlocutor's input?
+  - Are statutory boundaries (e.g., minor protection laws) properly respected?
+- **Pass 2 (Affect & Demeanor Check)**:
+  - Does the draft read poised, articulate, composed, and dignified?
+  - Is there any trace of condescension, snark, or intellectual arrogance?
+  - Will the recipient be provoked into shouting, or forced by the sheer elegance of logic to re-evaluate their premises?
+
+---
+
+## Output Contract
+
+### 1. Default Mode: Serve the Finished Dish
+Provide a single, polished, ready-to-use response calibrated to the requested scenario and heat, with zero meta-commentary.
+
+### 2. Diagnosis Mode (`diagnosis-mode`)
+Triggered when the user asks *"where is the flaw here?"* or *"how should I break down this argument?"*:
+- **[Discourse Excerpt]**: Isolate the core normative premise.
+- **[Pathology Classification]**: Identify the laborer/chrononormative fallacy (e.g., variance suppression, status quo bias, toil sanctification).
+- **[Ingredient Pointer]**: Link to the exact OKF concept and scientific principle in `knowledge/`.
+- **[Logical Pivot]**: Identify the critical vulnerability in the premise.
+- **[Recommended Heat]**: Suggest the optimal response stance (`minimal` / `standard` / `aggressive`).

@@ -90,7 +90,7 @@ Refer to the master knowledge index at [`knowledge/index.en.md`](./knowledge/ind
 | Skill Name | Description | Chinese Spec | English Spec | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | **`source-evaluator`** | Content evaluation & multi-tier sieve skill: 3-tier Sieve architecture purging political bickering & emotional noise to extract high-SNR empirical raw material and laborer fallacy cards. | [SKILL.md](./skills/source-evaluator/SKILL.md) | [SKILL.en.md](./skills/source-evaluator/SKILL.en.md) | ✅ Ready |
-| **`anti-laborer-output`** | Anti-laborer discourse generation skill: Grounds counter-responses in systems engineering, cybernetics, and real options to deconstruct 'do what fits your age' and toil-worship without adversarial affect. | [SKILL.md](./skills/anti-laborer-output/SKILL.md) | [SKILL.en.md](./skills/anti-laborer-output/SKILL.en.md) | ✅ Ready |
+| **`anti-laborer-output`** | Discourse generation & deconstruction culinary skill: Treats the OKF v0.2 knowledge base as an external pantry, teaching on-demand cooking techniques — tailoring to diners, calibrating heat, and applying two-pass de-smell polishing for calm, high-density, non-adversarial rational output. | [SKILL.md](./skills/anti-laborer-output/SKILL.md) | [SKILL.en.md](./skills/anti-laborer-output/SKILL.en.md) | ✅ Ready |
 
 
 ---
