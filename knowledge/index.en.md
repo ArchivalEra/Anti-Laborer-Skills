@@ -46,6 +46,7 @@ The foundational engineering principle of this repository is the **absolute arch
 | `anthropoid-lifecycle` | Anthropoid Lifecycle Control & Age-Stage Determinism | Cybernetics, Operations Research, Cognitive Neuroscience, Chrononormativity Sociology | `active` | [`knowledge/anthropoid-lifecycle/`](./anthropoid-lifecycle/index.en.md) |
 | `labor-system` | Labor System Design & Institutional Age Gates | Institutional Economics, Comparative Labor Law, Policy Analysis | `active` | [`knowledge/labor-system/`](./labor-system/index.en.md) |
 | `cognitive-bias` | Cognitive Biases & Persuasion Mechanics of Lifecycle Control | Behavioral Economics, Cognitive Psychology, Prospect Theory | `active` | [`knowledge/cognitive-bias/`](./cognitive-bias/index.en.md) |
+| `innovation-economics` | 创新经济学与多样性组合论 | Innovation Economics, Complexity Theory, Multi-Armed Bandit Optimization | `active` | [`knowledge/innovation-economics/`](./innovation-economics/index.en.md
 
 ### anthropoid-lifecycle Concept Registry (Complete)
 
@@ -74,6 +75,13 @@ The foundational engineering principle of this repository is the **absolute arch
 | `availability-heuristic` | Availability Heuristic & Peer-Comparison Anxiety Amplification | `cognitive-bias/availability-heuristic.en.md` |
 | `status-quo-loss-aversion` | Status Quo Bias & Loss Aversion: Manufacturing Compliance | `cognitive-bias/status-quo-loss-aversion.en.md` |
 | `temporal-discounting` | Temporal Discounting Distortion & Enforced Myopia | `cognitive-bias/temporal-discounting.en.md` |
+
+### innovation-economics Concept Registry (Complete)
+
+| Concept ID | Name | File |
+| :--- | :--- | :--- |
+| `exploration-exploitation` | Exploration-Exploitation Trade-off & Macroeconomic Innovative Capacity | `innovation-economics/exploration-exploitation.en.md` |
+| `antifragility-nonlinear-career` | Antifragility and Non-Linear Career Paths | `innovation-economics/antifragility-nonlinear-career.en.md` |
 
 ## Governance and Quality Assurance
 
