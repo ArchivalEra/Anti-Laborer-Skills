@@ -11,7 +11,12 @@ domains:
     name: Anthropoid Lifecycle Control & Age-Stage Determinism
     path: knowledge/anthropoid-lifecycle/
     description: Systems engineering, cybernetics, and cognitive neuroscience knowledge catalog deconstructing age-stage determinism and coercive lifecycle homogenization.
+  - id: labor-system
+    name: Labor System Design & Institutional Age Gates
+    path: knowledge/labor-system/
+    description: Institutional economics, comparative labor law, and policy analysis of forced linear labor pipeline design and age-based institutional gatekeeping.
 ---
+
 
 # Knowledge Catalog Index (Open Knowledge Format v0.2)
 
@@ -35,9 +40,31 @@ The foundational engineering principle of this repository is the **absolute arch
 | Domain ID | Name | Core Academic Pillars | Status | Directory |
 | :--- | :--- | :--- | :--- | :--- |
 | `anthropoid-lifecycle` | Anthropoid Lifecycle Control & Age-Stage Determinism | Cybernetics, Operations Research, Cognitive Neuroscience, Chrononormativity Sociology | `active` | [`knowledge/anthropoid-lifecycle/`](./anthropoid-lifecycle/index.en.md) |
+| `labor-system` | Labor System Design & Institutional Age Gates | Institutional Economics, Comparative Labor Law, Policy Analysis | `active` | [`knowledge/labor-system/`](./labor-system/index.en.md) |
+
+### anthropoid-lifecycle Concept Registry (Complete)
+
+| Concept ID | Name | File |
+| :--- | :--- | :--- |
+| `definition` | Formal Ontological Definition & Boundary Conditions | `anthropoid-lifecycle/definition.en.md` |
+| `social-clock-phenomenology` | Social Clock Phenomenology & Institutional Gatekeeping | `anthropoid-lifecycle/social-clock-phenomenology.en.md` |
+| `cybernetics-variance-suppression` | Cybernetics of Variance Suppression & Pipeline Deadlocks | `anthropoid-lifecycle/cybernetics-variance-suppression.en.md` |
+| `asynchronous-lifecourse-model` | Asynchronous Event-Driven Lifecourse Model | `anthropoid-lifecycle/asynchronous-lifecourse-model.en.md` |
+| `human-capital-option-value` | Human Capital Option Value & Premature Lock-in Economics | `anthropoid-lifecycle/human-capital-option-value.en.md` |
+| `signaling-vs-mastery` | Spence Signaling Model vs. Genuine Mastery | `anthropoid-lifecycle/signaling-vs-mastery.en.md` |
+| `internalization-mechanisms` | Internalization Mechanisms: Panopticon & Learned Helplessness | `anthropoid-lifecycle/internalization-mechanisms.en.md` |
+| `late-bloomer-empirical` | Non-Linear High Achievement Trajectory Empirical Case Library | `anthropoid-lifecycle/late-bloomer-empirical.en.md` |
+
+### labor-system Concept Registry (Complete)
+
+| Concept ID | Name | File |
+| :--- | :--- | :--- |
+| `china-institutional-gates` | China's Institutional Age Gates in Labor Markets | `labor-system/china-institutional-gates.en.md` |
+| `global-age-discrimination-law` | Global Age Discrimination Law Comparative Study | `labor-system/global-age-discrimination-law.en.md` |
 
 ## Governance and Quality Assurance
 
 - **Concept Atomicity**: Each concept file represents an isolated, unambiguous scientific proposition or system mechanism.
 - **Provenance & Falsifiability**: Concepts must include explicit `sources` fields citing authoritative peer-reviewed papers, empirical surveys, statutory data, or primary field samples.
 - **Bilingual Parity**: Per repository rules, every `.md` file must be strictly mirrored by a corresponding `.en.md` file.
+

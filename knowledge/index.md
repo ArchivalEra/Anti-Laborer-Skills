@@ -11,6 +11,10 @@ domains:
     name: Anthropoid Lifecycle Control & Age-Stage Determinism
     path: knowledge/anthropoid-lifecycle/
     description: 对以“什么年龄做什么事”为借口的广义生命周期型控制、社会时钟规训与方差压制行为的系统工程学、控制论与认知科学知识库。
+  - id: labor-system
+    name: Labor System Design & Institutional Age Gates
+    path: knowledge/labor-system/
+    description: 劳动制度设计、年龄歧视立法比较与强制线性流水线的制度经济学分析。
 ---
 
 # 知识库索引 (Open Knowledge Format v0.2)
@@ -35,6 +39,27 @@ domains:
 | 领域标识 (Domain ID) | 中文名称 | 核心学科支柱 | 状态 | 规范目录 |
 | :--- | :--- | :--- | :--- | :--- |
 | `anthropoid-lifecycle` | 人猿生命周期控制与年龄阶段宿命论 | 控制论、运筹学、认知神经科学、社会时钟社会学 | `active` | [`knowledge/anthropoid-lifecycle/`](./anthropoid-lifecycle/index.md) |
+| `labor-system` | 劳动制度设计与年龄性制度门槛 | 制度经济学、比较劳动法、政策分析 | `active` | [`knowledge/labor-system/`](./labor-system/index.md) |
+
+### anthropoid-lifecycle 概念注册表（完整）
+
+| 概念 ID | 概念名称 | 文件 |
+| :--- | :--- | :--- |
+| `definition` | 人猿生命周期控制的严格本体论定义 | `anthropoid-lifecycle/definition.md` |
+| `social-clock-phenomenology` | 社会时钟现象学与制度门槛分析 | `anthropoid-lifecycle/social-clock-phenomenology.md` |
+| `cybernetics-variance-suppression` | 控制论方差压制与流水线死锁 | `anthropoid-lifecycle/cybernetics-variance-suppression.md` |
+| `asynchronous-lifecourse-model` | 异步事件驱动生命历程模型 | `anthropoid-lifecycle/asynchronous-lifecourse-model.md` |
+| `human-capital-option-value` | 人力资本实物期权价值与过早锁定的经济学代价 | `anthropoid-lifecycle/human-capital-option-value.md` |
+| `signaling-vs-mastery` | 斯宾塞信号模型与真实技能掌握的分离 | `anthropoid-lifecycle/signaling-vs-mastery.md` |
+| `internalization-mechanisms` | 内化机制：全景监狱与习得性无助 | `anthropoid-lifecycle/internalization-mechanisms.md` |
+| `late-bloomer-empirical` | 非线性高成就轨迹实证案例库 | `anthropoid-lifecycle/late-bloomer-empirical.md` |
+
+### labor-system 概念注册表（完整）
+
+| 概念 ID | 概念名称 | 文件 |
+| :--- | :--- | :--- |
+| `china-institutional-gates` | 中国劳动制度年龄性制度门槛体制分析 | `labor-system/china-institutional-gates.md` |
+| `global-age-discrimination-law` | 全球年龄歧视法规比较研究 | `labor-system/global-age-discrimination-law.md` |
 
 ## 知识库治理与检验规范
 
