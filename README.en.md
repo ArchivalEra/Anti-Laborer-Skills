@@ -43,6 +43,42 @@ To maintain structural integrity and relentless consistency, this repository imp
 ### 3. Synchronous Skills-README Update Hook
 - Whenever skills within the `skills/` directory are modified, the pre-commit hook mandates that both `README.md` and `README.en.md` must be updated and staged concurrently, preventing stale indexes and out-of-date documentation.
 
+## 🏛 Architectural Decoupling: Knowledge Base vs. Action Skills
+
+The repository enforces an absolute architectural separation between **Information Sourcing & Knowledge Synthesis** and **Response & Dialogue Generation**:
+
+```
++-------------------------------------------------------------------------+
+|                  1. Knowledge Layer (knowledge/)                        |
+|       Standardized under Google Open Knowledge Format (OKF v0.2)        |
+|                                                                         |
+|  - Peer-reviewed empirical facts, formal ontologies, cybernetic proofs   |
+|  - Strictly prohibits dialogue templates, prompts, or contrarian tone  |
+|  - Location: knowledge/<domain>/<concept>.en.md                         |
++-------------------------------------------------------------------------+
+                                    |
+                    Mounted as Read-Only Ground Truth Context
+                                    v
++-------------------------------------------------------------------------+
+|                  2. Skill & Action Layer (skills/)                      |
+|       Standard Agent Skills (ZCode, Claude Code, AGY Formats)           |
+|                                                                         |
+|  - Harvester engine (scripts/harvester): multi-platform scrapers        |
+|  - Content sieve (skills/source-evaluator): 3-tier noise filtering      |
+|  - Reasoning & response skills (future): consume knowledge context      |
++-------------------------------------------------------------------------+
+```
+
+---
+
+## 📚 Knowledge Catalog Index (Open Knowledge Format v0.2)
+
+Refer to the master knowledge index at [`knowledge/index.en.md`](./knowledge/index.en.md).
+
+| Domain ID | Domain Name | Key Registered Concepts | Status | Directory |
+| :--- | :--- | :--- | :--- | :--- |
+| **`anthropoid-lifecycle`** | Anthropoid Lifecycle Control & Age-Stage Determinism | • Formal Ontological Definition & Boundary<br>• Neugarten Social Clock & 35-Year Barrier Phenomenology<br>• Ashby's Law of Requisite Variety & Pipeline Deadlocks<br>• Asynchronous Event-Driven State Machines & Neurogenesis | `active` | [`knowledge/anthropoid-lifecycle/`](./knowledge/anthropoid-lifecycle/index.en.md) |
+
 ---
 
 ## 📂 Skills Index
@@ -59,5 +95,8 @@ To maintain structural integrity and relentless consistency, this repository imp
 
 We welcome contributors with rigorous scientific methodology and engineering discipline. Please observe the following requirements:
 1. Maintain an objective, empirical, non-combative academic and engineering tone at all times;
-2. Provide symmetric bilingual versions for any new or modified documentation;
-3. Adhere to the absolute-path whitelist convention when updating `.gitignore`.
+2. Knowledge domains must adhere strictly to Google Open Knowledge Format (OKF v0.2) specifications;
+3. Never mix response templates or emotional rhetoric into the knowledge catalog;
+4. Provide symmetric bilingual versions for any new or modified documentation;
+5. Adhere to the absolute-path whitelist convention when updating `.gitignore`.
+

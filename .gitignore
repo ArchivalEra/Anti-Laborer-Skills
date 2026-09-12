@@ -37,3 +37,20 @@
 !/skills/source-evaluator/RUBRIC.en.md
 !/skills/source-evaluator/scripts/filter.py
 
+# 6. Open Knowledge Format (OKF v0.2) 知识库绝对路径白名单
+!/knowledge/index.md
+!/knowledge/index.en.md
+!/knowledge/anthropoid-lifecycle/index.md
+!/knowledge/anthropoid-lifecycle/index.en.md
+!/knowledge/anthropoid-lifecycle/log.md
+!/knowledge/anthropoid-lifecycle/log.en.md
+!/knowledge/anthropoid-lifecycle/definition.md
+!/knowledge/anthropoid-lifecycle/definition.en.md
+!/knowledge/anthropoid-lifecycle/social-clock-phenomenology.md
+!/knowledge/anthropoid-lifecycle/social-clock-phenomenology.en.md
+!/knowledge/anthropoid-lifecycle/cybernetics-variance-suppression.md
+!/knowledge/anthropoid-lifecycle/cybernetics-variance-suppression.en.md
+!/knowledge/anthropoid-lifecycle/asynchronous-lifecourse-model.md
+!/knowledge/anthropoid-lifecycle/asynchronous-lifecourse-model.en.md
+
+
