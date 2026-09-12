@@ -18,8 +18,17 @@
 !/README.md
 !/README.en.md
 
-# 4. 采集工具白名单
+# 4. 采集工具与多平台矩阵解析引擎白名单
 !/scripts/harvest.mjs
+!/scripts/harvester/index.mjs
+!/scripts/harvester/utils.mjs
+!/scripts/harvester/router.mjs
+!/scripts/harvester/platforms/generic.mjs
+!/scripts/harvester/platforms/domestic/short_video.mjs
+!/scripts/harvester/platforms/domestic/knowledge_forum.mjs
+!/scripts/harvester/platforms/domestic/social_media.mjs
+!/scripts/harvester/platforms/international/social_video.mjs
+!/scripts/harvester/platforms/international/messaging_newsletters.mjs
 
 # 5. skills/source-evaluator 绝对路径白名单
 !/skills/source-evaluator/SKILL.md
