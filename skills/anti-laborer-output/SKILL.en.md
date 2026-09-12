@@ -29,6 +29,9 @@ Cooking must proceed in strict linear order:
 [Input Discourse]
    │
    ▼
+Step 0. Grill-Me: Stress-Test & Clear Decision Tree Frontier
+   │
+   ▼
 Step 1. Identify Pathologies & Fetch Ingredients (via Context Pointer)
    │
    ▼
@@ -49,6 +52,28 @@ Step 6. Two-Pass Plating Inspection (Fidelity Gate + Affect Gate)
    ▼
 [Output Delivery: Default Finished Dish | Diagnosis Mode Pathology Card]
 ```
+
+---
+
+### Step 0: Grill-Me (Clear the Decision Tree Frontier)
+
+Adapted from Matt Pocock's `grilling` methodology: **Never cook or hallucinate the user's circumstances, power dynamics, or constraints before stress-testing the frontier.**
+
+Low-quality outputs almost always stem from unexamined assumptions—treating loving parents like public online trolls, treating a ruthless employer like family, or prescribing reckless resignation ("just quit and follow your dream") to an individual carrying heavy mortgage obligations. Work the decision tree in **rounds** across the frontier:
+
+- **The Frontier Questions**:
+  When user context is under-specified, issue structured frontier questions paired with your recommended answer (➡️):
+  1. ❓ **Q1 [Power Dynamics & Relationships]**: Who is the interlocutor? What direct financial dependence or institutional hierarchy exists between you? (Parents / spouse / direct manager / hiring recruiter / public internet stranger)
+     ➡️ *Provide your inference and recommended classification*
+  2. ❓ **Q2 [Baseline Runway & Fragility]**: What is your realistic financial runway and downside tolerance? Are there non-negotiable obligations (mortgage, dependents, gap-year survival limits)?
+     ➡️ *Provide your safety boundary recommendation*
+  3. ❓ **Q3 [Target Outcome]**: What exact result do you want this discourse to produce? (Soft de-escalation / preserve long-term trust / draw firm workplace boundaries / comprehensive intellectual refutation)
+     ➡️ *Provide your tactical recommendation*
+
+- **Completion Criterion**:
+  Proceed to Step 1 only when all critical dependencies (power hierarchy, financial runway, strategic objective) are settled and the frontier is empty.
+- **Fast-Path Bypass**:
+  If the user's initial prompt explicitly specifies the relationship, stakes, runway, and target outcome—or explicitly states *"give me the script directly without grilling"*—treat the frontier as pre-settled and advance directly to Step 1.
 
 ---
 
