@@ -26,6 +26,9 @@ concepts:
   - id: okf.knowledge.anthropoid_lifecycle.asynchronous_lifecourse_model
     file: asynchronous-lifecourse-model.md
     name: 异步生命历程模型：事件驱动状态机与终身神经可塑性
+  - id: okf.knowledge.anthropoid_lifecycle.east_asian_intergenerational_trauma_report
+    file: east-asian-intergenerational-trauma-report.md
+    name: 东亚社会结构性代际创伤、单向孝道异化与青年行为防御机制深度调查报告
 ---
 
 # 领域总览：人猿生命周期控制 (Anthropoid Lifecycle Control)
@@ -85,3 +88,6 @@ concepts:
 4. **[异步生命历程模型 (asynchronous-lifecourse-model.md)](./asynchronous-lifecourse-model.md)**:
    - 事件驱动（Event-Driven）异步状态机。
    - 突触终身可塑性与高阶探索-利用（Explore-Exploit）模型。
+5. **[东亚社会代际创伤调查报告 (east-asian-intergenerational-trauma-report.md)](./east-asian-intergenerational-trauma-report.md)**:
+   - 单向度孝道异化与互惠契约崩塌（尊老以前置德行为提，爱幼以自愿爱家庭为前提）。
+   - “嘉豪”A股暴富逃避机制与“腐女”抵御“大家闺秀”家务奴役的自卫结界。

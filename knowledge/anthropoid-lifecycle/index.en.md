@@ -26,6 +26,9 @@ concepts:
   - id: okf.knowledge.anthropoid_lifecycle.asynchronous_lifecourse_model
     file: asynchronous-lifecourse-model.en.md
     name: Asynchronous Lifecourse Model: Event-Driven State Machines & Lifelong Neuroplasticity
+  - id: okf.knowledge.anthropoid_lifecycle.east_asian_intergenerational_trauma_report
+    file: east-asian-intergenerational-trauma-report.en.md
+    name: Comprehensive Investigation Report on East Asian Structural Intergenerational Trauma, Asymmetric Filial Alienation, and Youth Behavioral Defense Mechanisms
 ---
 
 # Domain Overview: Anthropoid Lifecycle Control
@@ -86,3 +89,6 @@ This knowledge bundle applies four rigorous scientific disciplines—**Cyberneti
 4. **[Asynchronous Lifecourse Model (asynchronous-lifecourse-model.en.md)](./asynchronous-lifecourse-model.en.md)**:
    - Event-driven asynchronous finite-state machine (FSM) architecture.
    - Lifelong synaptic plasticity, adult neurogenesis, and high-entropy exploration algorithms.
+5. **[East Asian Intergenerational Trauma Report (east-asian-intergenerational-trauma-report.en.md)](./east-asian-intergenerational-trauma-report.en.md)**:
+   - Collapse of filial reciprocity (respecting elders requires elder virtue; loving youth requires voluntary affection).
+   - "Jiahao" speculative stock gambling under marriage debt, and "Fujoshi" defense bunkers against gendered domestic servitude.
