@@ -36,6 +36,9 @@ concepts:
   - id: okf.knowledge.cognitive_bias.cynical_emoji_superiority_marker
     file: cynical-emoji-superiority-marker.en.md
     name: Semiotic Hegemony of Laugh-Cry and Facepalm — Low-Cost Derision and Epistemic Degradation
+  - id: okf.knowledge.cognitive_bias.in_theory_hedging_trap
+    file: in-theory-hedging-trap.en.md
+    name: The "In Theory" Bidirectional Hedging Trap — Unfalsifiable Escape and Pseudo-Academic Risk Shielding
 ---
 
 # Domain Overview: Cognitive Biases and Normative Persuasion Mechanics
@@ -53,4 +56,5 @@ This domain applies **behavioral economics** and **cognitive psychology** to ide
 5. **[system-justification-panglossian.en.md](./system-justification-panglossian.en.md)**: System justification theory and the Panglossian fallacy.
 6. **[empirical-phantom-authority-cases.en.md](./empirical-phantom-authority-cases.en.md)**: Empirical counter-case library for appeal to phantom authority (36 cross-domain failures).
 7. **[cynical-emoji-superiority-marker.en.md](./cynical-emoji-superiority-marker.en.md)**: Semiotic hegemony of laugh-cry and facepalm (Idle cynic contextomy & low-SNR red flag).
+8. **[in-theory-hedging-trap.en.md](./in-theory-hedging-trap.en.md)**: The "In Theory" Bidirectional Hedging Trap (Unfalsifiable escape & pseudo-academic risk shielding).
 

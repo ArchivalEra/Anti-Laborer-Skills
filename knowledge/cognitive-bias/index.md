@@ -36,6 +36,9 @@ concepts:
   - id: okf.knowledge.cognitive_bias.cynical_emoji_superiority_marker
     file: cynical-emoji-superiority-marker.md
     name: “笑哭与捂脸”的符码霸权：低成本虚假优越感与极低信噪比的高危特征标记
+  - id: okf.knowledge.cognitive_bias.in_theory_hedging_trap
+    file: in-theory-hedging-trap.md
+    name: “理论上”的双向免责陷阱：不可证伪性逃逸与虚妄学术对冲
 ---
 
 # 领域总览：认知偏差与规训可说服性
@@ -57,4 +60,5 @@ concepts:
 5. **[system-justification-panglossian.md](./system-justification-panglossian.md)**：制度辩护理论与庞格罗斯谬误（局部妥协错认全局最优）
 6. **[empirical-phantom-authority-cases.md](./empirical-phantom-authority-cases.md)**：诉诸虚假全知权威实证反例库（36 大跨领域重大反例）
 7. **[cynical-emoji-superiority-marker.md](./cynical-emoji-superiority-marker.md)**：“笑哭与捂脸”的符码霸权（闲汉断章取义与低信噪比高危标记）
+8. **[in-theory-hedging-trap.md](./in-theory-hedging-trap.md)**：“理论上”的双向免责陷阱（不可证伪性逃逸与虚妄学术对冲）
 
