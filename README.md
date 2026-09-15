@@ -90,7 +90,6 @@
 | Skill 名称 | 描述 | 中文规范 | 英文规范 | 状态 |
 | :--- | :--- | :--- | :--- | :--- |
 | **`source-evaluator`** | 内容分辨与多维筛查技能：三层 Sieve 架构淘汰政治键政与纯情绪杂音，提炼高信噪比实证原料与力工谬误特征卡片。 | [SKILL.md](./skills/source-evaluator/SKILL.md) | [SKILL.en.md](./skills/source-evaluator/SKILL.en.md) | ✅ 已就绪 |
-| **`phantom-authority-evaluator`** | 诉诸虚假全知权威输入评定技能（“请大佛讲大道理”识别器）：纯输入端解析引擎，剥离虚构权威图腾与现实被掩饰缺陷，映射真实工程/组织约束成因，量化思维终止指数（TTI），零输出生成交集。 | [SKILL.md](./skills/phantom-authority-evaluator/SKILL.md) | [SKILL.en.md](./skills/phantom-authority-evaluator/SKILL.en.md) | ✅ 已就绪 |
 | **`anti-laborer-output`** | 话语生成与解构技能（AI Agent 执行规范）：前置 Matt 风格 Step 0 盘问探底（Grill-Me）压测决策树前沿；只读挂载底层知识库（OKF v0.2）进行证据检索；通过确定性工序与双遍质检门禁，生成无反调情绪、高信息密度的理性回应。 | [SKILL.md](./skills/anti-laborer-output/SKILL.md) | [SKILL.en.md](./skills/anti-laborer-output/SKILL.en.md) | ✅ 已就绪 |
 
 

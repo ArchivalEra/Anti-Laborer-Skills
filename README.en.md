@@ -90,7 +90,6 @@ Refer to the master knowledge index at [`knowledge/index.en.md`](./knowledge/ind
 | Skill Name | Description | Chinese Spec | English Spec | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | **`source-evaluator`** | Content evaluation & multi-tier sieve skill: 3-tier Sieve architecture purging political bickering & emotional noise to extract high-SNR empirical raw material and laborer fallacy cards. | [SKILL.md](./skills/source-evaluator/SKILL.md) | [SKILL.en.md](./skills/source-evaluator/SKILL.en.md) | ✅ Ready |
-| **`phantom-authority-evaluator`** | Appeal to Phantom Authority evaluation skill (Input analyzer for "The Great Buddha Fallacy"): Pure input parsing engine isolating abstract authority totems from shielded engineering/organizational defects, mapping physical root causes, scoring Thought-Termination Index (TTI), with zero output-generation overlap. | [SKILL.md](./skills/phantom-authority-evaluator/SKILL.md) | [SKILL.en.md](./skills/phantom-authority-evaluator/SKILL.en.md) | ✅ Ready |
 | **`anti-laborer-output`** | Discourse generation & deconstruction skill (AI agent operational runbook): Front-loads Matt-style Step 0 Grill-Me to settle the decision frontier; mounts OKF v0.2 knowledge base for evidence retrieval; executes a deterministic workflow with two-pass quality gates for calm, high-density, non-adversarial rational output. | [SKILL.md](./skills/anti-laborer-output/SKILL.md) | [SKILL.en.md](./skills/anti-laborer-output/SKILL.en.md) | ✅ Ready |
 
 
