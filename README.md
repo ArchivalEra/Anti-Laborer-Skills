@@ -43,8 +43,10 @@
 ### 3. Skills 与文档联动更新机制 (Auto-Sync Hook)
 - 当任何位于 `skills/` 目录下的技能定义或文档发生变更时，Git Hook 强制要求本次提交必须同时包含对 `README.md` 与 `README.en.md` 的同步更新，杜绝文档脱节与索引失效。
 
-### 4. 知识库与速查矩阵推送门禁 (Pre-Push Diagnostic Matrix Hook)
-- 当推送（git push）涉及 `knowledge/` 知识库概念的修改或新增时，Pre-push Hook 强制校验主索引 `knowledge/index.md` 与 `knowledge/index.en.md`，要求必须同步更新【言论症状与知识库靶点速查路由矩阵】并将新增概念对齐挂载，确保下游输出智能体始终能毫秒级直达实证靶点。
+### 4. 知识库与索引/文档推送门禁 (Pre-Push Diagnostic Matrix & README Sync Hook)
+- 当推送（git push）涉及 `knowledge/` 知识库概念的修改或新增时，Pre-push Hook 强制执行双重校验：
+  1. 主索引 `knowledge/index.md` 与 `knowledge/index.en.md` 必须同步更新【言论症状与知识库靶点速查路由矩阵】并将新增概念对齐挂载，确保下游输出智能体始终能毫秒级直达实证靶点；
+  2. 根级概览文档 `README.md` 与 `README.en.md` 必须同步更新，确保全库概览及知识分类索引始终与底层知识库保持一致，杜绝信息脱节。
 
 ## 🏛 核心架构：知识库与执行技能的解耦设计 (Decoupled Architecture)
 

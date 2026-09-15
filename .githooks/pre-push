@@ -110,14 +110,35 @@ if [ -n "$KNOWLEDGE_CONCEPTS" ]; then
       EXIT_CODE=1
     fi
   done <<< "$KNOWLEDGE_CONCEPTS"
+
+  # 2.5 Check if README.md and README.en.md were updated in this push
+  README_ZH="README.md"
+  README_EN="README.en.md"
+
+  README_ZH_UPDATED=$(echo "$CHANGED_FILES" | grep -Fx "$README_ZH" || true)
+  README_EN_UPDATED=$(echo "$CHANGED_FILES" | grep -Fx "$README_EN" || true)
+
+  if [ -z "$README_ZH_UPDATED" ] || [ -z "$README_EN_UPDATED" ]; then
+    echo "❌ [README Sync Check] Knowledge concepts were modified, but '$README_ZH' and/or '$README_EN' were NOT updated in this push!" >&2
+    echo "   Rule: Whenever new knowledge files under knowledge/ are pushed, README.md and README.en.md must be updated and synchronized." >&2
+    if [ -z "$README_ZH_UPDATED" ]; then
+      echo "   Missing in push: $README_ZH" >&2
+    fi
+    if [ -z "$README_EN_UPDATED" ]; then
+      echo "   Missing in push: $README_EN" >&2
+    fi
+    EXIT_CODE=1
+  fi
 fi
 
 if [ "$EXIT_CODE" -ne 0 ]; then
   echo "" >&2
   echo "🚫 Pre-push hook rejected the push." >&2
-  echo "   Pushing to knowledge/ requires maintaining the Symptom-to-Knowledge Diagnostic Matrix in both knowledge/index.md and knowledge/index.en.md." >&2
+  echo "   Pushing to knowledge/ requires:" >&2
+  echo "   1. Updating the Symptom-to-Knowledge Diagnostic Matrix in knowledge/index.md and knowledge/index.en.md" >&2
+  echo "   2. Updating README.md and README.en.md with the newly added knowledge concepts" >&2
   exit 1
 fi
 
-echo "✅ [Hook] Pre-push validation passed (Knowledge Matrix intact)."
+echo "✅ [Hook] Pre-push validation passed (Knowledge Matrix and README intact)."
 exit 0

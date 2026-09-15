@@ -43,8 +43,10 @@ To maintain structural integrity and relentless consistency, this repository imp
 ### 3. Synchronous Skills-README Update Hook
 - Whenever skills within the `skills/` directory are modified, the pre-commit hook mandates that both `README.md` and `README.en.md` must be updated and staged concurrently, preventing stale indexes and out-of-date documentation.
 
-### 4. Knowledge Base Diagnostic Matrix Push Gate (Pre-Push Hook)
-- Whenever a `git push` touches knowledge concept files under `knowledge/`, the pre-push hook strictly validates that both `knowledge/index.md` and `knowledge/index.en.md` are synchronized, ensuring that the Symptom-to-Knowledge Diagnostic Matrix is maintained so that downstream generation agents can always locate empirical anchors deterministically.
+### 4. Knowledge Base Diagnostic Matrix & README Push Gate (Pre-Push Hook)
+- Whenever a `git push` touches knowledge concept files under `knowledge/`, the pre-push hook strictly enforces dual validations:
+  1. Both `knowledge/index.md` and `knowledge/index.en.md` must be synchronized, ensuring the Symptom-to-Knowledge Diagnostic Matrix is updated with all new concepts so downstream agents locate empirical anchors deterministically;
+  2. Root documentation `README.md` and `README.en.md` must be updated and synchronized within the same push, guaranteeing that high-level overviews and category indexes stay aligned with underlying knowledge concepts.
 
 ## 🏛 Architectural Decoupling: Knowledge Base vs. Action Skills
 
