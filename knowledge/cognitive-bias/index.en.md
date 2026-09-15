@@ -24,16 +24,25 @@ concepts:
   - id: okf.knowledge.cognitive_bias.temporal_discounting
     file: temporal-discounting.en.md
     name: Temporal Discounting Distortion — How Forced Acceleration Inflates Perceived Short-term Costs
+  - id: okf.knowledge.cognitive_bias.appeal_to_phantom_authority
+    file: appeal-to-phantom-authority.en.md
+    name: Appeal to Phantom Authority & Epistemic Outsourcing — The Great Buddha Fallacy
+  - id: okf.knowledge.cognitive_bias.system_justification_panglossian
+    file: system-justification-panglossian.en.md
+    name: System Justification Theory & the Panglossian Fallacy — Local Compromise vs. Hallucinated Global Optimality
 ---
 
 # Domain Overview: Cognitive Biases and Normative Persuasion Mechanics
 
 ## 1. Domain Scope
 
-This domain applies **behavioral economics** and **cognitive psychology** to identify and deconstruct the **cognitive persuasion mechanisms** that make anthropoid lifecycle control discourse highly resistant to rational challenge. The domain analyzes which systematic cognitive biases and fast-thinking heuristics the control apparatus exploits to reduce individual detection of its underlying power dynamics.
+This domain applies **behavioral economics** and **cognitive psychology** to identify and deconstruct the **cognitive persuasion mechanisms** that make anthropoid lifecycle control and laborer justification discourse highly resistant to rational challenge. The domain analyzes which systematic cognitive biases, fast-thinking heuristics, and epistemic abdication habits the apparatus exploits.
 
 ## 2. Concept Registry
 
 1. **[availability-heuristic.en.md](./availability-heuristic.en.md)**: Availability heuristic and peer-comparison anxiety amplification.
 2. **[status-quo-loss-aversion.en.md](./status-quo-loss-aversion.en.md)**: Status quo bias, loss aversion, and social proof manufacturing.
 3. **[temporal-discounting.en.md](./temporal-discounting.en.md)**: Temporal discounting distortion and enforced myopia.
+4. **[appeal-to-phantom-authority.en.md](./appeal-to-phantom-authority.en.md)**: Appeal to phantom authority and epistemic outsourcing ("The Great Buddha Fallacy").
+5. **[system-justification-panglossian.en.md](./system-justification-panglossian.en.md)**: System justification theory and the Panglossian fallacy.
+

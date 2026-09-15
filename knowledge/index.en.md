@@ -84,6 +84,9 @@ The foundational engineering principle of this repository is the **absolute arch
 | `availability-heuristic` | Availability Heuristic & Peer-Comparison Anxiety Amplification | `cognitive-bias/availability-heuristic.en.md` |
 | `status-quo-loss-aversion` | Status Quo Bias & Loss Aversion: Manufacturing Compliance | `cognitive-bias/status-quo-loss-aversion.en.md` |
 | `temporal-discounting` | Temporal Discounting Distortion & Enforced Myopia | `cognitive-bias/temporal-discounting.en.md` |
+| `appeal-to-phantom-authority` | Appeal to Phantom Authority & Epistemic Outsourcing — The Great Buddha Fallacy | `cognitive-bias/appeal-to-phantom-authority.en.md` |
+| `system-justification-panglossian` | System Justification Theory & the Panglossian Fallacy — Local Compromise vs. Hallucinated Global Optimality | `cognitive-bias/system-justification-panglossian.en.md` |
+
 
 ### innovation-economics Concept Registry (Complete)
 

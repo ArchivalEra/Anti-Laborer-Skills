@@ -36,6 +36,11 @@
 !/skills/source-evaluator/RUBRIC.md
 !/skills/source-evaluator/RUBRIC.en.md
 !/skills/source-evaluator/scripts/filter.py
+!/skills/phantom-authority-evaluator/SKILL.md
+!/skills/phantom-authority-evaluator/SKILL.en.md
+!/skills/phantom-authority-evaluator/RUBRIC.md
+!/skills/phantom-authority-evaluator/RUBRIC.en.md
+!/skills/phantom-authority-evaluator/scripts/parse_phantom.py
 !/skills/anti-laborer-output/SKILL.md
 !/skills/anti-laborer-output/SKILL.en.md
 
@@ -80,6 +85,11 @@
 !/knowledge/cognitive-bias/status-quo-loss-aversion.en.md
 !/knowledge/cognitive-bias/temporal-discounting.md
 !/knowledge/cognitive-bias/temporal-discounting.en.md
+!/knowledge/cognitive-bias/appeal-to-phantom-authority.md
+!/knowledge/cognitive-bias/appeal-to-phantom-authority.en.md
+!/knowledge/cognitive-bias/system-justification-panglossian.md
+!/knowledge/cognitive-bias/system-justification-panglossian.en.md
+
 
 
 # 9. innovation-economics 领域绝对路径白名单

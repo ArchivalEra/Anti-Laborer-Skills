@@ -24,13 +24,19 @@ concepts:
   - id: okf.knowledge.cognitive_bias.temporal_discounting
     file: temporal-discounting.md
     name: 时间折现失真：为何强制加速令人高估短期成本
+  - id: okf.knowledge.cognitive_bias.appeal_to_phantom_authority
+    file: appeal-to-phantom-authority.md
+    name: 诉诸虚假全知权威与认知外包：攀附不存在的大佛与思维终止机制
+  - id: okf.knowledge.cognitive_bias.system_justification_panglossian
+    file: system-justification-panglossian.md
+    name: 制度辩护理论与庞格罗斯谬误：将现状妥协脑补为全局最优
 ---
 
 # 领域总览：认知偏差与规训可说服性
 
 ## 1. 领域定义
 
-本领域从**行为经济学（Behavioral Economics）**与**认知心理学（Cognitive Psychology）**视角，识别并拆解"人猿生命周期控制"话语体系的**认知技术性机制（Cognitive Persuasion Mechanisms）**——即该控制系统借助哪些人类固有的认知偏差与启发式思维，使被控制者自愿接受、内化甚至传播"必须按时间表生活"的规范信条。
+本领域从**行为经济学（Behavioral Economics）**与**认知心理学（Cognitive Psychology）**视角，识别并拆解"人猿生命周期控制"与力工辩护话语体系的**认知技术性机制（Cognitive Persuasion Mechanisms）**——即该控制系统借助哪些人类固有的认知偏差与启发式思维，使被控制者自愿接受、内化甚至传播规范信条。
 
 ## 2. 分析框架
 
@@ -41,3 +47,6 @@ concepts:
 1. **[availability-heuristic.md](./availability-heuristic.md)**：可用性启发式与同辈比较焦虑
 2. **[status-quo-loss-aversion.md](./status-quo-loss-aversion.md)**：现状偏误、损失厌恶与从众社会证明
 3. **[temporal-discounting.md](./temporal-discounting.md)**：时间折现失真与强制短视
+4. **[appeal-to-phantom-authority.md](./appeal-to-phantom-authority.md)**：诉诸虚假全知权威与认知外包（“请大佛讲大道理”）
+5. **[system-justification-panglossian.md](./system-justification-panglossian.md)**：制度辩护理论与庞格罗斯谬误（局部妥协错认全局最优）
+

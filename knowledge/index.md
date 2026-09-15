@@ -84,6 +84,9 @@ domains:
 | `availability-heuristic` | 可用性启发式与同辈比较焦虑的放大机制 | `cognitive-bias/availability-heuristic.md` |
 | `status-quo-loss-aversion` | 现状偏误与损失厌恶：年龄门槛话语的顺应性制造 | `cognitive-bias/status-quo-loss-aversion.md` |
 | `temporal-discounting` | 时间折现失真与强制加速：为何生命周期控制令人高估短期成本 | `cognitive-bias/temporal-discounting.md` |
+| `appeal-to-phantom-authority` | 诉诸虚假全知权威与认知外包：攀附不存在的大佛与思维终止机制 | `cognitive-bias/appeal-to-phantom-authority.md` |
+| `system-justification-panglossian` | 制度辩护理论与庞格罗斯谬误：将现状妥协脑补为全局最优 | `cognitive-bias/system-justification-panglossian.md` |
+
 
 ### innovation-economics 概念注册表（完整）
 
