@@ -33,6 +33,9 @@ concepts:
   - id: okf.knowledge.cognitive_bias.empirical_phantom_authority_cases
     file: empirical-phantom-authority-cases.en.md
     name: Empirical Counter-Cases to Phantom Authority — 36 Systemic Failures and Cognitive Blind Spots
+  - id: okf.knowledge.cognitive_bias.cynical_emoji_superiority_marker
+    file: cynical-emoji-superiority-marker.en.md
+    name: Semiotic Hegemony of Laugh-Cry and Facepalm — Low-Cost Derision and Epistemic Degradation
 ---
 
 # Domain Overview: Cognitive Biases and Normative Persuasion Mechanics
@@ -49,4 +52,5 @@ This domain applies **behavioral economics** and **cognitive psychology** to ide
 4. **[appeal-to-phantom-authority.en.md](./appeal-to-phantom-authority.en.md)**: Appeal to phantom authority and epistemic outsourcing ("The Great Buddha Fallacy").
 5. **[system-justification-panglossian.en.md](./system-justification-panglossian.en.md)**: System justification theory and the Panglossian fallacy.
 6. **[empirical-phantom-authority-cases.en.md](./empirical-phantom-authority-cases.en.md)**: Empirical counter-case library for appeal to phantom authority (36 cross-domain failures).
+7. **[cynical-emoji-superiority-marker.en.md](./cynical-emoji-superiority-marker.en.md)**: Semiotic hegemony of laugh-cry and facepalm (Idle cynic contextomy & low-SNR red flag).
 

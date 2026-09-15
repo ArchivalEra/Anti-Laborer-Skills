@@ -60,6 +60,7 @@ domains:
 | **“你现在换行业/换赛道，以前积累全沉没了”**<br>“年轻时要一条道走到黑，不要东一榔头西一棒子” | 损失厌恶与过早锁定陷阱<br>探索-利用权衡失衡 | [`anthropoid-lifecycle/human-capital-option-value.md`](./anthropoid-lifecycle/human-capital-option-value.md)<br>[`innovation-economics/exploration-exploitation.md`](./innovation-economics/exploration-exploitation.md)<br>[`innovation-economics/antifragility-nonlinear-career.md`](./innovation-economics/antifragility-nonlinear-career.md) | • 人力资本实物期权模型与等待价值<br>• 多臂老虎机 (Multi-Armed Bandit) 终身探索算法<br>• 塔勒布反脆弱杠铃策略 (Barbell Strategy) |
 | **“外面世界哪有你想的那么好，大家都是这么过的”**<br>“就你清高？看看别人不都老老实实结婚生子还贷” | 可用性启发式偏差<br>从众瀑布与群体极化<br>全景监狱习得性无助内化 | [`cognitive-bias/availability-heuristic.md`](./cognitive-bias/availability-heuristic.md)<br>[`cognitive-bias/status-quo-loss-aversion.md`](./cognitive-bias/status-quo-loss-aversion.md)<br>[`anthropoid-lifecycle/internalization-mechanisms.md`](./anthropoid-lifecycle/internalization-mechanisms.md)<br>[`comparative-global-models/nordic-flexicurity.md`](./comparative-global-models/nordic-flexicurity.md) | • 特维尔斯基 & 卡尼曼可用性启发式模型<br>• 损失厌恶指数与社会证明瀑布<br>• 福柯全景敞视机制与塞利格曼习得性无助<br>• 丹麦 Flexicurity 终身安全网与再教育体系 |
 | **“现在不把身体拼上去，以后连拼的机会都没有”**<br>“年轻吃苦叫吃苦，中年吃苦叫受罪” | 双曲时间折现失真<br>制度诱导型强制短视 | [`cognitive-bias/temporal-discounting.md`](./cognitive-bias/temporal-discounting.md)<br>[`innovation-economics/antifragility-nonlinear-career.md`](./innovation-economics/antifragility-nonlinear-career.md) | • 双曲贴现曲线与跨期选择非理性塌缩<br>• 生涯凸性回报与长期复利设计 |
+| **“……😂 / [捂脸] / 🤣”**<br>“你认真的吗😂”<br>“笑死我了[捂脸]，建议多读点书” | 闲汉符号学霸权与低成本虚假优越感<br>犬儒理性免责护甲<br>时间零机会成本与极端断章取义 | [`cognitive-bias/cynical-emoji-superiority-marker.md`](./cognitive-bias/cynical-emoji-superiority-marker.md) | • 99%锁定为低智环境无产出闲汉与断章取义噪音<br>• FLAG_CYNICAL_EMOJI_SNR_COLLAPSE (信噪比归零)<br>• 斯洛特戴克《犬儒理性批判》与布迪厄符号暴力<br>• 处置铁律：直接硬拦截过滤，严禁消耗高价值算力与时间纠缠 |
 
 ## 知识领域目录 (Domains)
 
@@ -101,6 +102,7 @@ domains:
 | `appeal-to-phantom-authority` | 诉诸虚假全知权威与认知外包：攀附不存在的大佛与思维终止机制 | `cognitive-bias/appeal-to-phantom-authority.md` |
 | `system-justification-panglossian` | 制度辩护理论与庞格罗斯谬误：将现状妥协脑补为全局最优 | `cognitive-bias/system-justification-panglossian.md` |
 | `empirical-phantom-authority-cases` | 诉诸虚假全知权威实证反例库：跨领域 36 大系统性失误与认知盲区 | `cognitive-bias/empirical-phantom-authority-cases.md` |
+| `cynical-emoji-superiority-marker` | “笑哭与捂脸”的符码霸权：低成本虚假优越感与极低信噪比的高危特征标记 | `cognitive-bias/cynical-emoji-superiority-marker.md` |
 
 
 ### innovation-economics 概念注册表（完整）

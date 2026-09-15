@@ -33,6 +33,9 @@ concepts:
   - id: okf.knowledge.cognitive_bias.empirical_phantom_authority_cases
     file: empirical-phantom-authority-cases.md
     name: 诉诸虚假全知权威实证反例库：跨领域 36 大系统性失误与认知盲区
+  - id: okf.knowledge.cognitive_bias.cynical_emoji_superiority_marker
+    file: cynical-emoji-superiority-marker.md
+    name: “笑哭与捂脸”的符码霸权：低成本虚假优越感与极低信噪比的高危特征标记
 ---
 
 # 领域总览：认知偏差与规训可说服性
@@ -53,4 +56,5 @@ concepts:
 4. **[appeal-to-phantom-authority.md](./appeal-to-phantom-authority.md)**：诉诸虚假全知权威与认知外包（“请大佛讲大道理”）
 5. **[system-justification-panglossian.md](./system-justification-panglossian.md)**：制度辩护理论与庞格罗斯谬误（局部妥协错认全局最优）
 6. **[empirical-phantom-authority-cases.md](./empirical-phantom-authority-cases.md)**：诉诸虚假全知权威实证反例库（36 大跨领域重大反例）
+7. **[cynical-emoji-superiority-marker.md](./cynical-emoji-superiority-marker.md)**：“笑哭与捂脸”的符码霸权（闲汉断章取义与低信噪比高危标记）
 
