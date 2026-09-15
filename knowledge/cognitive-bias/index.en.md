@@ -39,6 +39,9 @@ concepts:
   - id: okf.knowledge.cognitive_bias.in_theory_hedging_trap
     file: in-theory-hedging-trap.en.md
     name: The "In Theory" Bidirectional Hedging Trap — Unfalsifiable Escape and Pseudo-Academic Risk Shielding
+  - id: okf.knowledge.cognitive_bias.macro_entity_parasitic_projection
+    file: macro-entity-parasitic-projection.en.md
+    name: Macro-Entity Parasitic Projection — The "Jiahao" Archetype, Fetishized Hegemony, and Egoless Chauvinism
 ---
 
 # Domain Overview: Cognitive Biases and Normative Persuasion Mechanics
@@ -57,4 +60,5 @@ This domain applies **behavioral economics** and **cognitive psychology** to ide
 6. **[empirical-phantom-authority-cases.en.md](./empirical-phantom-authority-cases.en.md)**: Empirical counter-case library for appeal to phantom authority (36 cross-domain failures).
 7. **[cynical-emoji-superiority-marker.en.md](./cynical-emoji-superiority-marker.en.md)**: Semiotic hegemony of laugh-cry and facepalm (Idle cynic contextomy & low-SNR red flag).
 8. **[in-theory-hedging-trap.en.md](./in-theory-hedging-trap.en.md)**: The "In Theory" Bidirectional Hedging Trap (Unfalsifiable escape & pseudo-academic risk shielding).
+9. **[macro-entity-parasitic-projection.en.md](./macro-entity-parasitic-projection.en.md)**: Macro-Entity Parasitic Projection (The "Jiahao" archetype, fetishized hegemony, and egoless chauvinism).
 

@@ -62,6 +62,7 @@ domains:
 | **“现在不把身体拼上去，以后连拼的机会都没有”**<br>“年轻吃苦叫吃苦，中年吃苦叫受罪” | 双曲时间折现失真<br>制度诱导型强制短视 | [`cognitive-bias/temporal-discounting.md`](./cognitive-bias/temporal-discounting.md)<br>[`innovation-economics/antifragility-nonlinear-career.md`](./innovation-economics/antifragility-nonlinear-career.md) | • 双曲贴现曲线与跨期选择非理性塌缩<br>• 生涯凸性回报与长期复利设计 |
 | **“……😂 / [捂脸] / 🤣”**<br>“你认真的吗😂”<br>“笑死我了[捂脸]，建议多读点书” | 闲汉符号学霸权与低成本虚假优越感<br>犬儒理性免责护甲<br>时间零机会成本与极端断章取义 | [`cognitive-bias/cynical-emoji-superiority-marker.md`](./cognitive-bias/cynical-emoji-superiority-marker.md) | • 99%锁定为低智环境无产出闲汉与断章取义噪音<br>• FLAG_CYNICAL_EMOJI_SNR_COLLAPSE (信噪比归零)<br>• 斯洛特戴克《犬儒理性批判》与布迪厄符号暴力<br>• 处置铁律：直接硬拦截过滤，严禁消耗高价值算力与时间纠缠 |
 | **“理论上这个需求两行代码就能改好，怎么排期要三天？”**<br>“理论上35岁前按部就班就能立足，模型这么完美你怎么做不到？”<br>“从理论上讲……（若打脸则甩锅：现实变量太多执行偏差，能怪理论吗）” | 不可证伪双向免责对冲<br>无下行风险声誉收割（廉价言辞）<br>真空球形鸡教条主义 | [`cognitive-bias/in-theory-hedging-trap.md`](./cognitive-bias/in-theory-hedging-trap.md) | • 绝代双骄之二：假学术文人免责护甲（对冲“笑哭/捂脸”）<br>• 波普尔不可证伪性与特设性拯救危机<br>• 塔勒布《非对称风险》(Skin in the Game) 道德风险与法兰克福《论扯淡》<br>• FLAG_IN_THEORY_UNFALSIFIABLE_HEDGE (要求给出证伪指标与责任承诺，无下行风险者直接过滤) |
+| **“某国芯片卡脖子已破/大厂市值干崩全美，你挑刺产品是不是汉奸？”**<br>“我们大厂几万人怎么可能不如你懂？”<br>“为了国家产业大局/百年大棋，普通人牺牲一点权益怎么了？” | 宏大实体寄生与神圣图腾投射（“嘉豪”本源）<br>自我价值破产者的代偿性自恋<br>马克思异化倒错（被压榨者崇拜压榨图腾）<br>微观向宏大无端跃迁（没皮硬扯） | [`cognitive-bias/macro-entity-parasitic-projection.md`](./cognitive-bias/macro-entity-parasitic-projection.md) | • 霍弗《狂热分子》：无能者消融于宏大实体的代偿全能感<br>• 产权真空与廉价部族主义（零股权、零决策权、纯代价耗材）<br>• 简中区信噪比彻底崩塌的最后 0.1% 致命毒斑<br>• FLAG_MACRO_ENTITY_PARASITIC_PROJECTION (视作异星杂音，绝对零响应直接丢弃) |
 
 ## 知识领域目录 (Domains)
 
@@ -105,6 +106,7 @@ domains:
 | `empirical-phantom-authority-cases` | 诉诸虚假全知权威实证反例库：跨领域 36 大系统性失误与认知盲区 | `cognitive-bias/empirical-phantom-authority-cases.md` |
 | `cynical-emoji-superiority-marker` | “笑哭与捂脸”的符码霸权：低成本虚假优越感与极低信噪比的高危特征标记 | `cognitive-bias/cynical-emoji-superiority-marker.md` |
 | `in-theory-hedging-trap` | “理论上”的双向免责陷阱：不可证伪性逃逸与虚妄学术对冲 | `cognitive-bias/in-theory-hedging-trap.md` |
+| `macro-entity-parasitic-projection` | 宏大实体寄生与图腾附魅：“嘉豪”本源与国家/企业/产业名的虚妄投射 | `cognitive-bias/macro-entity-parasitic-projection.md` |
 
 
 ### innovation-economics 概念注册表（完整）

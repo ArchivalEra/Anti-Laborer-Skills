@@ -39,6 +39,9 @@ concepts:
   - id: okf.knowledge.cognitive_bias.in_theory_hedging_trap
     file: in-theory-hedging-trap.md
     name: “理论上”的双向免责陷阱：不可证伪性逃逸与虚妄学术对冲
+  - id: okf.knowledge.cognitive_bias.macro_entity_parasitic_projection
+    file: macro-entity-parasitic-projection.md
+    name: 宏大实体寄生与图腾附魅：“嘉豪”本源与国家/企业/产业名的虚妄投射
 ---
 
 # 领域总览：认知偏差与规训可说服性
@@ -61,4 +64,5 @@ concepts:
 6. **[empirical-phantom-authority-cases.md](./empirical-phantom-authority-cases.md)**：诉诸虚假全知权威实证反例库（36 大跨领域重大反例）
 7. **[cynical-emoji-superiority-marker.md](./cynical-emoji-superiority-marker.md)**：“笑哭与捂脸”的符码霸权（闲汉断章取义与低信噪比高危标记）
 8. **[in-theory-hedging-trap.md](./in-theory-hedging-trap.md)**：“理论上”的双向免责陷阱（不可证伪性逃逸与虚妄学术对冲）
+9. **[macro-entity-parasitic-projection.md](./macro-entity-parasitic-projection.md)**：宏大实体寄生与图腾附魅（“嘉豪”本源与国家/企业/产业名的虚妄投射）
 
