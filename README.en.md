@@ -107,3 +107,14 @@ We welcome contributors with rigorous scientific methodology and engineering dis
 4. Provide symmetric bilingual versions for any new or modified documentation;
 5. Adhere to the absolute-path whitelist convention when updating `.gitignore`.
 
+---
+
+## 📄 License
+
+This repository is distributed under a **Dual-Licensing Model**:
+
+- **Software, Scripts & Agent Skills** (`skills/`, `scripts/`, `.githooks/`): Licensed under the [MIT License](./LICENSE-MIT), enabling frictionless commercial adoption, downstream toolchains, and multi-agent integration (ZCode, Claude Code, AGY).
+- **Knowledge Base & Empirical Research** (`knowledge/`): Licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)](./LICENSE-CC-BY-SA-4.0), safeguarding open-source knowledge reciprocity, academic attribution, and preventing closed-source proprietary capture.
+
+For the full legal terms, refer to the root [`LICENSE`](./LICENSE) file.
+

@@ -18,6 +18,9 @@
 !/.githooks/pre-push
 !/README.md
 !/README.en.md
+!/LICENSE
+!/LICENSE-MIT
+!/LICENSE-CC-BY-SA-4.0
 
 # 4. 采集工具与多平台矩阵解析引擎白名单
 !/scripts/harvest.mjs

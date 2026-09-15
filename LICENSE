@@ -1,0 +1,60 @@
+# Dual Licensing Policy (双重许可声明)
+
+本项目采用**双重许可机制（Dual Licensing Model）**，以兼顾工程实现的集成便利性与学术知识库的开源互惠性：
+
+1. **代码、脚本与技能定义 (Code, Scripts & Agent Skills)**：
+   - 包含目录：`skills/`、`scripts/`、`.githooks/` 及所有执行脚本、自动化工具与 Agent 提示词工程规范；
+   - 适用许可：**MIT 许可证 (MIT License)**；
+   - 详见独立文件 [`LICENSE-MIT`](./LICENSE-MIT) 或文末 MIT 条款正文。允许商业闭源集成、二次开发、自由分发，赋能各主流 Agent 框架（如 ZCode、Claude Code、AGY 等）无摩擦调用。
+
+2. **知识库实证研究与本体架构 (Knowledge Base & Empirical Research)**：
+   - 包含目录：`knowledge/` 下所有领域概念、实证调研报告、本体定义及症状-靶点速查路由矩阵；
+   - 适用许可：**知识共享 署名-相同方式共享 4.0 国际许可协议 (Creative Commons Attribution-ShareAlike 4.0 International, CC BY-SA 4.0)**；
+   - 详见独立文件 [`LICENSE-CC-BY-SA-4.0`](./LICENSE-CC-BY-SA-4.0) 或文末 CC BY-SA 4.0 条款摘要。要求任何基于本知识库的研究拓展、概念派生与二次分发必须署名原作者并以相同的开源互惠协议开放，防止知识资产被恶意洗稿与闭源垄断。
+
+---
+
+## Part 1: MIT License
+
+**Applicable to**: `skills/**`, `scripts/**`, `.githooks/**`, and associated executable software/configurations.
+
+Copyright (c) 2026 Anti-Laborer-Skills Contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## Part 2: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+
+**Applicable to**: `knowledge/**` (Open Knowledge Format v0.2 documentation, sociological reports, and ontological schemas).
+
+### Human-Readable Summary of the License:
+
+**You are free to:**
+- **Share** — copy and redistribute the material in any medium or format for any purpose, even commercially.
+- **Adapt** — remix, transform, and build upon the material for any purpose, even commercially.
+- The licensor cannot revoke these freedoms as long as you follow the license terms.
+
+**Under the following terms:**
+- **Attribution (署名)** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+- **ShareAlike (相同方式共享)** — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+- **No additional restrictions** — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
+For the full legal text, please refer to [`LICENSE-CC-BY-SA-4.0`](./LICENSE-CC-BY-SA-4.0) or visit:
+https://creativecommons.org/licenses/by-sa/4.0/legalcode
