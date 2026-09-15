@@ -22,6 +22,12 @@
 !/LICENSE-MIT
 !/LICENSE-CC-BY-SA-4.0
 
+# 3.1 博客与图表白名单
+!/blog/assets/evolution_pipeline.png
+!/blog/assets/decoupled_architecture.png
+!/blog/持续训练的反力工skill.md
+!/blog/持续训练的反力工skill.en.md
+
 # 4. 采集工具与多平台矩阵解析引擎白名单
 !/scripts/harvest.mjs
 !/scripts/harvester/index.mjs
