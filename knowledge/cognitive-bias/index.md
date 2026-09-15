@@ -42,6 +42,9 @@ concepts:
   - id: okf.knowledge.cognitive_bias.macro_entity_parasitic_projection
     file: macro-entity-parasitic-projection.md
     name: 宏大实体寄生与图腾附魅：“嘉豪”本源与国家/企业/产业名的虚妄投射
+  - id: okf.knowledge.cognitive_bias.benlai_teleological_essentialism
+    file: benlai-teleological-essentialism.md
+    name: “本来”的先验目的论谬误：脱离生产实践的温室预设与实践可塑性
 ---
 
 # 领域总览：认知偏差与规训可说服性
@@ -65,4 +68,5 @@ concepts:
 7. **[cynical-emoji-superiority-marker.md](./cynical-emoji-superiority-marker.md)**：“笑哭与捂脸”的符码霸权（闲汉断章取义与低信噪比高危标记）
 8. **[in-theory-hedging-trap.md](./in-theory-hedging-trap.md)**：“理论上”的双向免责陷阱（不可证伪性逃逸与虚妄学术对冲）
 9. **[macro-entity-parasitic-projection.md](./macro-entity-parasitic-projection.md)**：宏大实体寄生与图腾附魅（“嘉豪”本源与国家/企业/产业名的虚妄投射）
+10. **[benlai-teleological-essentialism.md](./benlai-teleological-essentialism.md)**：“本来”的先验目的论谬误（脱离生产实践的温室预设与实践可塑性）
 

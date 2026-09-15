@@ -42,6 +42,9 @@ concepts:
   - id: okf.knowledge.cognitive_bias.macro_entity_parasitic_projection
     file: macro-entity-parasitic-projection.en.md
     name: Macro-Entity Parasitic Projection — The "Jiahao" Archetype, Fetishized Hegemony, and Egoless Chauvinism
+  - id: okf.knowledge.cognitive_bias.benlai_teleological_essentialism
+    file: benlai-teleological-essentialism.en.md
+    name: The "Benlai" Teleological Essentialism — Pre-Industrial Greenhouse Presumption and Practice-Driven Plasticity
 ---
 
 # Domain Overview: Cognitive Biases and Normative Persuasion Mechanics
@@ -61,4 +64,5 @@ This domain applies **behavioral economics** and **cognitive psychology** to ide
 7. **[cynical-emoji-superiority-marker.en.md](./cynical-emoji-superiority-marker.en.md)**: Semiotic hegemony of laugh-cry and facepalm (Idle cynic contextomy & low-SNR red flag).
 8. **[in-theory-hedging-trap.en.md](./in-theory-hedging-trap.en.md)**: The "In Theory" Bidirectional Hedging Trap (Unfalsifiable escape & pseudo-academic risk shielding).
 9. **[macro-entity-parasitic-projection.en.md](./macro-entity-parasitic-projection.en.md)**: Macro-Entity Parasitic Projection (The "Jiahao" archetype, fetishized hegemony, and egoless chauvinism).
+10. **[benlai-teleological-essentialism.en.md](./benlai-teleological-essentialism.en.md)**: The "Benlai" Teleological Essentialism (Pre-industrial greenhouse presumption and practice-driven plasticity).
 

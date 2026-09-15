@@ -63,6 +63,7 @@ domains:
 | **“……😂 / [捂脸] / 🤣”**<br>“你认真的吗😂”<br>“笑死我了[捂脸]，建议多读点书” | 闲汉符号学霸权与低成本虚假优越感<br>犬儒理性免责护甲<br>时间零机会成本与极端断章取义 | [`cognitive-bias/cynical-emoji-superiority-marker.md`](./cognitive-bias/cynical-emoji-superiority-marker.md) | • 99%锁定为低智环境无产出闲汉与断章取义噪音<br>• FLAG_CYNICAL_EMOJI_SNR_COLLAPSE (信噪比归零)<br>• 斯洛特戴克《犬儒理性批判》与布迪厄符号暴力<br>• 处置铁律：直接硬拦截过滤，严禁消耗高价值算力与时间纠缠 |
 | **“理论上这个需求两行代码就能改好，怎么排期要三天？”**<br>“理论上35岁前按部就班就能立足，模型这么完美你怎么做不到？”<br>“从理论上讲……（若打脸则甩锅：现实变量太多执行偏差，能怪理论吗）” | 不可证伪双向免责对冲<br>无下行风险声誉收割（廉价言辞）<br>真空球形鸡教条主义 | [`cognitive-bias/in-theory-hedging-trap.md`](./cognitive-bias/in-theory-hedging-trap.md) | • 绝代双骄之二：假学术文人免责护甲（对冲“笑哭/捂脸”）<br>• 波普尔不可证伪性与特设性拯救危机<br>• 塔勒布《非对称风险》(Skin in the Game) 道德风险与法兰克福《论扯淡》<br>• FLAG_IN_THEORY_UNFALSIFIABLE_HEDGE (要求给出证伪指标与责任承诺，无下行风险者直接过滤) |
 | **“某国芯片卡脖子已破/大厂市值干崩全美，你挑刺产品是不是汉奸？”**<br>“我们大厂几万人怎么可能不如你懂？”<br>“为了国家产业大局/百年大棋，普通人牺牲一点权益怎么了？” | 宏大实体寄生与神圣图腾投射（“嘉豪”本源）<br>自我价值破产者的代偿性自恋<br>马克思异化倒错（被压榨者崇拜压榨图腾）<br>微观向宏大无端跃迁（没皮硬扯） | [`cognitive-bias/macro-entity-parasitic-projection.md`](./cognitive-bias/macro-entity-parasitic-projection.md) | • 霍弗《狂热分子》：无能者消融于宏大实体的代偿全能感<br>• 产权真空与廉价部族主义（零股权、零决策权、纯代价耗材）<br>• 简中区信噪比彻底崩塌的最后 0.1% 致命毒斑<br>• FLAG_MACRO_ENTITY_PARASITIC_PROJECTION (视作异星杂音，绝对零响应直接丢弃) |
+| **“这事情本来就该这样，怎么搞得这么复杂？”**<br>“他本来可以做到完美的，都是外部在故意防爆/使坏！”<br>“本来就该双休轻松拿高薪，全是无良资本家的错！” | 先验目的论与自然主义谬误（“本来”温室预设）<br>休谟“是-应当”倒错<br>未入世群体盲视生产成本与工程高熵摩擦力<br>阶段性认知悬浮（具备高度实践可塑性） | [`cognitive-bias/benlai-teleological-essentialism.md`](./cognitive-bias/benlai-teleological-essentialism.md) | • 休谟断头台与自然主义谬误（将主观“应当”篡改为先验“本来”）<br>• 未参与社会生产的阶段性温室病（象牙塔学生/腐女/亚文化社群）<br>• 马克思《关于费尔巴哈的提纲》与“钱难赚屎难吃”实践脱敏定律<br>• FLAG_BENLAI_ESSENTIALIST_TELEOLOGY (不对抗不侮辱，成本核算冷处理，保留向好演化空间) |
 
 ## 知识领域目录 (Domains)
 
@@ -107,6 +108,7 @@ domains:
 | `cynical-emoji-superiority-marker` | “笑哭与捂脸”的符码霸权：低成本虚假优越感与极低信噪比的高危特征标记 | `cognitive-bias/cynical-emoji-superiority-marker.md` |
 | `in-theory-hedging-trap` | “理论上”的双向免责陷阱：不可证伪性逃逸与虚妄学术对冲 | `cognitive-bias/in-theory-hedging-trap.md` |
 | `macro-entity-parasitic-projection` | 宏大实体寄生与图腾附魅：“嘉豪”本源与国家/企业/产业名的虚妄投射 | `cognitive-bias/macro-entity-parasitic-projection.md` |
+| `benlai-teleological-essentialism` | “本来”的先验目的论谬误：脱离生产实践的温室预设与实践可塑性 | `cognitive-bias/benlai-teleological-essentialism.md` |
 
 
 ### innovation-economics 概念注册表（完整）
