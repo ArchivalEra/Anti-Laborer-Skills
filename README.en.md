@@ -43,6 +43,9 @@ To maintain structural integrity and relentless consistency, this repository imp
 ### 3. Synchronous Skills-README Update Hook
 - Whenever skills within the `skills/` directory are modified, the pre-commit hook mandates that both `README.md` and `README.en.md` must be updated and staged concurrently, preventing stale indexes and out-of-date documentation.
 
+### 4. Knowledge Base Diagnostic Matrix Push Gate (Pre-Push Hook)
+- Whenever a `git push` touches knowledge concept files under `knowledge/`, the pre-push hook strictly validates that both `knowledge/index.md` and `knowledge/index.en.md` are synchronized, ensuring that the Symptom-to-Knowledge Diagnostic Matrix is maintained so that downstream generation agents can always locate empirical anchors deterministically.
+
 ## 🏛 Architectural Decoupling: Knowledge Base vs. Action Skills
 
 The repository enforces an absolute architectural separation between **Information Sourcing & Knowledge Synthesis** and **Response & Dialogue Generation**:
@@ -90,7 +93,7 @@ Refer to the master knowledge index at [`knowledge/index.en.md`](./knowledge/ind
 | Skill Name | Description | Chinese Spec | English Spec | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | **`source-evaluator`** | Content evaluation & multi-tier sieve skill: 3-tier Sieve architecture purging political bickering & emotional noise to extract high-SNR empirical raw material and laborer fallacy cards. | [SKILL.md](./skills/source-evaluator/SKILL.md) | [SKILL.en.md](./skills/source-evaluator/SKILL.en.md) | ✅ Ready |
-| **`anti-laborer-output`** | Discourse generation & deconstruction skill (AI agent operational runbook): Front-loads Matt-style Step 0 Grill-Me to settle the decision frontier; mounts OKF v0.2 knowledge base for evidence retrieval; executes a deterministic workflow with two-pass quality gates for calm, high-density, non-adversarial rational output. | [SKILL.md](./skills/anti-laborer-output/SKILL.md) | [SKILL.en.md](./skills/anti-laborer-output/SKILL.en.md) | ✅ Ready |
+| **`anti-laborer-output`** | Discourse generation & deconstruction skill (AI agent operational runbook): Front-loads Matt-style Step 0 Grill-Me to settle the decision frontier; routes directly via the Symptom-to-Knowledge Diagnostic Matrix in master knowledge index; executes a deterministic workflow with two-pass quality gates for calm, high-density, non-adversarial rational output. | [SKILL.md](./skills/anti-laborer-output/SKILL.md) | [SKILL.en.md](./skills/anti-laborer-output/SKILL.en.md) | ✅ Ready |
 
 
 ---

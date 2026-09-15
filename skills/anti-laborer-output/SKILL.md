@@ -62,16 +62,17 @@ Step 5: 最终交付 (Output Contract)
 
 ### Step 1: 病灶分类与食材检索 (Classify & Retrieve)
 
-根据输入言论的谬误特征，通过上下文指针检索外部知识库对应领域：
+根据输入言论的谬误特征，**首选查阅 [`knowledge/index.md`](file:///mnt/hdd/zcode-on-the-move/Anti-Laborer-skills/knowledge/index.md) 中的【言论症状与知识库靶点速查路由矩阵】** 进行确定性路由映射，将用户所遭遇的口号症状毫秒级对齐到概念文件与 36 大实证反例：
 
-- **检索指针**：访问 [`knowledge/index.md`](file:///mnt/hdd/zcode-on-the-move/Anti-Laborer-skills/knowledge/index.md) 定位并读取具体概念文件：
+- **首选直达路由**：查阅知识库主索引中的【言论症状与知识库靶点速查路由矩阵】；
+- **兜底领域指针**：若言论属于未收录的新型变种，按领域分诊：
+  - `cognitive-bias/`：诉诸虚假全知权威（请大佛）、可用性启发式、现状偏误、双曲时间折现失真、36大跨领域实证反例库。
   - `anthropoid-lifecycle/`：年龄门槛、社会时钟、过早锁定、成人神经发生、晶体智力上升。
   - `labor-system/`：劳动法年龄盲区、35岁行政硬指标、应届生锁定特权。
-  - `cognitive-bias/`：可用性启发式、同辈展示偏差、现状偏误、双曲时间折现失真。
   - `innovation-economics/`：探索-利用权衡、多臂老虎机收敛、反脆弱杠铃策略。
   - `comparative-global-models/`：日本就活制度疤痕、北欧弹性安全制、美国回归实习机制。
 
-- **完成标准 (Completion Criterion)**：至少选定并读取 1 项对口概念，提炼出其核心科学定律、公式或实证结论作为本次回应的逻辑锚点。
+- **完成标准 (Completion Criterion)**：至少选定并读取 1 项对口概念文件及对应的实证案例，提炼出其核心科学定律、公式或实证反例作为本次回应的逻辑锚点。
 
 ---
 

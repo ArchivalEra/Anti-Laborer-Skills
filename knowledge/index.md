@@ -47,6 +47,20 @@ domains:
    - 仅负责调度具体的执行逻辑（如多源采集解析 `harvester`、信源信噪比评估 `source-evaluator` 等）。
    - 未来若需构建分析型或评判型技能，技能仅将 `knowledge/` 作为只读上下文挂载，严禁反向污染底层知识库本体。
 
+## 🧭 言论症状与知识库靶点速查路由矩阵 (Symptom-to-Knowledge Diagnostic Matrix)
+
+当用户或下游话语生成技能（如 `anti-laborer-output`）面对现实网络讨论中的具体言论时，可通过本矩阵直接将**日常生活化口号/症状**映射到知识库中对应的**底层客观概念文件与实证反例**，杜绝大模型盲猜与幻觉：
+
+| 典型现实言论 / 症状表征 (Linguistic Symptom) | 底层病理机制与谬误本质 | 知识库对口概念文件 (Target OKF Concept) | 核心证据与实证案例 (Anchor & Cases) |
+| :--- | :--- | :--- | :--- |
+| **“像xx大厂几万工程师怎么可能没想到？”**<br>“上下五千年御医世家都这么开药，难道不如你懂？”<br>“上面大领导智囊团那么聪明，必然有深意” | 诉诸虚假全知权威（请大佛）<br>庞格罗斯式现状辩护<br>思维终止型套话与认知外包 | [`cognitive-bias/appeal-to-phantom-authority.md`](./cognitive-bias/appeal-to-phantom-authority.md)<br>[`cognitive-bias/system-justification-panglossian.md`](./cognitive-bias/system-justification-panglossian.md)<br>[`cognitive-bias/empirical-phantom-authority-cases.md`](./cognitive-bias/empirical-phantom-authority-cases.md) | • 36大跨领域实证反例库<br>• 案例 1: 苹果蝶式键盘 (执念与沉没成本)<br>• 案例 7: 波音 737 MAX MCAS (单一传感器死穴)<br>• 案例 19: 马兜铃酸肾病 (前现代认知工具盲区)<br>• 康威定律、有限理性与 Satisficing |
+| **“什么年龄做什么事，35岁前不搞定就晚了”**<br>“三十不立，这辈子就彻底废了”<br>“大家都这个节奏，你凭什么觉得自己特殊” | 纽加滕社会时钟单轨规训<br>年龄阶段宿命论与控制论方差压制<br>将局部制度门槛泛化为生理规律 | [`anthropoid-lifecycle/social-clock-phenomenology.md`](./anthropoid-lifecycle/social-clock-phenomenology.md)<br>[`anthropoid-lifecycle/asynchronous-lifecourse-model.md`](./anthropoid-lifecycle/asynchronous-lifecourse-model.md)<br>[`anthropoid-lifecycle/late-bloomer-empirical.md`](./anthropoid-lifecycle/late-bloomer-empirical.md) | • 异步事件驱动生命历程状态机<br>• 成人神经发生 (Neurogenesis) 实证<br>• 晶体智力 (Crystallized Intelligence) 随年龄持续上升规律<br>• 非线性大器晚成实证案例库 |
+| **“考公考编过了35岁人家看都不看你”**<br>“没了应届生身份，好单位大门全对你关死” | 劳动市场制度性年龄硬门槛<br>体制排斥性合规与特权身份锁定 | [`labor-system/china-institutional-gates.md`](./labor-system/china-institutional-gates.md)<br>[`labor-system/global-age-discrimination-law.md`](./labor-system/global-age-discrimination-law.md)<br>[`comparative-global-models/japan-shukatsu.md`](./comparative-global-models/japan-shukatsu.md) | • 中国劳动法“硬红线”制度成因剖析<br>• 全球反年龄歧视法案 (ADEA/欧盟雇佣平等指令) 对比<br>• 日本就活 (Shukatsu) 制度性疤痕实证 |
+| **“吃得苦中苦，方为人上人”**<br>“别想着投机取巧，苦熬出来的才是真正的基本功”<br>“机器干的不算本事，手工硬磨才是敬业” | 手段与目的颠倒<br>机械高耗能信号崇拜<br>控制论流水线死锁 | [`anthropoid-lifecycle/signaling-vs-mastery.md`](./anthropoid-lifecycle/signaling-vs-mastery.md)<br>[`anthropoid-lifecycle/cybernetics-variance-suppression.md`](./anthropoid-lifecycle/cybernetics-variance-suppression.md)<br>[`anthropoid-lifecycle/definition.md`](./anthropoid-lifecycle/definition.md) | • 斯宾塞信号理论：机械吃苦作为廉价忠诚信号<br>• 阿什比必要多样性定律 (Law of Requisite Variety)<br>• 人猿生命周期控制本体论边界定义 |
+| **“你现在换行业/换赛道，以前积累全沉没了”**<br>“年轻时要一条道走到黑，不要东一榔头西一棒子” | 损失厌恶与过早锁定陷阱<br>探索-利用权衡失衡 | [`anthropoid-lifecycle/human-capital-option-value.md`](./anthropoid-lifecycle/human-capital-option-value.md)<br>[`innovation-economics/exploration-exploitation.md`](./innovation-economics/exploration-exploitation.md)<br>[`innovation-economics/antifragility-nonlinear-career.md`](./innovation-economics/antifragility-nonlinear-career.md) | • 人力资本实物期权模型与等待价值<br>• 多臂老虎机 (Multi-Armed Bandit) 终身探索算法<br>• 塔勒布反脆弱杠铃策略 (Barbell Strategy) |
+| **“外面世界哪有你想的那么好，大家都是这么过的”**<br>“就你清高？看看别人不都老老实实结婚生子还贷” | 可用性启发式偏差<br>从众瀑布与群体极化<br>全景监狱习得性无助内化 | [`cognitive-bias/availability-heuristic.md`](./cognitive-bias/availability-heuristic.md)<br>[`cognitive-bias/status-quo-loss-aversion.md`](./cognitive-bias/status-quo-loss-aversion.md)<br>[`anthropoid-lifecycle/internalization-mechanisms.md`](./anthropoid-lifecycle/internalization-mechanisms.md)<br>[`comparative-global-models/nordic-flexicurity.md`](./comparative-global-models/nordic-flexicurity.md) | • 特维尔斯基 & 卡尼曼可用性启发式模型<br>• 损失厌恶指数与社会证明瀑布<br>• 福柯全景敞视机制与塞利格曼习得性无助<br>• 丹麦 Flexicurity 终身安全网与再教育体系 |
+| **“现在不把身体拼上去，以后连拼的机会都没有”**<br>“年轻吃苦叫吃苦，中年吃苦叫受罪” | 双曲时间折现失真<br>制度诱导型强制短视 | [`cognitive-bias/temporal-discounting.md`](./cognitive-bias/temporal-discounting.md)<br>[`innovation-economics/antifragility-nonlinear-career.md`](./innovation-economics/antifragility-nonlinear-career.md) | • 双曲贴现曲线与跨期选择非理性塌缩<br>• 生涯凸性回报与长期复利设计 |
+
 ## 知识领域目录 (Domains)
 
 | 领域标识 (Domain ID) | 中文名称 | 核心学科支柱 | 状态 | 规范目录 |

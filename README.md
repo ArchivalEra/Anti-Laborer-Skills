@@ -43,6 +43,9 @@
 ### 3. Skills 与文档联动更新机制 (Auto-Sync Hook)
 - 当任何位于 `skills/` 目录下的技能定义或文档发生变更时，Git Hook 强制要求本次提交必须同时包含对 `README.md` 与 `README.en.md` 的同步更新，杜绝文档脱节与索引失效。
 
+### 4. 知识库与速查矩阵推送门禁 (Pre-Push Diagnostic Matrix Hook)
+- 当推送（git push）涉及 `knowledge/` 知识库概念的修改或新增时，Pre-push Hook 强制校验主索引 `knowledge/index.md` 与 `knowledge/index.en.md`，要求必须同步更新【言论症状与知识库靶点速查路由矩阵】并将新增概念对齐挂载，确保下游输出智能体始终能毫秒级直达实证靶点。
+
 ## 🏛 核心架构：知识库与执行技能的解耦设计 (Decoupled Architecture)
 
 本仓库在工程体系上严格贯彻 **“信息接收与知识总结” 与 “回答话语生成” 的彻底解耦**：
@@ -90,7 +93,7 @@
 | Skill 名称 | 描述 | 中文规范 | 英文规范 | 状态 |
 | :--- | :--- | :--- | :--- | :--- |
 | **`source-evaluator`** | 内容分辨与多维筛查技能：三层 Sieve 架构淘汰政治键政与纯情绪杂音，提炼高信噪比实证原料与力工谬误特征卡片。 | [SKILL.md](./skills/source-evaluator/SKILL.md) | [SKILL.en.md](./skills/source-evaluator/SKILL.en.md) | ✅ 已就绪 |
-| **`anti-laborer-output`** | 话语生成与解构技能（AI Agent 执行规范）：前置 Matt 风格 Step 0 盘问探底（Grill-Me）压测决策树前沿；只读挂载底层知识库（OKF v0.2）进行证据检索；通过确定性工序与双遍质检门禁，生成无反调情绪、高信息密度的理性回应。 | [SKILL.md](./skills/anti-laborer-output/SKILL.md) | [SKILL.en.md](./skills/anti-laborer-output/SKILL.en.md) | ✅ 已就绪 |
+| **`anti-laborer-output`** | 话语生成与解构技能（AI Agent 执行规范）：前置 Matt 风格 Step 0 盘问探底（Grill-Me）压测决策树前沿；依托知识库主索引【言论症状与知识库靶点速查路由矩阵】直达实证锚点；通过确定性工序与双遍质检门禁，生成无反调情绪、高信息密度的理性回应。 | [SKILL.md](./skills/anti-laborer-output/SKILL.md) | [SKILL.en.md](./skills/anti-laborer-output/SKILL.en.md) | ✅ 已就绪 |
 
 
 ---

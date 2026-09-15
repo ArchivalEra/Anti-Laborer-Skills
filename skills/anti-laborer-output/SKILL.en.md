@@ -62,16 +62,17 @@ Before drafting, eliminate all unexamined assumptions regarding the user's real 
 
 ### Step 1: Classify & Retrieve
 
-Analyze the input text to identify the active fallacy and retrieve the corresponding concept via context pointers:
+Analyze the input text to identify the active fallacy. **Prioritize looking up the [Symptom-to-Knowledge Diagnostic Routing Matrix](file:///mnt/hdd/zcode-on-the-move/Anti-Laborer-skills/knowledge/index.en.md)** in the master knowledge index for deterministic routing from colloquial symptoms to target concepts and empirical counter-cases:
 
-- **Retrieval Pointer**: Access [`knowledge/index.en.md`](file:///mnt/hdd/zcode-on-the-move/Anti-Laborer-skills/knowledge/index.en.md) to locate and read relevant concept files:
+- **Primary Direct Routing**: Consult the [Symptom-to-Knowledge Diagnostic Routing Matrix](file:///mnt/hdd/zcode-on-the-move/Anti-Laborer-skills/knowledge/index.en.md);
+- **Fallback Domain Pointers**: If the claim is a novel unindexed variant, route via domain:
+  - `cognitive-bias/`: Appeal to phantom authority ("The Great Buddha Fallacy"), availability heuristic, status quo bias, temporal discounting, 36 empirical counter-case library.
   - `anthropoid-lifecycle/`: Chronological age locks, 35-year barrier, premature commitment, adult neurogenesis, crystallized intelligence.
   - `labor-system/`: Labor law statutory blind spots, civil service age caps, fresh-graduate exclusivity.
-  - `cognitive-bias/`: Availability heuristic, peer presentation bias, status quo bias, hyperbolic temporal discounting.
   - `innovation-economics/`: Exploration-exploitation trade-offs, multi-armed bandit failure, antifragility barbell strategy.
   - `comparative-global-models/`: Japan's Shukatsu scarring effects, Nordic flexicurity, US returnship programs.
 
-- **Completion Criterion**: At least one concept file is read and its core scientific theorem, mathematical formulation, or empirical finding is isolated as the logical anchor.
+- **Completion Criterion**: At least one concept file and its associated empirical counter-cases are read and isolated as the logical grounding anchor.
 
 ---
 
