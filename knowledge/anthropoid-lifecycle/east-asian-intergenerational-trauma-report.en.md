@@ -63,9 +63,9 @@ links:
 This report conducts a systematic investigation into the long-obscured structural intergenerational trauma across East Asian societies (with special emphasis on the Sinophone cultural space). Key findings include:
 
 1. **Total Collapse of the Ethical Reciprocity Contract**: Pre-Qin Confucian moral reciprocity ("kind father, filial child") was systematically corrupted over two millennia of bureaucratic despotism into unilateral gerontocratic subjugation ("parents are never in the wrong"). The fundamental rational axiom—**"respecting the elderly requires the elderly to possess genuine virtue; loving the youth requires the child to genuinely love the family"**—was eradicated, devolving into parasitic resource extraction and emotional bullying of youth by entrenched elder cohorts.
-2. **True Economic Pathology of the "Jiahao" Archetype**: Underclass young men who aggressively invoke "national strategy, semiconductor breakthroughs, and mega-corp market caps" online are **90%+ focused on A-share sector rotations, speculative stock spikes, crypto leverage, and get-rich-quick financial fantasies**. Confronted with astronomical marriage home prices and bride prices imposed by elders, while trapped in a 15–20 RMB hourly wage ceiling, their nationalistic frenzy is a financial lottery daydream and vicarious ego-defense against abusive filial demands.
+2. **True Economic and Psychological Pathology of the "Jiahao" Archetype (Debunking Intellectual Caricatures)**: Academics, teachers, and journalists detached from frontline manufacturing often peddle outdated poverty tropes depicting industrial workers as destitute souls surviving on 15 RMB/hour. In the real 2026 economy, blue-collar workers in advanced manufacturing earn 7,000–8,000+ RMB/month, a marked improvement from five years prior. Furthermore, Jiahao **actually made real money in the stock market during recent structural and thematic equity runs**. However, improved material conditions worsened his ideological distortions: **he mistook macro liquidity and state industrial policy tailwinds (Beta) for his own prophetic genius (Alpha), fueling aggressive confirmation bias**. Simultaneously, patriarchal elders scaled their feudal demands (expensive apartments in higher-tier cities, luxury cars, steep bride prices) to absorb all his wage and trading gains, keeping him emotionally and financially subjugated.
 3. **Gendered Trauma & Defense Mechanisms of "Fujoshi" Subculture**: Young women who frequently invoke "Benlai" (本来 — *it was supposed to be like this by default*) are not engaged in frivolous aesthetic posturing; rather, they are **coping with deep psychic conditioning from elders who incessantly demand that "girls must inherently be meticulous, submissive, domestic, and ladylike."** Escaping into Boy's Love (BL) subculture provides an unexploited gender sanctuary free of domestic servitude, while "Benlai" operates as an unconscious, mirror-image defensive shell shielding them from patriarchal exploitation.
-4. **Practice Theory and Rehabilitation Plasticity**: Idle cynics and greenhouse fujoshi are fundamentally distinct from hopelessly calcified older dogmatists. Their distorted discourse stems from **temporary cognitive suspension outside material production**. Once thrown into the labor market to experience the sobering economic gravity of *"money is hard to earn, feces taste foul,"* their speculative bubbles and idealized shells shatter, rapidly rehabilitating them into grounded, empathetic, and pragmatic human beings.
+4. **Practice Theory and Rehabilitation Plasticity**: Idle cynics and greenhouse fujoshi are fundamentally distinct from hopelessly calcified older dogmatists. Their distorted discourse stems from **temporary cognitive suspension outside fully autonomous material production and independent personhood**. Once they experience the sobering economic gravity of *"money is hard to earn, feces taste foul"*—defending hard-earned income and establishing independent adult boundaries—their speculative grandiosity and idealized shells dissolve, rapidly rehabilitating them into grounded, sovereign individuals.
 
 ---
 
@@ -90,24 +90,25 @@ As Fei Xiaotong (*From the Soil*) and Sun Lung-kee (*The Deep Structure of Chine
 
 ---
 
-## 2. Anatomy of "Jiahao": Stock Market Mania, Marriage Traps, and Filial Servitude
+## 2. Anatomy of "Jiahao": 2026 Realities, Jackpot Confirmation Bias, and Escalating Filial Traps
 
-### 2.1 The Camouflage of Grandeur: Why "Nation and Mega-Corp" Mean "Money and Stocks"
-Linguistic clustering and field interviews reveal that while the "Jiahao" demographic frequently chants "national grand strategy, advanced chips, and national champions," their primary discursive context is **A-share ticker channels, speculative equity forums, crypto margin chats, and get-rich-quick circles**:
-- Their peak dopamine spikes not during technical whitepaper discussions, but when **a thematic concept stock hits consecutive daily limit-up ceilings through hot-money speculation**.
-- Beneath the bombastic rhetoric of *"crushing foreign competitors,"* the genuine subconscious plea is: *"Please let hot money inflate the shares I hold ten-fold so I can cash out and survive!"*
+### 2.1 Dispelling the Ivory-Tower Myth: Shopfloor Compensation in 2026
+Critiques grounded in factual falsehoods fail on impact. Teachers and journalists who have never worked on modern production lines often cling to dated impressions, assuming blue-collar workers remain in dire squalor.
 
-### 2.2 Material Despair: The Complete Collapse of Wage Labor Accumulation
-Why does Jiahao gamble rather than rely on honest labor? Because the asset structure of East Asian society has mathematically foreclosed upward mobility through wages:
-- **Meager Hourly Wages**: Factory assembly, car detailing, and food delivery pay 15–25 RMB/hour. Working 300 exhausting hours monthly nets only 4,000–6,000 RMB.
-- **Elder-Enforced Asset Gateways**: East Asian marriage markets, governed by parental demands, mandate **fully funded urban real estate** (1–3 million RMB) and **hefty bride prices**.
-- **Mathematical Impossibility**: It would take Jiahao 40–60 years of total abstinence from food and spending to amass a down payment. With honest labor rendered mathematically futile, his entire psychic energy redirects toward extreme speculative financial gambling.
+Empirical investigation demonstrates:
+- **Significant Wage Gains in Manufacturing**: In advanced manufacturing, EVs, energy systems, and precision assembly lines, regular workers ("打螺丝") regularly earn **7,000–8,000+ RMB/month** through steady shifts and skill mastery, a decisive upgrade from compensation levels five years ago.
+- **Genuine Secondary Market Profits**: Jiahao **is not an armchair loser without capital; in recent structural market rallies, he made substantial real profits in equities**. His brokerage balance contains verified 5-figure or 6-figure realized gains.
 
-### 2.3 Ego Compensation Under Abusive Filial Piety
-Jiahao is deeply poisoned by distorted traditional filial dogma:
-- Elders mercilessly belittle him: *"The neighbor's son bought an apartment and drives a luxury car; you are an unfilial disgrace."*
-- Lacking the philosophical vocabulary to challenge his parents, Jiahao internalizes toxic shame and inadequacy.
-- **Parasitic Delusion as Refuge**: To escape the humiliation of being an impoverished laborer rejected by his family, he adopts an online persona of an "insider to national geopolitical strategy" and "honorary oligarch," using macro grandeur to mask his agonizing material helplessness.
+### 2.2 Cognitive Inflation: Mistaking Market Beta for Personal Alpha
+Because **his wages rose and his stock trades profited**, Jiahao's ideological distortions intensified rather than dissipated:
+- **Jackpot Confirmation Bias**: Handed real stock gains and an 8,000 RMB salary, Jiahao fell into severe cognitive inflation. He attributed broad macroeconomic liquidity, state industrial subsidies, and sector tailwinds (macro Beta) entirely to his own "prophetic grasp of grand national chess moves" (illusory Alpha).
+- **Sacred Parasitism & Extreme Fragility**: In investment forums, Jiahao bound his identity to state policies and corporate titans. Breakthroughs by domestic champions became divine amulets protecting his trading account. Any objective scrutiny of technical defects or corporate governance is perceived as a direct attack on his trading profits and intellect, triggering aggressive retaliatory accusations of "treason."
+
+### 2.3 Escalating Elder Extraction: Income Growth Without Personal Liberation
+While Jiahao earns 8,000 RMB monthly and profits from equities, **his status as a feudal family vassal remains unchanged—in fact, elder extraction tightened**:
+- **Expanding Parental Appetite**: Five years ago, when he earned 3,500 RMB, elders pushed for a modest 500k RMB county apartment. Now that he earns 8,000 RMB and made stock profits, elder greed escalated in tandem: demanding a 1.5–2 million RMB apartment in a tier-2 city, a 200k RMB wedding car, a 300k RMB bride price, and ongoing subsidies to patriarchal relatives.
+- **Filial Piety Siphoning All Surplus**: The older generation wields the moral cudgel of "filial obligation." Jiahao's hard-won factory wages and trading returns are completely vacuumed up to fund elder vanity.
+- **Roots of Ideological Splitting**: Trapped as a voiceless ATM in his family, Jiahao escapes into online hyper-nationalist grandeur, worshiping colossal state entities to compensate for his complete lack of sovereignty at home.
 
 ---
 
@@ -145,8 +146,8 @@ Marx wrote: *"The question whether objective truth can be attributed to human th
 - Jiahao boasts of stock windfalls and the fujoshi clings to immaculate "Benlai" ideals because their survival is still partially buffered by school, family allowances, or low-cost stagnation.
 - **The Demystifying Gravity of Real Labor**: Once they step onto the genuine production floor—facing early commute crowds, fixing broken production deployments, enduring client rejections, and paying their own medical bills;
 - The visceral realization that **"money is hard to earn, feces taste foul (钱难赚，屎难吃)"** acts as a brutal yet liberating rite of passage:
-  1. **Jiahao's Awakening**: The cold reality of labor markets obliterates stock-gambling delusions, revealing that national slogans will not pay his rent. He cuts his parasitic ties to colossal totems and begins fighting for genuine labor rights and material dignity.
-  2. **Fujoshi's Awakening**: Navigating genuine professional trade-offs dissolves the pristine "Benlai" daydream, teaching her to accept high-entropy complexity, establish firm interpersonal boundaries, courageously defy elder emotional blackmail, and mature into a self-determined modern woman.
+  1. **Jiahao's Demystification & Sovereignty**: Every yuan earned on the factory line (averaging 8,000 RMB/month) is distilled from intense physical exertion and technical discipline, not hollow slogans. After experiencing a full market cycle and the inevitable mean reversion of speculative Beta—and realizing that every cent of his hard-earned savings is relentlessly drained by elder demands for apartments and cars—Jiahao reaches a turning point: **macro grandeur cannot substitute for his own livelihood, equity windfalls are not permanent, and elder exploitation is a feudal trap**. He severs the parasitic umbilical cord, defends his property and boundaries, and matures into an autonomous, rational citizen.
+  2. **Fujoshi's Awakening & Autonomy**: Navigating genuine professional trade-offs dissolves the pristine "Benlai" daydream, teaching her to accept high-entropy complexity, establish firm interpersonal boundaries, courageously defy elder emotional blackmail, and mature into a self-determined modern woman.
 
 ---
 
