@@ -40,6 +40,7 @@ verified: true
 links:
   related:
     - okf.knowledge.cognitive_bias.system_justification_panglossian
+    - okf.knowledge.cognitive_bias.empirical_phantom_authority_cases
     - okf.knowledge.cognitive_bias.status_quo_loss_aversion
     - okf.knowledge.anthropoid_lifecycle.internalization_mechanisms
 ---

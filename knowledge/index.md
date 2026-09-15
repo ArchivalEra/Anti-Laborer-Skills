@@ -86,6 +86,7 @@ domains:
 | `temporal-discounting` | 时间折现失真与强制加速：为何生命周期控制令人高估短期成本 | `cognitive-bias/temporal-discounting.md` |
 | `appeal-to-phantom-authority` | 诉诸虚假全知权威与认知外包：攀附不存在的大佛与思维终止机制 | `cognitive-bias/appeal-to-phantom-authority.md` |
 | `system-justification-panglossian` | 制度辩护理论与庞格罗斯谬误：将现状妥协脑补为全局最优 | `cognitive-bias/system-justification-panglossian.md` |
+| `empirical-phantom-authority-cases` | 诉诸虚假全知权威实证反例库：跨领域 36 大系统性失误与认知盲区 | `cognitive-bias/empirical-phantom-authority-cases.md` |
 
 
 ### innovation-economics 概念注册表（完整）

@@ -30,6 +30,9 @@ concepts:
   - id: okf.knowledge.cognitive_bias.system_justification_panglossian
     file: system-justification-panglossian.md
     name: 制度辩护理论与庞格罗斯谬误：将现状妥协脑补为全局最优
+  - id: okf.knowledge.cognitive_bias.empirical_phantom_authority_cases
+    file: empirical-phantom-authority-cases.md
+    name: 诉诸虚假全知权威实证反例库：跨领域 36 大系统性失误与认知盲区
 ---
 
 # 领域总览：认知偏差与规训可说服性
@@ -49,4 +52,5 @@ concepts:
 3. **[temporal-discounting.md](./temporal-discounting.md)**：时间折现失真与强制短视
 4. **[appeal-to-phantom-authority.md](./appeal-to-phantom-authority.md)**：诉诸虚假全知权威与认知外包（“请大佛讲大道理”）
 5. **[system-justification-panglossian.md](./system-justification-panglossian.md)**：制度辩护理论与庞格罗斯谬误（局部妥协错认全局最优）
+6. **[empirical-phantom-authority-cases.md](./empirical-phantom-authority-cases.md)**：诉诸虚假全知权威实证反例库（36 大跨领域重大反例）
 
