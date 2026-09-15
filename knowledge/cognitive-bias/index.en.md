@@ -45,6 +45,15 @@ concepts:
   - id: okf.knowledge.cognitive_bias.benlai_teleological_essentialism
     file: benlai-teleological-essentialism.en.md
     name: The "Benlai" Teleological Essentialism — Pre-Industrial Greenhouse Presumption and Practice-Driven Plasticity
+  - id: okf.knowledge.cognitive_bias.ai_artisan_luddism
+    file: ai-artisan-luddism.en.md
+    name: AI-Era Artisan Luddism vs. Prompt Laborer Bipolarity — Techno-Luddism and Cognitive Abdication
+  - id: okf.knowledge.cognitive_bias.physicalist_matter_fetishism
+    file: physicalist-matter-fetishism.en.md
+    name: Physicalist Matter Fetishism & Digital Nihilism — Pre-Modern Naive Materialism and Anti-Abstraction Bias
+  - id: okf.knowledge.cognitive_bias.performative_presenteeism
+    file: performative-presenteeism.en.md
+    name: Performative Presenteeism & Bureaucratic Laborer — Organizational Entropy, Pseudo-Work, and Defensive Exhaustion
 ---
 
 # Domain Overview: Cognitive Biases and Normative Persuasion Mechanics
@@ -65,4 +74,7 @@ This domain applies **behavioral economics** and **cognitive psychology** to ide
 8. **[in-theory-hedging-trap.en.md](./in-theory-hedging-trap.en.md)**: The "In Theory" Bidirectional Hedging Trap (Unfalsifiable escape & pseudo-academic risk shielding).
 9. **[macro-entity-parasitic-projection.en.md](./macro-entity-parasitic-projection.en.md)**: Macro-Entity Parasitic Projection (The "Jiahao" archetype, fetishized hegemony, and egoless chauvinism).
 10. **[benlai-teleological-essentialism.en.md](./benlai-teleological-essentialism.en.md)**: The "Benlai" Teleological Essentialism (Pre-industrial greenhouse presumption and practice-driven plasticity).
+11. **[ai-artisan-luddism.en.md](./ai-artisan-luddism.en.md)**: AI-Era Artisan Luddism vs. Prompt Laborer Bipolarity (Techno-Luddism and cognitive abdication).
+12. **[physicalist-matter-fetishism.en.md](./physicalist-matter-fetishism.en.md)**: Physicalist Matter Fetishism & Digital Nihilism (Pre-modern naive materialism and anti-abstraction bias).
+13. **[performative-presenteeism.en.md](./performative-presenteeism.en.md)**: Performative Presenteeism & Bureaucratic Laborer (Organizational entropy, pseudo-work, and defensive exhaustion).
 

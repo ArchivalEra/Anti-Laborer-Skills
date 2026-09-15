@@ -45,6 +45,15 @@ concepts:
   - id: okf.knowledge.cognitive_bias.benlai_teleological_essentialism
     file: benlai-teleological-essentialism.md
     name: “本来”的先验目的论谬误：脱离生产实践的温室预设与实践可塑性
+  - id: okf.knowledge.cognitive_bias.ai_artisan_luddism
+    file: ai-artisan-luddism.md
+    name: AI时代的“手搓原教旨”与“Prompt力工”双相病：技术卢德主义与认知盲区
+  - id: okf.knowledge.cognitive_bias.physicalist_matter_fetishism
+    file: physicalist-matter-fetishism.md
+    name: 物理实体拜物教与数字虚无主义：前现代物质直观经验论与反抽象偏见
+  - id: okf.knowledge.cognitive_bias.performative_presenteeism
+    file: performative-presenteeism.md
+    name: 表演性工时与在场证明力工：组织熵增、伪工作与防御性疲劳
 ---
 
 # 领域总览：认知偏差与规训可说服性
@@ -69,4 +78,7 @@ concepts:
 8. **[in-theory-hedging-trap.md](./in-theory-hedging-trap.md)**：“理论上”的双向免责陷阱（不可证伪性逃逸与虚妄学术对冲）
 9. **[macro-entity-parasitic-projection.md](./macro-entity-parasitic-projection.md)**：宏大实体寄生与图腾附魅（“嘉豪”本源与国家/企业/产业名的虚妄投射）
 10. **[benlai-teleological-essentialism.md](./benlai-teleological-essentialism.md)**：“本来”的先验目的论谬误（脱离生产实践的温室预设与实践可塑性）
+11. **[ai-artisan-luddism.md](./ai-artisan-luddism.md)**：AI时代的“手搓原教旨”与“Prompt力工”双相病（技术卢德主义与认知盲区）
+12. **[physicalist-matter-fetishism.md](./physicalist-matter-fetishism.md)**：物理实体拜物教与数字虚无主义（前现代物质直观经验论与反抽象偏见）
+13. **[performative-presenteeism.md](./performative-presenteeism.md)**：表演性工时与在场证明力工（组织熵增、伪工作与防御性疲劳）
 

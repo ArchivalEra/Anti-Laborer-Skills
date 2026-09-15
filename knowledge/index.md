@@ -65,6 +65,9 @@ domains:
 | **“某国芯片卡脖子已破/大厂市值干崩全美，你挑刺产品是不是汉奸？”**<br>“我们大厂几万人怎么可能不如你懂？”<br>“A股某题材妖股天天连板，国家万亿产业布局，借势搞钱买房翻身懂不懂！” | 宏大实体寄生与神圣图腾投射（“嘉豪”本源）<br>股市题材与搞钱暴富逃避机制<br>恶性孝道婚房绞索下的自我破产与自尊代偿<br>马克思异化倒错（把压榨者奉为图腾） | [`cognitive-bias/macro-entity-parasitic-projection.md`](./cognitive-bias/macro-entity-parasitic-projection.md) | • 霍弗《狂热分子》：自我消融于神圣实体的代偿全能感<br>• 2026一线实证：打螺丝月入8000+且炒股真赚到钱（破除教师/记者廉价赤贫臆想）<br>• 暴发式确认偏误：把周期Beta误当个人神算Alpha；老一代索取胃口随收入飙升全盘吞噬剩余价值<br>• FLAG_MACRO_ENTITY_PARASITIC_PROJECTION (视作异星杂音，绝对零响应直接丢弃) |
 | **“这事情本来就该这样，怎么搞得这么复杂？”**<br>“他本来可以做到完美的，都是外部在故意防爆/使坏！”<br>“女孩子本来就该细心懂事做家务大家闺秀，你们为什么这么暴躁？” | 先验目的论谬误（“本来”自卫结界）<br>长辈“大家闺秀/细心懂事”无偿家务与情感剥削创伤<br>耽美（BL）免剥削避难所与无意识心理硬壳<br>未入世群体认知悬浮（具备高度实践可塑性） | [`cognitive-bias/benlai-teleological-essentialism.md`](./cognitive-bias/benlai-teleological-essentialism.md) | • 上野千鹤子：父权制对女性无偿再生产劳动与情感劳动的残酷榨取<br>• 逃入耽美作为“彻底排斥女性肉身与家务奴役”的反剥削避难所<br>• 无意识心理防御机制：被迫借用长辈“本来”语法构建反向纯净道德盾牌<br>• 马克思《提纲》与“钱难赚屎难吃”实践脱敏（真上班后迅速回归理性）<br>• FLAG_BENLAI_ESSENTIALIST_TELEOLOGY (不对抗不侮辱，成本核算冷处理) |
 | **“天下无不是之父母，百善孝为先！”**<br>“长辈说你几句怎么了？尊老爱幼懂不懂！”<br>“老人哪怕再不对也是你长辈，你敢反驳就是大不孝！” | 单向度宗族孝道异化与年龄特权霸权<br>伦理互惠契约的彻底崩塌<br>将老年群体既得利益与德行缺失神圣化<br>东亚高压共生体的情感勒索与债务控制 | [`anthropoid-lifecycle/east-asian-intergenerational-trauma-report.md`](./anthropoid-lifecycle/east-asian-intergenerational-trauma-report.md) | • **伦理互惠铁律：尊老的前提是老人确实好德行，爱幼的前提是孩子确实爱家庭**<br>• 先秦双向责任契约（父慈是子孝的绝对前提）被封建极权篡改为单向奴役<br>• 费孝通《乡土中国》与孙隆基《中国文化的深层结构》：债务工厂与未断奶病理<br>• 闲汉与腐女并非生来低智，实为老一辈代际暴力的第一线受创代偿产物<br>• FLAG_ASYMMETRIC_FILIAL_EXPLOITATION (坚决拆解单向年龄霸权，确立双向德行前置) |
+| **“代码必须一行行纯手敲才有灵魂工匠精神，用AI就是偷懒投机取巧！”**<br>“反正有AI直接狂刷一键生成就行，学什么底层编译原理和数据结构，架构师全下岗！” | 技术卢德主义与偶然复杂度击键仪式感崇拜<br>认知完全外包与随机采样伪工程化（无状态机把控的Prompt祈祷力工） | [`cognitive-bias/ai-artisan-luddism.md`](./cognitive-bias/ai-artisan-luddism.md) | • 布鲁克斯《没有银弹》：解耦本质复杂度（系统拓扑）与偶然复杂度（键盘击键摩擦）<br>• 阿什比必要多样性定律与认知带宽再分配（生物神经元算力上移至形式化验证）<br>• 历史演进实证：从打孔机、手写汇编到 SQL 与 AI Agent 编排<br>• FLAG_AI_ARTISAN_LUDDISM / FLAG_PROMPT_PRAYING_LABORER |
+| **“在电脑前敲键盘敲代码都是虚的泡沫，只有送外卖/进厂修车/下苦力才是真家伙！”**<br>“虚拟经济全是骗局，看得见摸得着的实物才算真本事与铁饭碗！” | 前现代朴素唯物主义与反抽象偏见<br>感官依赖陷阱（将价值局限于宏观低速质量位移）<br>否定非竞争性要素的万倍生产力乘数 | [`cognitive-bias/physicalist-matter-fetishism.md`](./cognitive-bias/physicalist-matter-fetishism.md) | • 香农信息论与热力学：信息即负熵（真正的生产力在于给混乱混沌注入低熵拓扑秩序）<br>• 罗默内生增长理论：物理竞争性客体 vs 非竞争性思想/代码的边际零成本万倍扩散<br>• 现代工业实证：五轴数控机床取代手工车床，调度算法决定外卖路线与电网金融中枢<br>• FLAG_PHYSICALIST_MATTER_FETISHISM |
+| **“哪怕发呆也得在工位坐满12小时证明态度端正，晚上不走才叫有敬业心！”**<br>“大家都熬着你凭什么先走，走得早说明工作不饱和；日报周报必须写满五千字！” | 表演性工时与在场证明异化（古德哈特定律失效）<br>科层制管理能力退化与防御性伪工作<br>认知资源自我损耗（Ego Depletion）与重大工程缺陷率飙升 | [`cognitive-bias/performative-presenteeism.md`](./cognitive-bias/performative-presenteeism.md) | • 古德哈特定律：当工时变成考核目标，它就不再是有效度量指标<br>• 帕金森定律与格雷伯《狗屁工作》：形式主义看门人与管理充实感膨胀<br>• 软件工程实证统计：深夜疲劳使缺陷逃逸率与线上重大事故概率飙升 300%~500%<br>• FLAG_PERFORMATIVE_PRESENTEEISM |
 
 ## 知识领域目录 (Domains)
 
@@ -111,6 +114,9 @@ domains:
 | `in-theory-hedging-trap` | “理论上”的双向免责陷阱：不可证伪性逃逸与虚妄学术对冲 | `cognitive-bias/in-theory-hedging-trap.md` |
 | `macro-entity-parasitic-projection` | 宏大实体寄生与图腾附魅：“嘉豪”本源与国家/企业/产业名的虚妄投射 | `cognitive-bias/macro-entity-parasitic-projection.md` |
 | `benlai-teleological-essentialism` | “本来”的先验目的论谬误：脱离生产实践的温室预设与实践可塑性 | `cognitive-bias/benlai-teleological-essentialism.md` |
+| `ai-artisan-luddism` | AI时代的“手搓原教旨”与“Prompt力工”双相病：技术卢德主义与认知盲区 | `cognitive-bias/ai-artisan-luddism.md` |
+| `physicalist-matter-fetishism` | 物理实体拜物教与数字虚无主义：前现代物质直观经验论与反抽象偏见 | `cognitive-bias/physicalist-matter-fetishism.md` |
+| `performative-presenteeism` | 表演性工时与在场证明力工：组织熵增、伪工作与防御性疲劳 | `cognitive-bias/performative-presenteeism.md` |
 
 
 ### innovation-economics 概念注册表（完整）
