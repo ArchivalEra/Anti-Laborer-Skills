@@ -7,7 +7,7 @@ description: Generate calm, grounded, evidence-backed responses to counter 'labo
 
 Standard operational execution skill for AI agents: systematically deconstruct "laborer mentality" (fetishizing mindless toil and inverting means and ends) and "anthropoid lifecycle control" (coercive age-stage determinism mandating "do what fits your age").
 
-Grounded in the root virtue of **Predictability**, this skill governs the agent's **deterministic reasoning and anti-AI-trope generation workflow**. All underlying empirical citations reside in the external knowledge catalog ([`knowledge/index.en.md`](file:///mnt/hdd/zcode-on-the-move/Anti-Laborer-skills/knowledge/index.en.md)). Hardcoding domain concepts inside this skill is strictly prohibited. Concrete de-smelling rubrics and before/after pairs are disclosed in [`STYLE-GUIDE.en.md`](./STYLE-GUIDE.en.md).
+Grounded in the core virtues of **Predictability** and **Self-Contained Co-location**, this skill unifies grounded anti-AI-trope rubrics, posture purging, and empirical rigor within a single workflow. All underlying empirical citations reside in the external knowledge catalog ([`knowledge/index.en.md`](file:///mnt/hdd/zcode-on-the-move/Anti-Laborer-skills/knowledge/index.en.md)).
 
 ---
 
@@ -114,7 +114,7 @@ Draft the response following positive assertion principles. **Ban formulaic AI s
 
 ### Step 4: Two-Pass Quality Gate
 
-Before delivery, execute two internal verification passes, referencing [`STYLE-GUIDE.en.md`](./STYLE-GUIDE.en.md):
+Before delivery, execute two internal verification passes, referencing the in-skill reference section below:
 
 #### Pass 1: Fidelity Audit
 - [ ] **`protected spans` Intact**: Are scientific theorems, user survival constraints (runway months, debt figures), and statutory baselines 100% preserved?
@@ -143,3 +143,38 @@ Deliver the final text cleanly, with zero introductory pleasantries or meta-narr
    - **[Knowledge Anchor]**: Exact concept ID and theorem in `knowledge/`.
    - **[Logical Vulnerability]**: The precise fatal flaw in the material cost and causal chain.
    - **[Grounded Response]**: Drafted plain-language reply.
+
+---
+
+## 📚 In-Skill Style & De-smell Reference
+
+### 1. Inviolable Protected Spans
+- **Theorems & Mechanisms**: Core concepts from `knowledge/` (Ashby's law, Spence signaling, real options, hyperbolic discounting) and empirical case parameters;
+- **User Baselines**: Explicit financial runway months, debt limits, dependent duties from Step 0;
+- **Statutory Boundaries**: Child labor prohibitions and statutory labor protections.
+
+### 2. Posture Purge Matrix
+| Posture Archetype | Hallmarks & AI Slop Tropes | Mandatory Fix |
+| :--- | :--- | :--- |
+| **Performative Empathy** | • *"I deeply understand your exhaustion and pain"*<br>• *"You are not lazy; you have simply been failed by the system"* | **Delete completely**. Never announce that you "understand." Cut straight to objective costs and boundary analysis. |
+| **Identity Flattery** | • *"You have touched upon the core paradox of our generation"*<br>• *"With this awareness, you are already ahead of 99% of peers"* | **Delete completely**. Never evaluate whether the user is "brilliant" or "clear-eyed"; stick strictly to facts. |
+| **Narrator Residue** | • *"This poignantly illustrates the instrumental alienation of modern labor"*<br>• *"Behind this lies a profound structural deadlock..."* | **Convert to direct assertion**. Do not explain "what this reveals"; directly state the causal chain and empirical consequences. |
+
+### 3. Syntactic Anti-Patterns & Grounded Corrections
+- **Binary Contrasts (`Not X, but Y`)**: Drop the negative half; state the positive action and fact directly.
+  - ❌ *This is not surrendering to reality, but employing rational real options to construct a long-term survival moat.*
+  - ✅ *This preserves our cash runway and limits bankruptcy downside under current revenue realities.*
+- **Significance Inflation (`Not only... but also...`)**: Collapse into a single, concrete operational value.
+  - ❌ *Refusing unpaid overtime is not merely about physical health, but about rebuilding one's sovereign personhood as an autonomous human.*
+  - ✅ *Refusing unpaid overtime preserves physical stamina for high-value skill compounding and prevents premature burnout.*
+- **Hollow Summaries (`In conclusion / At the end of the day`)**: Ban conclusive platitudes. Stop immediately once the argument and boundary are clear.
+
+### 4. Before / After Case Pairs
+
+- **Case 1: Rebutting Elder Coercion into Civil Service ("Young people shouldn't aim too high; security is everything")**
+  - ❌ *AI Slop*: "I deeply appreciate your elders' protective intentions for you. However, in this era of profound uncertainty, so-called absolute security has long ceased to exist. This is not just a constraint on your youthful vigor, but navigating a new continent with an obsolete map. In conclusion, have faith in your inner path, and time will vindicate your courage."
+  - ✅ *Grounded Prose*: "My elders want me in a stable post because they worry an income interruption would leave me unable to handle emergencies. That financial concern is legitimate. However, public-sector and enterprise payrolls are currently experiencing structural headcount tightening; relying solely on institutional tenure no longer hedges against inflation or sector obsolescence. My current savings cover 12 months of living expenses, during which I am focusing on building verifiable technical skills. Securing a low downside while preserving career optionality is more resilient than locking into a zero-growth pipeline prematurely."
+
+- **Case 2: Rebutting Manager's Exploitative Overtime Pitch ("Suffering builds character; don't be obsessed with overtime pay")**
+  - ❌ *AI Slop*: "This poignantly reflects the systemic alienation of laborer mentality. Modern management science has long demonstrated that the law of diminishing marginal returns renders brute-force toil incapable of fostering genuine skill leaps. Rather than engaging in self-consoling exhaustion, one must focus human capital on high-leverage exploration."
+  - ✅ *Grounded Prose*: "Enduring hardship is only worthwhile if it yields demonstrable breakthroughs in core competence, not just a raw accumulation of logged hours. Over the past three weeks, continuous overtime has driven up defect rates on our code deliveries without producing new domain insights. If this milestone is genuinely mission-critical, we should define measurable deliverable targets and adjust deployment shifts accordingly; otherwise, sustained fatigue merely dilutes the team's net output."
