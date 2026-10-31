@@ -28,8 +28,9 @@ export async function stableEvaluate(page, fn, arg, { settleMs = 1200, attempts 
     try {
       const result = await page.evaluate(fn, arg);
       await sleep(settleMs);
-      // Re-run once after settling; if the second run still succeeds on the
-      // same document, consider the page stable.
+      // Re-run the same evaluation as a stability probe: if the navigation had
+      // torn down the context between goto and now, this second call throws
+      // and the loop retries instead of returning data from a dying document.
       const confirm = await page.evaluate(fn, arg);
       return confirm ?? result;
     } catch (err) {

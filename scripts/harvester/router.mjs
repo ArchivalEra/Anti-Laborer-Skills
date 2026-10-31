@@ -2,9 +2,11 @@
  * Central Platform Router
  * Automatically matches incoming URLs to dedicated parsers and determines network routing.
  *
- * Routing is table-driven: the first matching row wins (URL token match OR an
- * explicit --platform alias). Keeping routes as data keeps routeRequest flat
- * and lets new platforms be added without growing branch complexity.
+ * Routing is table-driven: the first matching row wins (explicit --platform,
+ * including legacy aliases, OR a URL token match). Keeping routes as
+ * self-describing objects lets new platforms be added without growing branch
+ * complexity, and `aliases` preserves the platform names accepted by the
+ * pre-table if/else chain.
  */
 
 import * as shortVideo from './platforms/domestic/short_video.mjs';
@@ -16,55 +18,61 @@ import * as generic from './platforms/generic.mjs';
 
 const DEFAULT_PROXY = 'http://127.0.0.1:2080';
 
-// Each row: [platform, needsProxy, parser, urlTokens]
 const ROUTES = [
   // 1. Domestic Short Video (Direct connection)
-  ['douyin', false, shortVideo.parseDouyin, ['douyin.com', 'iesdouyin.com']],
-  ['kuaishou', false, shortVideo.parseKuaishou, ['kuaishou.com', 'kwai.com']],
-  ['wechat_channels', false, shortVideo.parseWechatChannels, ['channels.weixin.qq.com', 'weixin.qq.com/sph']],
-  ['tencent_video', false, shortVideo.parseTencentVideo, ['v.qq.com']],
+  { platform: 'douyin', needsProxy: false, parser: shortVideo.parseDouyin, tokens: ['douyin.com', 'iesdouyin.com'] },
+  { platform: 'kuaishou', needsProxy: false, parser: shortVideo.parseKuaishou, tokens: ['kuaishou.com', 'kwai.com'] },
+  { platform: 'wechat_channels', needsProxy: false, parser: shortVideo.parseWechatChannels, tokens: ['channels.weixin.qq.com', 'weixin.qq.com/sph'] },
+  { platform: 'tencent_video', needsProxy: false, parser: shortVideo.parseTencentVideo, tokens: ['v.qq.com'] },
 
   // 2. Domestic Knowledge & UGC & Forum
-  ['zhihu', false, knowledgeForum.parseZhihu, ['zhihu.com']],
-  ['bilibili', false, knowledgeForum.parseBilibili, ['bilibili.com', 'b23.tv']],
-  ['xiaohongshu', false, knowledgeForum.parseXiaohongshu, ['xiaohongshu.com', 'xhslink.com']],
-  ['v2ex', true, knowledgeForum.parseV2EX, ['v2ex.com']],
-  ['baidu_tieba', false, knowledgeForum.parseBaiduTieba, ['tieba.baidu.com']],
+  { platform: 'zhihu', needsProxy: false, parser: knowledgeForum.parseZhihu, tokens: ['zhihu.com'] },
+  { platform: 'bilibili', needsProxy: false, parser: knowledgeForum.parseBilibili, tokens: ['bilibili.com', 'b23.tv'] },
+  { platform: 'xiaohongshu', needsProxy: false, parser: knowledgeForum.parseXiaohongshu, tokens: ['xiaohongshu.com', 'xhslink.com'] },
+  { platform: 'v2ex', needsProxy: true, parser: knowledgeForum.parseV2EX, tokens: ['v2ex.com'] },
+  { platform: 'baidu_tieba', needsProxy: false, parser: knowledgeForum.parseBaiduTieba, tokens: ['tieba.baidu.com'], aliases: ['tieba'] },
 
   // 3. Domestic Social Media & Articles (Direct)
-  ['wechat_article', false, socialMedia.parseWechatArticle, ['mp.weixin.qq.com']],
-  ['weibo', false, socialMedia.parseWeibo, ['weibo.com', 'weibo.cn']],
-  ['toutiao', false, socialMedia.parseToutiao, ['toutiao.com', 'wukong.com']],
-  ['baijiahao', false, socialMedia.parseBaijiahao, ['baijiahao.baidu.com']],
-  ['sohu', false, socialMedia.parseSohu, ['sohu.com']],
-  ['qzone', false, socialMedia.parseQzone, ['qzone.qq.com']],
+  { platform: 'wechat_article', needsProxy: false, parser: socialMedia.parseWechatArticle, tokens: ['mp.weixin.qq.com'] },
+  { platform: 'weibo', needsProxy: false, parser: socialMedia.parseWeibo, tokens: ['weibo.com', 'weibo.cn'] },
+  { platform: 'toutiao', needsProxy: false, parser: socialMedia.parseToutiao, tokens: ['toutiao.com', 'wukong.com'] },
+  { platform: 'baijiahao', needsProxy: false, parser: socialMedia.parseBaijiahao, tokens: ['baijiahao.baidu.com'] },
+  { platform: 'sohu', needsProxy: false, parser: socialMedia.parseSohu, tokens: ['sohu.com'] },
+  { platform: 'qzone', needsProxy: false, parser: socialMedia.parseQzone, tokens: ['qzone.qq.com'] },
 
   // 4. International Social & Video (Proxy needed)
-  ['youtube', true, intlSocial.parseYouTube, ['youtube.com', 'youtu.be']],
-  ['tiktok', true, intlSocial.parseTikTok, ['tiktok.com']],
-  ['twitter_x', true, intlSocial.parseTwitter, ['twitter.com', 'x.com']],
-  ['reddit', true, intlSocial.parseReddit, ['reddit.com']],
-  ['meta', true, intlSocial.parseMeta, ['facebook.com', 'instagram.com']],
-  ['pinterest', true, intlSocial.parsePinterest, ['pinterest.com']],
-  ['tumblr', true, intlSocial.parseTumblr, ['tumblr.com']],
-  ['vk', true, intlSocial.parseVK, ['vk.com']],
-  ['snapchat', true, intlSocial.parseSnapchat, ['snapchat.com']],
-  ['clubhouse', true, intlSocial.parseClubhouse, ['clubhouse.com']],
+  { platform: 'youtube', needsProxy: true, parser: intlSocial.parseYouTube, tokens: ['youtube.com', 'youtu.be'] },
+  { platform: 'tiktok', needsProxy: true, parser: intlSocial.parseTikTok, tokens: ['tiktok.com'] },
+  { platform: 'twitter_x', needsProxy: true, parser: intlSocial.parseTwitter, tokens: ['twitter.com', 'x.com'], aliases: ['twitter'] },
+  { platform: 'reddit', needsProxy: true, parser: intlSocial.parseReddit, tokens: ['reddit.com'] },
+  { platform: 'meta', needsProxy: true, parser: intlSocial.parseMeta, tokens: ['facebook.com', 'instagram.com'] },
+  { platform: 'pinterest', needsProxy: true, parser: intlSocial.parsePinterest, tokens: ['pinterest.com'] },
+  { platform: 'tumblr', needsProxy: true, parser: intlSocial.parseTumblr, tokens: ['tumblr.com'] },
+  { platform: 'vk', needsProxy: true, parser: intlSocial.parseVK, tokens: ['vk.com'] },
+  { platform: 'snapchat', needsProxy: true, parser: intlSocial.parseSnapchat, tokens: ['snapchat.com'] },
+  { platform: 'clubhouse', needsProxy: true, parser: intlSocial.parseClubhouse, tokens: ['clubhouse.com'] },
 
   // 5. International Messaging & Newsletters (Proxy needed)
-  ['telegram', true, intlMsg.parseTelegramChannel, ['t.me', 'telegram.org']],
-  ['discord', true, intlMsg.parseDiscord, ['discord.com', 'discord.gg']],
-  ['whatsapp', true, intlMsg.parseWhatsAppChannel, ['whatsapp.com']],
-  ['substack', true, intlMsg.parseSubstack, ['substack.com']],
-  ['medium', true, intlMsg.parseMedium, ['medium.com']],
+  { platform: 'telegram', needsProxy: true, parser: intlMsg.parseTelegramChannel, tokens: ['t.me', 'telegram.org'] },
+  { platform: 'discord', needsProxy: true, parser: intlMsg.parseDiscord, tokens: ['discord.com', 'discord.gg'] },
+  { platform: 'whatsapp', needsProxy: true, parser: intlMsg.parseWhatsAppChannel, tokens: ['whatsapp.com'] },
+  { platform: 'substack', needsProxy: true, parser: intlMsg.parseSubstack, tokens: ['substack.com'] },
+  { platform: 'medium', needsProxy: true, parser: intlMsg.parseMedium, tokens: ['medium.com'] },
 ];
 
 const DOMESTIC_TOKENS = ['.cn', '.qq.', '.baidu.', '.sohu.'];
 
+function matchesRoute(route, lowerUrl, explicitPlatform) {
+  return (
+    route.platform === explicitPlatform ||
+    (route.aliases?.includes(explicitPlatform) ?? false) ||
+    route.tokens.some((token) => lowerUrl.includes(token))
+  );
+}
+
 function routeByUrl(url, explicitPlatform) {
   const lowerUrl = url.toLowerCase();
-  const route = ROUTES.find(([platform, , , tokens]) =>
-    platform === explicitPlatform || tokens.some((token) => lowerUrl.includes(token)));
+  const route = ROUTES.find((entry) => matchesRoute(entry, lowerUrl, explicitPlatform));
 
   if (!route) {
     // Generic Fallback: Default to proxy for foreign domains, direct for domestic domains
@@ -76,7 +84,7 @@ function routeByUrl(url, explicitPlatform) {
     };
   }
 
-  const [platform, needsProxy, parser] = route;
+  const { platform, needsProxy, parser } = route;
   return { platform, needsProxy, parser };
 }
 
