@@ -94,7 +94,7 @@
 
 | Skill 名称 | 描述 | 中文规范 | 英文规范 | 状态 |
 | :--- | :--- | :--- | :--- | :--- |
-| **`source-evaluator`** | 内容分辨与多维筛查技能：三层 Sieve 架构淘汰政治键政与纯情绪杂音，提炼高信噪比实证原料与力工谬误特征卡片。分析对象为**言论**而非人类；L1 增设载体无关的“零信息量资格判定”拦截（含符码与纯文本载体）。 | [SKILL.md](./skills/source-evaluator/SKILL.md) | [SKILL.en.md](./skills/source-evaluator/SKILL.en.md) | ✅ 已就绪 |
+| **`source-evaluator`** | 内容分辨与多维筛查技能：三层 Sieve 架构淘汰政治键政与纯情绪杂音，提炼高信噪比实证原料与力工谬误特征卡片。分析对象为**言论**而非人类；L1 增设载体无关的“零信息量资格判定”与“自我密封句式”拦截（含符码与纯文本载体），自检 13 项。 | [SKILL.md](./skills/source-evaluator/SKILL.md) | [SKILL.en.md](./skills/source-evaluator/SKILL.en.md) | ✅ 已就绪 |
 | **`anti-laborer-output`** | 话语生成与解构技能（AI Agent 执行规范）：前置 Matt 风格 Step 0 盘问探底（Grill-Me）压测决策树前沿；依托知识库主索引【言论症状与知识库靶点速查路由矩阵】直达实证锚点；单文件自洽融合“说人话”机制（姿态剥离、保真回读、残留味审计），实施无装饰表情、超低上下文负载（Pruned Context Load）的确定性工序与双遍质检门禁，生成落地平实的高信息密度回应。 | [SKILL.md](./skills/anti-laborer-output/SKILL.md) | [SKILL.en.md](./skills/anti-laborer-output/SKILL.en.md) | ✅ 已就绪 |
 
 

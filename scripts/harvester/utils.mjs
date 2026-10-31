@@ -78,11 +78,15 @@ export async function autoDismissModals(page) {
         els.forEach((el) => {
           try {
             el.click();
-          } catch (_) {}
+          } catch (_) {
+            // Best-effort dismissal: one dead selector must never abort a harvest.
+          }
         });
       }
     });
-  } catch (_) {}
+  } catch (_) {
+    // The page may navigate away mid-evaluation; dismissal is optional by design.
+  }
 }
 
 export function formatHarvestOutput(result, isJson = false) {

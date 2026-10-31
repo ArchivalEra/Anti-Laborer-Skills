@@ -28,23 +28,28 @@ let forceNoProxy = false;
 let outputJson = false;
 let customSelector = null;
 
-for (let i = 0; i < args.length; i++) {
-  const arg = args[i];
-  if (arg === '--url' && args[i + 1]) {
-    url = args[++i];
-  } else if (arg === '--search' && args[i + 1]) {
-    searchQuery = args[++i];
-  } else if (arg === '--platform' && args[i + 1]) {
-    explicitPlatform = args[++i];
-  } else if (arg === '--proxy' && args[i + 1]) {
-    proxy = args[++i];
+// Flags that consume a value token. Walked as a queue so the loop body never
+// mutates a loop counter (Sonar S2310) while preserving the original
+// semantics: a value is consumed only when a following token exists.
+const VALUE_FLAGS = {
+  '--url': (v) => { url = v; },
+  '--search': (v) => { searchQuery = v; },
+  '--platform': (v) => { explicitPlatform = v; },
+  '--proxy': (v) => { proxy = v; },
+  '--selector': (v) => { customSelector = v; },
+};
+
+const queue = [...args];
+while (queue.length > 0) {
+  const arg = queue.shift();
+  const takeValue = VALUE_FLAGS[arg];
+  if (takeValue && queue.length > 0) {
+    takeValue(queue.shift());
   } else if (arg === '--no-proxy') {
     forceNoProxy = true;
-  } else if (arg === '--selector' && args[i + 1]) {
-    customSelector = args[++i];
   } else if (arg === '--json') {
     outputJson = true;
-  } else if (!url && !searchQuery && !arg.startsWith('-')) {
+  } else if (!arg.startsWith('-') && !url && !searchQuery) {
     url = arg;
   }
 }

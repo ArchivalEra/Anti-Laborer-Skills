@@ -1,6 +1,10 @@
 /**
  * Central Platform Router
  * Automatically matches incoming URLs to dedicated parsers and determines network routing.
+ *
+ * Routing is table-driven: the first matching row wins (URL token match OR an
+ * explicit --platform alias). Keeping routes as data keeps routeRequest flat
+ * and lets new platforms be added without growing branch complexity.
  */
 
 import * as shortVideo from './platforms/domestic/short_video.mjs';
@@ -12,132 +16,79 @@ import * as generic from './platforms/generic.mjs';
 
 const DEFAULT_PROXY = 'http://127.0.0.1:2080';
 
+// Each row: [platform, needsProxy, parser, urlTokens]
+const ROUTES = [
+  // 1. Domestic Short Video (Direct connection)
+  ['douyin', false, shortVideo.parseDouyin, ['douyin.com', 'iesdouyin.com']],
+  ['kuaishou', false, shortVideo.parseKuaishou, ['kuaishou.com', 'kwai.com']],
+  ['wechat_channels', false, shortVideo.parseWechatChannels, ['channels.weixin.qq.com', 'weixin.qq.com/sph']],
+  ['tencent_video', false, shortVideo.parseTencentVideo, ['v.qq.com']],
+
+  // 2. Domestic Knowledge & UGC & Forum
+  ['zhihu', false, knowledgeForum.parseZhihu, ['zhihu.com']],
+  ['bilibili', false, knowledgeForum.parseBilibili, ['bilibili.com', 'b23.tv']],
+  ['xiaohongshu', false, knowledgeForum.parseXiaohongshu, ['xiaohongshu.com', 'xhslink.com']],
+  ['v2ex', true, knowledgeForum.parseV2EX, ['v2ex.com']],
+  ['baidu_tieba', false, knowledgeForum.parseBaiduTieba, ['tieba.baidu.com']],
+
+  // 3. Domestic Social Media & Articles (Direct)
+  ['wechat_article', false, socialMedia.parseWechatArticle, ['mp.weixin.qq.com']],
+  ['weibo', false, socialMedia.parseWeibo, ['weibo.com', 'weibo.cn']],
+  ['toutiao', false, socialMedia.parseToutiao, ['toutiao.com', 'wukong.com']],
+  ['baijiahao', false, socialMedia.parseBaijiahao, ['baijiahao.baidu.com']],
+  ['sohu', false, socialMedia.parseSohu, ['sohu.com']],
+  ['qzone', false, socialMedia.parseQzone, ['qzone.qq.com']],
+
+  // 4. International Social & Video (Proxy needed)
+  ['youtube', true, intlSocial.parseYouTube, ['youtube.com', 'youtu.be']],
+  ['tiktok', true, intlSocial.parseTikTok, ['tiktok.com']],
+  ['twitter_x', true, intlSocial.parseTwitter, ['twitter.com', 'x.com']],
+  ['reddit', true, intlSocial.parseReddit, ['reddit.com']],
+  ['meta', true, intlSocial.parseMeta, ['facebook.com', 'instagram.com']],
+  ['pinterest', true, intlSocial.parsePinterest, ['pinterest.com']],
+  ['tumblr', true, intlSocial.parseTumblr, ['tumblr.com']],
+  ['vk', true, intlSocial.parseVK, ['vk.com']],
+  ['snapchat', true, intlSocial.parseSnapchat, ['snapchat.com']],
+  ['clubhouse', true, intlSocial.parseClubhouse, ['clubhouse.com']],
+
+  // 5. International Messaging & Newsletters (Proxy needed)
+  ['telegram', true, intlMsg.parseTelegramChannel, ['t.me', 'telegram.org']],
+  ['discord', true, intlMsg.parseDiscord, ['discord.com', 'discord.gg']],
+  ['whatsapp', true, intlMsg.parseWhatsAppChannel, ['whatsapp.com']],
+  ['substack', true, intlMsg.parseSubstack, ['substack.com']],
+  ['medium', true, intlMsg.parseMedium, ['medium.com']],
+];
+
+const DOMESTIC_TOKENS = ['.cn', '.qq.', '.baidu.', '.sohu.'];
+
+function routeByUrl(url, explicitPlatform) {
+  const lowerUrl = url.toLowerCase();
+  const route = ROUTES.find(([platform, , , tokens]) =>
+    platform === explicitPlatform || tokens.some((token) => lowerUrl.includes(token)));
+
+  if (!route) {
+    // Generic Fallback: Default to proxy for foreign domains, direct for domestic domains
+    const isDomestic = DOMESTIC_TOKENS.some((token) => lowerUrl.includes(token));
+    return {
+      platform: 'generic_web',
+      needsProxy: !isDomestic,
+      parser: (page, targetUrl, sel) => generic.parseGenericWeb(page, targetUrl, sel),
+    };
+  }
+
+  const [platform, needsProxy, parser] = route;
+  return { platform, needsProxy, parser };
+}
+
 export function routeRequest(url, explicitPlatform = null) {
   if (!url) {
     // Search-engine allowlist: only Google and Bing (see generic.mjs policy note).
     if (explicitPlatform === 'bing') {
-      return {
-        platform: 'bing_search',
-        needsProxy: true,
-        parser: (page, q) => generic.parseBingSearch(page, q),
-      };
+      return { platform: 'bing_search', needsProxy: true, parser: (page, q) => generic.parseBingSearch(page, q) };
     }
-    return {
-      platform: 'google_search',
-      needsProxy: true,
-      parser: (page, q) => generic.parseGoogleSearch(page, q),
-    };
+    return { platform: 'google_search', needsProxy: true, parser: (page, q) => generic.parseGoogleSearch(page, q) };
   }
-
-  const u = url.toLowerCase();
-
-  // 1. Domestic Short Video (Direct connection)
-  if (u.includes('douyin.com') || u.includes('iesdouyin.com') || explicitPlatform === 'douyin') {
-    return { platform: 'douyin', needsProxy: false, parser: shortVideo.parseDouyin };
-  }
-  if (u.includes('kuaishou.com') || u.includes('kwai.com') || explicitPlatform === 'kuaishou') {
-    return { platform: 'kuaishou', needsProxy: false, parser: shortVideo.parseKuaishou };
-  }
-  if (u.includes('channels.weixin.qq.com') || u.includes('weixin.qq.com/sph') || explicitPlatform === 'wechat_channels') {
-    return { platform: 'wechat_channels', needsProxy: false, parser: shortVideo.parseWechatChannels };
-  }
-  if (u.includes('v.qq.com') || explicitPlatform === 'tencent_video') {
-    return { platform: 'tencent_video', needsProxy: false, parser: shortVideo.parseTencentVideo };
-  }
-
-  // 2. Domestic Knowledge & UGC & Forum
-  if (u.includes('zhihu.com') || explicitPlatform === 'zhihu') {
-    return { platform: 'zhihu', needsProxy: false, parser: knowledgeForum.parseZhihu };
-  }
-  if (u.includes('bilibili.com') || u.includes('b23.tv') || explicitPlatform === 'bilibili') {
-    return { platform: 'bilibili', needsProxy: false, parser: knowledgeForum.parseBilibili };
-  }
-  if (u.includes('xiaohongshu.com') || u.includes('xhslink.com') || explicitPlatform === 'xiaohongshu') {
-    return { platform: 'xiaohongshu', needsProxy: false, parser: knowledgeForum.parseXiaohongshu };
-  }
-  if (u.includes('v2ex.com') || explicitPlatform === 'v2ex') {
-    return { platform: 'v2ex', needsProxy: true, parser: knowledgeForum.parseV2EX };
-  }
-  if (u.includes('tieba.baidu.com') || explicitPlatform === 'tieba') {
-    return { platform: 'baidu_tieba', needsProxy: false, parser: knowledgeForum.parseBaiduTieba };
-  }
-
-  // 3. Domestic Social Media & Articles (Direct)
-  if (u.includes('mp.weixin.qq.com') || explicitPlatform === 'wechat_article') {
-    return { platform: 'wechat_article', needsProxy: false, parser: socialMedia.parseWechatArticle };
-  }
-  if (u.includes('weibo.com') || u.includes('weibo.cn') || explicitPlatform === 'weibo') {
-    return { platform: 'weibo', needsProxy: false, parser: socialMedia.parseWeibo };
-  }
-  if (u.includes('toutiao.com') || u.includes('wukong.com') || explicitPlatform === 'toutiao') {
-    return { platform: 'toutiao', needsProxy: false, parser: socialMedia.parseToutiao };
-  }
-  if (u.includes('baijiahao.baidu.com') || explicitPlatform === 'baijiahao') {
-    return { platform: 'baijiahao', needsProxy: false, parser: socialMedia.parseBaijiahao };
-  }
-  if (u.includes('sohu.com') || explicitPlatform === 'sohu') {
-    return { platform: 'sohu', needsProxy: false, parser: socialMedia.parseSohu };
-  }
-  if (u.includes('qzone.qq.com') || explicitPlatform === 'qzone') {
-    return { platform: 'qzone', needsProxy: false, parser: socialMedia.parseQzone };
-  }
-
-  // 4. International Social & Video (Proxy needed)
-  if (u.includes('youtube.com') || u.includes('youtu.be') || explicitPlatform === 'youtube') {
-    return { platform: 'youtube', needsProxy: true, parser: intlSocial.parseYouTube };
-  }
-  if (u.includes('tiktok.com') || explicitPlatform === 'tiktok') {
-    return { platform: 'tiktok', needsProxy: true, parser: intlSocial.parseTikTok };
-  }
-  if (u.includes('twitter.com') || u.includes('x.com') || explicitPlatform === 'twitter') {
-    return { platform: 'twitter_x', needsProxy: true, parser: intlSocial.parseTwitter };
-  }
-  if (u.includes('reddit.com') || explicitPlatform === 'reddit') {
-    return { platform: 'reddit', needsProxy: true, parser: intlSocial.parseReddit };
-  }
-  if (u.includes('facebook.com') || u.includes('instagram.com') || explicitPlatform === 'meta') {
-    return { platform: 'meta', needsProxy: true, parser: intlSocial.parseMeta };
-  }
-  if (u.includes('pinterest.com') || explicitPlatform === 'pinterest') {
-    return { platform: 'pinterest', needsProxy: true, parser: intlSocial.parsePinterest };
-  }
-  if (u.includes('tumblr.com') || explicitPlatform === 'tumblr') {
-    return { platform: 'tumblr', needsProxy: true, parser: intlSocial.parseTumblr };
-  }
-  if (u.includes('vk.com') || explicitPlatform === 'vk') {
-    return { platform: 'vk', needsProxy: true, parser: intlSocial.parseVK };
-  }
-  if (u.includes('snapchat.com') || explicitPlatform === 'snapchat') {
-    return { platform: 'snapchat', needsProxy: true, parser: intlSocial.parseSnapchat };
-  }
-  if (u.includes('clubhouse.com') || explicitPlatform === 'clubhouse') {
-    return { platform: 'clubhouse', needsProxy: true, parser: intlSocial.parseClubhouse };
-  }
-
-  // 5. International Messaging & Newsletters (Proxy needed)
-  if (u.includes('t.me') || u.includes('telegram.org') || explicitPlatform === 'telegram') {
-    return { platform: 'telegram', needsProxy: true, parser: intlMsg.parseTelegramChannel };
-  }
-  if (u.includes('discord.com') || u.includes('discord.gg') || explicitPlatform === 'discord') {
-    return { platform: 'discord', needsProxy: true, parser: intlMsg.parseDiscord };
-  }
-  if (u.includes('whatsapp.com') || explicitPlatform === 'whatsapp') {
-    return { platform: 'whatsapp', needsProxy: true, parser: intlMsg.parseWhatsAppChannel };
-  }
-  if (u.includes('substack.com') || explicitPlatform === 'substack') {
-    return { platform: 'substack', needsProxy: true, parser: intlMsg.parseSubstack };
-  }
-  if (u.includes('medium.com') || explicitPlatform === 'medium') {
-    return { platform: 'medium', needsProxy: true, parser: intlMsg.parseMedium };
-  }
-
-  // 6. Generic Fallback: Default to proxy for foreign domains, direct for domestic domains
-  const isDomestic = u.includes('.cn') || u.includes('.qq.') || u.includes('.baidu.') || u.includes('.sohu.');
-  return {
-    platform: 'generic_web',
-    needsProxy: !isDomestic,
-    parser: (page, targetUrl, sel) => generic.parseGenericWeb(page, targetUrl, sel),
-  };
+  return routeByUrl(url, explicitPlatform);
 }
 
 export { DEFAULT_PROXY };

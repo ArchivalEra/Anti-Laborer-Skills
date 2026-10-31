@@ -203,8 +203,6 @@ class ContentFilter:
         Calculates (snr_score, empirical_density, emotional_density).
         Normalized between 0.0 and 1.0.
         """
-        text_len = max(len(text), 1)
-
         # Count high-signal terms
         high_signal_hits = sum(len(p.findall(text)) for p in self.high_signal_re)
         # Numbers, units, percentages
@@ -281,7 +279,7 @@ class ContentFilter:
             )
 
         # Check for Laborer Mentality target
-        has_laborer, laborer_reason = self.check_laborer_fallacy(text)
+        has_laborer, _ = self.check_laborer_fallacy(text)
 
         # Target classification
         if has_laborer:
@@ -415,7 +413,7 @@ def main() -> None:
             print(f"🚩 Flag            : {result.flag or '—'}")
             print(f"📄 Raw Snippet     : {result.raw_snippet}")
         else:
-            print(f"✅ Status          : ACCEPTED (High Signal / Analyzable)")
+            print("✅ Status          : ACCEPTED (High Signal / Analyzable)")
             print(f"📊 SNR Score       : {result.snr_score}")
             print(f"📈 Empirical Index : {result.empirical_density}")
             print(f"📉 Emotional Index : {result.emotional_density}")
