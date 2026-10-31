@@ -12,6 +12,34 @@ export function cleanText(text) {
     .trim();
 }
 
+// Native sleep: page.waitForTimeout() sends CDP protocol commands that
+// anti-bot systems detect; setTimeout is invisible.
+export function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+// Wait for redirects to settle and the main frame to stop navigating.
+// Sites like bing.com redirect www->cn and then fire successive client-side
+// navigations that destroy page.evaluate's execution context. Retry the probe
+// until the document is stable instead of evaluating once and crashing.
+export async function stableEvaluate(page, fn, arg, { settleMs = 1200, attempts = 6 } = {}) {
+  let lastErr;
+  for (let i = 0; i < attempts; i++) {
+    try {
+      const result = await page.evaluate(fn, arg);
+      await sleep(settleMs);
+      // Re-run once after settling; if the second run still succeeds on the
+      // same document, consider the page stable.
+      const confirm = await page.evaluate(fn, arg);
+      return confirm ?? result;
+    } catch (err) {
+      lastErr = err;
+      await sleep(600 + i * 400);
+    }
+  }
+  throw lastErr;
+}
+
 export async function autoDismissModals(page) {
   try {
     await page.evaluate(() => {

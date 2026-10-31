@@ -4,7 +4,7 @@ name: Cognitive Biases and the Persuasion Mechanics of Anthropoid Lifecycle Cont
 type: DomainIndex
 spec_version: "0.2"
 status: active
-last_updated: "2026-09-12"
+last_updated: "2026-09-22"
 stewards:
   - team: Anti-Laborer Architecture & Knowledge Engineering Team
 tags:
@@ -54,6 +54,15 @@ concepts:
   - id: okf.knowledge.cognitive_bias.performative_presenteeism
     file: performative-presenteeism.en.md
     name: Performative Presenteeism & Bureaucratic Laborer — Organizational Entropy, Pseudo-Work, and Defensive Exhaustion
+  - id: okf.knowledge.cognitive_bias.zero_information_disqualification_cases
+    file: zero-information-disqualification-cases.en.md
+    name: Zero-Information Disqualification Case Library — Carrier-Independent Cynical Shielding and Detection-Scope Failure
+  - id: okf.knowledge.cognitive_bias.folk_supernatural_attribution_corpus
+    file: folk-supernatural-attribution-corpus.en.md
+    name: Folk Supernatural Attribution Corpus — Hearsay Chains, Perceptual Self-Exemption, and Self-Sealing Formulas
+  - id: okf.knowledge.cognitive_bias.ai_capability_debate_boundary
+    file: ai-capability-debate-boundary.en.md
+    name: "Argument Boundaries in AI Capability Debates: A Discriminating Case Between Testable Claims and Status Attacks"
 ---
 
 # Domain Overview: Cognitive Biases and Normative Persuasion Mechanics
@@ -70,11 +79,14 @@ This domain applies **behavioral economics** and **cognitive psychology** to ide
 4. **[appeal-to-phantom-authority.en.md](./appeal-to-phantom-authority.en.md)**: Appeal to phantom authority and epistemic outsourcing ("The Great Buddha Fallacy").
 5. **[system-justification-panglossian.en.md](./system-justification-panglossian.en.md)**: System justification theory and the Panglossian fallacy.
 6. **[empirical-phantom-authority-cases.en.md](./empirical-phantom-authority-cases.en.md)**: Empirical counter-case library for appeal to phantom authority (36 cross-domain failures).
-7. **[cynical-emoji-superiority-marker.en.md](./cynical-emoji-superiority-marker.en.md)**: Semiotic hegemony of laugh-cry and facepalm (Idle cynic contextomy & low-SNR red flag).
+7. **[cynical-emoji-superiority-marker.en.md](./cynical-emoji-superiority-marker.en.md)**: Semiotic hegemony of laugh-cry and facepalm (code-level epistemic disqualification & low-SNR red flag).
 8. **[in-theory-hedging-trap.en.md](./in-theory-hedging-trap.en.md)**: The "In Theory" Bidirectional Hedging Trap (Unfalsifiable escape & pseudo-academic risk shielding).
 9. **[macro-entity-parasitic-projection.en.md](./macro-entity-parasitic-projection.en.md)**: Macro-Entity Parasitic Projection (The "Jiahao" archetype, fetishized hegemony, and egoless chauvinism).
 10. **[benlai-teleological-essentialism.en.md](./benlai-teleological-essentialism.en.md)**: The "Benlai" Teleological Essentialism (Pre-industrial greenhouse presumption and practice-driven plasticity).
 11. **[ai-artisan-luddism.en.md](./ai-artisan-luddism.en.md)**: AI-Era Artisan Luddism vs. Prompt Laborer Bipolarity (Techno-Luddism and cognitive abdication).
 12. **[physicalist-matter-fetishism.en.md](./physicalist-matter-fetishism.en.md)**: Physicalist Matter Fetishism & Digital Nihilism (Pre-modern naive materialism and anti-abstraction bias).
 13. **[performative-presenteeism.en.md](./performative-presenteeism.en.md)**: Performative Presenteeism & Bureaucratic Laborer (Organizational entropy, pseudo-work, and defensive exhaustion).
+14. **[zero-information-disqualification-cases.en.md](./zero-information-disqualification-cases.en.md)**: Zero-information disqualification and the carrier-independent cynical shielding shell (with measured detection-scope failure record).
+15. **[folk-supernatural-attribution-corpus.en.md](./folk-supernatural-attribution-corpus.en.md)**: The folk supernatural attribution corpus (hearsay chains, perceptual self-exemption, post-hoc attribution, self-sealing formulas; ontologically neutral).
+16. **[ai-capability-debate-boundary.en.md](./ai-capability-debate-boundary.en.md)**: Argument boundaries in AI capability debates (mechanistic claim / engineering rebuttal / live demonstration / scope limitation vs. status attack; includes a self-correction record of one misclassification).
 

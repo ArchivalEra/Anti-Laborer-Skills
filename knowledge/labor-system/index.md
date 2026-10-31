@@ -20,6 +20,9 @@ concepts:
   - id: okf.knowledge.labor_system.global_age_discrimination_law
     file: global-age-discrimination-law.md
     name: 全球年龄歧视法规比较研究：ADEA与欧洲框架
+  - id: okf.knowledge.labor_system.mandatory_social_insurance
+    file: mandatory-social-insurance.md
+    name: 强制社会保险扩面与误读风波：制度事实、三元耦合与舆论结构
 ---
 
 # 领域总览：劳动制度设计
@@ -37,3 +40,4 @@ concepts:
 
 1. **[china-institutional-gates.md](./china-institutional-gates.md)**：中国劳动市场中年龄性制度门槛的系统分析
 2. **[global-age-discrimination-law.md](./global-age-discrimination-law.md)**：全球年龄歧视法规比较研究
+3. **[mandatory-social-insurance.md](./mandatory-social-insurance.md)**：强制社保扩面与“全民强制”误读风波——制度事实三层锚、社保-身份三元耦合、规训/抵御双向话语结构

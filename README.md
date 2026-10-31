@@ -82,9 +82,9 @@
 
 | 领域 ID | 领域名称 | 包含核心概念 | 状态 | 规范目录 |
 | :--- | :--- | :--- | :--- | :--- |
-| **`anthropoid-lifecycle`** | 人猿生命周期控制与年龄阶段宿命论 | • 本体定义与边界<br>• 纽加滕社会时钟与35岁门槛现象学<br>• 阿什比必要多样性定律与流水线死锁<br>• 异步事件驱动状态机与成人神经发生<br>• 实物期权价值与过早锁定经济学<br>• 斯宾塞信号模型与技能掌握分离<br>• 全景监狱与习得性无助内化机制<br>• 非线性高成就轨迹实证案例库<br>• 东亚社会结构性代际创伤、单向孝道异化与青年行为防御机制深度调查报告 | `active` | [`knowledge/anthropoid-lifecycle/`](./knowledge/anthropoid-lifecycle/index.md) |
-| **`labor-system`** | 劳动制度设计与年龄性制度门槛 | • 中国劳动制度年龄门槛体制分析<br>• 全球反年龄歧视法规比较研究（ADEA/欧盟） | `active` | [`knowledge/labor-system/`](./knowledge/labor-system/index.md) |
-| **`cognitive-bias`** | 认知偏差与生命周期控制话语可说服性机制 | • 可用性启发式与同辈比较焦虑放大<br>• 现状偏误、损失厌恶与社会证明瀑布<br>• 双曲时间折现失真与强制短视<br>• 诉诸虚假全知权威（“请大佛讲大道理”）<br>• 潘格罗斯范式与制度辩护理论<br>• 诉诸虚假全知权威跨领域 36 大实证反例库<br>• “笑哭与捂脸”符码霸权与低信噪比高危标记<br>• “理论上”双向免责陷阱与不可证伪性逃逸<br>• 宏大实体寄生与“嘉豪”图腾附魅（低信噪比三联煞终章）<br>• “本来”先验目的论谬误与实践可塑性<br>• AI时代“手搓原教旨”与“Prompt力工”双相病<br>• 物理实体拜物教与数字虚无主义（反抽象偏见）<br>• 表演性工时与在场证明力工（防御性伪工作） | `active` | [`knowledge/cognitive-bias/`](./knowledge/cognitive-bias/index.md) |
+| **`anthropoid-lifecycle`** | 人猿生命周期控制与年龄阶段宿命论 | • 本体定义与边界<br>• 纽加滕社会时钟与35岁门槛现象学<br>• 阿什比必要多样性定律与流水线死锁<br>• 异步事件驱动状态机与成人神经发生<br>• 实物期权价值与过早锁定经济学<br>• 斯宾塞信号模型与技能掌握分离<br>• 全景监狱与习得性无助内化机制<br>• 非线性高成就轨迹实证案例库<br>• 东亚社会结构性代际创伤、单向孝道异化与青年行为防御机制深度调查报告<br>• 90后未婚规模的口径学与挪用链 | `active` | [`knowledge/anthropoid-lifecycle/`](./knowledge/anthropoid-lifecycle/index.md) |
+| **`labor-system`** | 劳动制度设计与年龄性制度门槛 | • 中国劳动制度年龄门槛体制分析<br>• 全球反年龄歧视法规比较研究（ADEA/欧盟）<br>• 强制社保扩面与“全民强制”误读风波（三元耦合与舆论结构）<br>• 续集：社银贷/续保贷——贷款缴社保产品族与现金流闭环分析 | `active` | [`knowledge/labor-system/`](./knowledge/labor-system/index.md) |
+| **`cognitive-bias`** | 认知偏差与生命周期控制话语可说服性机制 | • 可用性启发式与同辈比较焦虑放大<br>• 现状偏误、损失厌恶与社会证明瀑布<br>• 双曲时间折现失真与强制短视<br>• 诉诸虚假全知权威（“请大佛讲大道理”）<br>• 潘格罗斯范式与制度辩护理论<br>• 诉诸虚假全知权威跨领域 36 大实证反例库<br>• “笑哭与捂脸”符码霸权与低信噪比高危标记<br>• “理论上”双向免责陷阱与不可证伪性逃逸<br>• 宏大实体寄生与“嘉豪”图腾附魅（低信噪比三联煞终章）<br>• “本来”先验目的论谬误与实践可塑性<br>• AI时代“手搓原教旨”与“Prompt力工”双相病<br>• 物理实体拜物教与数字虚无主义（反抽象偏见）<br>• 表演性工时与在场证明力工（防御性伪工作）<br>• 零信息量资格判定与载体无关的犬儒免责外壳（含检出作用域失效实测）<br>• 民俗超自然归因语料族（转述链条、感官自我豁免、自我密封句式；本体论中立）<br>• AI能力讨论的论据边界（可检验论据与地位攻击的五类判别） | `active` | [`knowledge/cognitive-bias/`](./knowledge/cognitive-bias/index.md) |
 | **`innovation-economics`** | 创新经济学与多样性组合论 | • 探索-利用权衡与多臂老虎机模型<br>• 反脆弱性与非线性生涯杠铃策略 | `active` | [`knowledge/innovation-economics/`](./knowledge/innovation-economics/index.md) |
 | **`comparative-global-models`** | 全球生命历程制度比较研究 | • 日本就活（Shukatsu）超刚性管线与失落世代<br>• 丹麦弹性安全（Flexicurity）黄金三角与终身教育<br>• 美国 Returnship 职业中断再入职生态 | `active` | [`knowledge/comparative-global-models/`](./knowledge/comparative-global-models/index.md) |
 
@@ -94,7 +94,7 @@
 
 | Skill 名称 | 描述 | 中文规范 | 英文规范 | 状态 |
 | :--- | :--- | :--- | :--- | :--- |
-| **`source-evaluator`** | 内容分辨与多维筛查技能：三层 Sieve 架构淘汰政治键政与纯情绪杂音，提炼高信噪比实证原料与力工谬误特征卡片。 | [SKILL.md](./skills/source-evaluator/SKILL.md) | [SKILL.en.md](./skills/source-evaluator/SKILL.en.md) | ✅ 已就绪 |
+| **`source-evaluator`** | 内容分辨与多维筛查技能：三层 Sieve 架构淘汰政治键政与纯情绪杂音，提炼高信噪比实证原料与力工谬误特征卡片。分析对象为**言论**而非人类；L1 增设载体无关的“零信息量资格判定”拦截（含符码与纯文本载体）。 | [SKILL.md](./skills/source-evaluator/SKILL.md) | [SKILL.en.md](./skills/source-evaluator/SKILL.en.md) | ✅ 已就绪 |
 | **`anti-laborer-output`** | 话语生成与解构技能（AI Agent 执行规范）：前置 Matt 风格 Step 0 盘问探底（Grill-Me）压测决策树前沿；依托知识库主索引【言论症状与知识库靶点速查路由矩阵】直达实证锚点；单文件自洽融合“说人话”机制（姿态剥离、保真回读、残留味审计），实施无装饰表情、超低上下文负载（Pruned Context Load）的确定性工序与双遍质检门禁，生成落地平实的高信息密度回应。 | [SKILL.md](./skills/anti-laborer-output/SKILL.md) | [SKILL.en.md](./skills/anti-laborer-output/SKILL.en.md) | ✅ 已就绪 |
 
 

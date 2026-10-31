@@ -29,6 +29,9 @@ concepts:
   - id: okf.knowledge.anthropoid_lifecycle.east_asian_intergenerational_trauma_report
     file: east-asian-intergenerational-trauma-report.en.md
     name: Comprehensive Investigation Report on East Asian Structural Intergenerational Trauma, Asymmetric Filial Alienation, and Youth Behavioral Defense Mechanisms
+  - id: okf.knowledge.anthropoid_lifecycle.post_90s_unmarried_statistics
+    file: post-90s-unmarried-statistics.en.md
+    name: "The Statistical Literacy of the Post-90s Unmarried Headcount: Layered Veracity of '100 Million out of 170 Million' and Its Misappropriation Chain"
 ---
 
 # Domain Overview: Anthropoid Lifecycle Control
@@ -90,5 +93,6 @@ This knowledge bundle applies four rigorous scientific disciplines—**Cyberneti
    - Event-driven asynchronous finite-state machine (FSM) architecture.
    - Lifelong synaptic plasticity, adult neurogenesis, and high-entropy exploration algorithms.
 5. **[East Asian Intergenerational Trauma Report (east-asian-intergenerational-trauma-report.en.md)](./east-asian-intergenerational-trauma-report.en.md)**:
+6. **[Statistical Literacy of the Post-90s Unmarried Headcount (post-90s-unmarried-statistics.en.md)](./post-90s-unmarried-statistics.en.md)**: Splitting the numeric layer from the misappropriation layer of "100m unmarried out of 170m post-90s"; scope distinctions (unmarried ≠ single ≠ non-marriage ≠ extinction); the fabricated-attribution chain and the age-35 counter-evidence.
    - Collapse of filial reciprocity (respecting elders requires elder virtue; loving youth requires voluntary affection).
    - "Jiahao" speculative stock gambling under marriage debt, and "Fujoshi" defense bunkers against gendered domestic servitude.

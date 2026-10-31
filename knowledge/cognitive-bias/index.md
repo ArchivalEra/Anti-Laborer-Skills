@@ -4,7 +4,7 @@ name: 认知偏差与人猿生命周期控制的可说服性机制
 type: DomainIndex
 spec_version: "0.2"
 status: active
-last_updated: "2026-09-12"
+last_updated: "2026-09-22"
 stewards:
   - team: Anti-Laborer Architecture & Knowledge Engineering Team
 tags:
@@ -54,6 +54,15 @@ concepts:
   - id: okf.knowledge.cognitive_bias.performative_presenteeism
     file: performative-presenteeism.md
     name: 表演性工时与在场证明力工：组织熵增、伪工作与防御性疲劳
+  - id: okf.knowledge.cognitive_bias.zero_information_disqualification_cases
+    file: zero-information-disqualification-cases.md
+    name: 零信息量资格判定实证案例库：载体无关的犬儒免责外壳与检出作用域失效
+  - id: okf.knowledge.cognitive_bias.folk_supernatural_attribution_corpus
+    file: folk-supernatural-attribution-corpus.md
+    name: 民俗超自然归因语料库：转述链条、感官自我豁免与自我密封句式
+  - id: okf.knowledge.cognitive_bias.ai_capability_debate_boundary
+    file: ai-capability-debate-boundary.md
+    name: AI能力讨论的论据边界：可检验论据与地位攻击的判别案例
 ---
 
 # 领域总览：认知偏差与规训可说服性
@@ -74,11 +83,14 @@ concepts:
 4. **[appeal-to-phantom-authority.md](./appeal-to-phantom-authority.md)**：诉诸虚假全知权威与认知外包（“请大佛讲大道理”）
 5. **[system-justification-panglossian.md](./system-justification-panglossian.md)**：制度辩护理论与庞格罗斯谬误（局部妥协错认全局最优）
 6. **[empirical-phantom-authority-cases.md](./empirical-phantom-authority-cases.md)**：诉诸虚假全知权威实证反例库（36 大跨领域重大反例）
-7. **[cynical-emoji-superiority-marker.md](./cynical-emoji-superiority-marker.md)**：“笑哭与捂脸”的符码霸权（闲汉断章取义与低信噪比高危标记）
+7. **[cynical-emoji-superiority-marker.md](./cynical-emoji-superiority-marker.md)**：“笑哭与捂脸”的符码霸权（符码层资格贬损与低信噪比高危标记）
 8. **[in-theory-hedging-trap.md](./in-theory-hedging-trap.md)**：“理论上”的双向免责陷阱（不可证伪性逃逸与虚妄学术对冲）
 9. **[macro-entity-parasitic-projection.md](./macro-entity-parasitic-projection.md)**：宏大实体寄生与图腾附魅（“嘉豪”本源与国家/企业/产业名的虚妄投射）
 10. **[benlai-teleological-essentialism.md](./benlai-teleological-essentialism.md)**：“本来”的先验目的论谬误（脱离生产实践的温室预设与实践可塑性）
 11. **[ai-artisan-luddism.md](./ai-artisan-luddism.md)**：AI时代的“手搓原教旨”与“Prompt力工”双相病（技术卢德主义与认知盲区）
 12. **[physicalist-matter-fetishism.md](./physicalist-matter-fetishism.md)**：物理实体拜物教与数字虚无主义（前现代物质直观经验论与反抽象偏见）
 13. **[performative-presenteeism.md](./performative-presenteeism.md)**：表演性工时与在场证明力工（组织熵增、伪工作与防御性疲劳）
+14. **[zero-information-disqualification-cases.md](./zero-information-disqualification-cases.md)**：零信息量资格判定与载体无关的犬儒免责外壳（含检出作用域失效实测记录）
+15. **[folk-supernatural-attribution-corpus.md](./folk-supernatural-attribution-corpus.md)**：民俗超自然归因语料族（转述链条、感官自我豁免、事后归因、自我密封句式；本体论中立）
+16. **[ai-capability-debate-boundary.md](./ai-capability-debate-boundary.md)**：AI能力讨论的论据边界（机制主张/工程反驳/现场演示/范围限定 vs 地位攻击；含一次误判的自我纠错记录）
 

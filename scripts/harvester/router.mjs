@@ -14,6 +14,14 @@ const DEFAULT_PROXY = 'http://127.0.0.1:2080';
 
 export function routeRequest(url, explicitPlatform = null) {
   if (!url) {
+    // Search-engine allowlist: only Google and Bing (see generic.mjs policy note).
+    if (explicitPlatform === 'bing') {
+      return {
+        platform: 'bing_search',
+        needsProxy: true,
+        parser: (page, q) => generic.parseBingSearch(page, q),
+      };
+    }
     return {
       platform: 'google_search',
       needsProxy: true,

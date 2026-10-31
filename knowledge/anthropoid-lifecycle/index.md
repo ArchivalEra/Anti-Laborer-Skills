@@ -29,6 +29,9 @@ concepts:
   - id: okf.knowledge.anthropoid_lifecycle.east_asian_intergenerational_trauma_report
     file: east-asian-intergenerational-trauma-report.md
     name: 东亚社会结构性代际创伤、单向孝道异化与青年行为防御机制深度调查报告
+  - id: okf.knowledge.anthropoid_lifecycle.post_90s_unmarried_statistics
+    file: post-90s-unmarried-statistics.md
+    name: 90后未婚规模的口径学：『1.7亿里1亿未婚』的真伪分层与挪用链
 ---
 
 # 领域总览：人猿生命周期控制 (Anthropoid Lifecycle Control)
@@ -89,5 +92,6 @@ concepts:
    - 事件驱动（Event-Driven）异步状态机。
    - 突触终身可塑性与高阶探索-利用（Explore-Exploit）模型。
 5. **[东亚社会代际创伤调查报告 (east-asian-intergenerational-trauma-report.md)](./east-asian-intergenerational-trauma-report.md)**:
+6. **[90后未婚规模的口径学 (post-90s-unmarried-statistics.md)](./post-90s-unmarried-statistics.md)**: 『1.7亿90后1亿未婚』的数字层/挪用层分判、口径区分（未婚≠单身≠不婚≠绝户）、伪造归因链与35岁反证。
    - 单向度孝道异化与互惠契约崩塌（尊老以前置德行为提，爱幼以自愿爱家庭为前提）。
    - “嘉豪”A股暴富逃避机制与“腐女”抵御“大家闺秀”家务奴役的自卫结界。

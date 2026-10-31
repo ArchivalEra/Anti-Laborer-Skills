@@ -6,6 +6,10 @@ Part of the Anti-Laborer-Skills repository.
 Provides:
 - L1 Fast-path Hard-cut: Drops ideological bickering, political mudslinging, pure emotional venting,
   and anti-intellectual brute-force labor worship.
+- Carrier-independent Zero-Information Disqualification: Hard-cuts utterances that pair a shielding
+  shell with a unilateral competence verdict and zero evidentiary chain. Judged from the text alone;
+  no inference about the speaker is permitted. (See knowledge/cognitive-bias/
+  zero-information-disqualification-cases.md.)
 - L2 SNR Gate: Verifies proposition structure, data/evidence density, and fallacy markers.
 - L3 Extraction Card Generation: Formats valid empirical discourse for downstream skill crafting.
 """
@@ -50,6 +54,64 @@ HIGH_SIGNAL_MARKERS = [
     r"(?i)(ab\s*test|p-value|trade-off|scalability|reproducibility|empirical)",
 ]
 
+# -----------------------------------------------------------------------------
+# Zero-Information Disqualification (carrier-independent)
+# See knowledge/cognitive-bias/zero-information-disqualification-cases.md §1/§4.
+# Judged from the text alone: no inference about the speaker is permitted.
+# -----------------------------------------------------------------------------
+
+# Carrier A: cynical code / emoji
+CYNICAL_CODE_PATTERNS = [
+    r"[😂🤣🤦]",
+    r"\[捂脸\]",
+    r"捂脸",
+]
+
+# Carrier B: plain-text shielding shell (the demotion escape hatch)
+SHIELD_SHELL_PATTERNS = [
+    r"(只能说|也就只能说)",
+    r"(建议(你)?(先)?(去)?(多)?读点书|多读点书|先去补(补)?课|回去补课)",
+    r"(笑死我了|笑死爹了)",
+    r"(我就(是)?随口|随口一说|开个玩笑而已)",
+    r"(呵呵|哈哈|乐)",
+]
+
+# Unilateral competence verdict (lands on the person, not the issue)
+DISQUALIFICATION_PATTERNS = [
+    r"你对[^，。！？]{0,12}(不太)?(熟悉|了解|懂)",
+    r"你(根本)?不(懂|了解|熟悉)",
+    r"(你不配|没资格|太嫩了)",
+    r"(你认真的吗|你是认真的吗)",
+    r"(建议(你)?(先)?(去)?(多)?读点书)",
+    r"(外行|小白|菜鸟)(吧|而已|就别)",
+]
+
+# Mechanism / measurement markers: their presence means the text carries substance
+EVIDENCE_PATTERNS = [
+    r"(?i)(机制|原理|接口|端点|参数|配置|脚本|命令行|权限|端口|证书|密钥|日志|函数|变量|规则|策略|协议|算法|架构|并发|死锁|沙箱|容器|防火墙|代理|ACL|WDAC|注册表|组策略|内核|驱动|快照|复现|基准|基准测试|监控|加密|白名单|黑名单)",
+    r"\d+(\.\d+)?\s*(%|ms|s|MB|GB|KB|QPS|ops|条|个|次|行|字节)",
+    r"\d{3,}",
+]
+
+# -----------------------------------------------------------------------------
+# Self-sealing / thought-terminating formulas
+# See knowledge/cognitive-bias/folk-supernatural-attribution-corpus.md.
+# These are COMPLETE rhetorical moves: they seal the claim against any
+# observation, so they are decidable from the fragment alone. Hearsay markers
+# ("听说", "大家都说") are deliberately NOT matched here -- they are innocuous in
+# isolation and only become fallacious inside a whole narrative, which regex
+# cannot adjudicate. Those clusters belong to L2/L3 narrative review.
+# -----------------------------------------------------------------------------
+SELF_SEALING_PATTERNS = [
+    r"(信则有|不信则无|信则灵|心诚则灵)",
+    r"(科学(也)?(不能|无法|解释不了)解释(不代表|不等于)(没有|不存在))",
+    r"(宁可信其有|不可信其无)",
+    r"((有些东西|有些事情|有些事)(说不清|有说法|不好说|科学解释不了))",
+    r"(等(你|你们|你长大)长大了就(知道|懂|明白)了)",
+    r"(等你(经历|遇到|碰上)过就(知道|懂)了)",
+    r"(那是你没见过|你没见过(罢了|而已))",
+]
+
 
 @dataclass
 class ExtractionCard:
@@ -60,6 +122,7 @@ class ExtractionCard:
     snr_score: float = 0.0
     empirical_density: float = 0.0
     emotional_density: float = 0.0
+    flag: Optional[str] = None
     target_fallacy: Optional[str] = None
     extracted_claim: Optional[str] = None
     suggested_domain: Optional[str] = None
@@ -72,6 +135,43 @@ class ContentFilter:
         self.venting_re = [re.compile(p) for p in VENTING_PATTERNS]
         self.laborer_re = [re.compile(p) for p in LABORER_MENTALITY_PATTERNS]
         self.high_signal_re = [re.compile(p) for p in HIGH_SIGNAL_MARKERS]
+        self.code_re = [re.compile(p) for p in CYNICAL_CODE_PATTERNS]
+        self.shell_re = [re.compile(p) for p in SHIELD_SHELL_PATTERNS]
+        self.disq_re = [re.compile(p) for p in DISQUALIFICATION_PATTERNS]
+        self.evidence_re = [re.compile(p) for p in EVIDENCE_PATTERNS]
+        self.seal_re = [re.compile(p) for p in SELF_SEALING_PATTERNS]
+
+    def check_zero_information_disqualification(self, text: str) -> Optional[str]:
+        """
+        Carrier-independent zero-information disqualification check.
+
+        Conjunction (all three required, carrier unconstrained):
+          1. shielding shell   - code carrier OR plain-text formula
+          2. unilateral competence verdict
+          3. zero evidentiary chain - no mechanism or measurement marker
+        Returns the flag name, or None when the pattern is absent.
+        """
+        has_code = any(p.search(text) for p in self.code_re)
+        has_shell = has_code or any(p.search(text) for p in self.shell_re)
+        has_disqualification = any(p.search(text) for p in self.disq_re)
+        has_evidence = any(p.search(text) for p in self.evidence_re)
+
+        if has_shell and has_disqualification and not has_evidence:
+            return "FLAG_CYNICAL_EMOJI_SNR_COLLAPSE" if has_code else "FLAG_ZERO_INFORMATION_DISQUALIFICATION"
+        return None
+
+    def check_self_sealing(self, text: str) -> Optional[str]:
+        """
+        Self-sealing / thought-terminating formula check.
+
+        These formulas are complete rhetorical moves: they place the claim beyond
+        any possible observation, so the fragment alone decides the matter. A
+        mechanism or measurement marker in the same text cancels the flag, since
+        the utterance then carries substance alongside the formula.
+        """
+        if any(p.search(text) for p in self.seal_re) and not any(p.search(text) for p in self.evidence_re):
+            return "FLAG_SELF_SEALING_UNFALSIFIABLE"
+        return None
 
     def check_l1_hard_cut(self, text: str) -> Tuple[bool, Optional[str], Optional[str]]:
         """
@@ -135,10 +235,40 @@ class ContentFilter:
                 raw_snippet=snippet,
             )
 
-        # Step 2: Metric computation
+        # Step 2: Zero-information disqualification (carrier-independent hard-cut)
+        # Rationale lands on the utterance, never on the speaker: the text carries
+        # no actionable proposition, so it warrants no compute.
+        disq_flag = self.check_zero_information_disqualification(text)
+        if disq_flag:
+            return ExtractionCard(
+                status="REJECTED",
+                rejection_stage="L1_HARD_CUT",
+                rejection_reason=(
+                    f"Zero-information disqualification ({disq_flag}): shielding shell + "
+                    "unilateral competence verdict + zero evidentiary chain"
+                ),
+                raw_snippet=snippet,
+                flag=disq_flag,
+            )
+
+        # Step 2b: Self-sealing / thought-terminating formulas (hard-cut)
+        seal_flag = self.check_self_sealing(text)
+        if seal_flag:
+            return ExtractionCard(
+                status="REJECTED",
+                rejection_stage="L1_HARD_CUT",
+                rejection_reason=(
+                    f"Self-sealing formula ({seal_flag}): the claim is placed beyond any "
+                    "possible observation, with zero evidentiary chain"
+                ),
+                raw_snippet=snippet,
+                flag=seal_flag,
+            )
+
+        # Step 3: Metric computation
         snr, empirical, emotional = self.evaluate_metrics(text)
 
-        # Step 3: L2 SNR Gate
+        # Step 4: L2 SNR Gate
         if emotional > 0.6 and empirical < 0.2:
             return ExtractionCard(
                 status="REJECTED",
@@ -196,6 +326,30 @@ def run_tests() -> bool:
         # 4. High-signal empirical engineering discourse -> Must be ACCEPTED
         (
             "在基准测试中，我们通过引入拓扑排序优化了任务调度，系统时延降低了 34%，QPS 提升至 12500 ops/s，充分证明了控制变量法的有效性。",
+            "ACCEPTED",
+            None,
+        ),
+        # 5. Carrier-free zero-information disqualification -> Must be REJECTED at L1
+        ("只能说你对 win 不太熟悉", "REJECTED", "L1_HARD_CUT"),
+        # 6. Code-carrier zero-information disqualification -> Must be REJECTED at L1
+        ("笑死我了[捂脸]，建议多读点书", "REJECTED", "L1_HARD_CUT"),
+        # 7. Emoji-carrier disqualification -> Must be REJECTED at L1
+        ("你认真的吗😂", "REJECTED", "L1_HARD_CUT"),
+        # 8. Substance-bearing counter-argument -> Must NOT be flagged (no shell, mechanism named)
+        (
+            "Windows 上可以用 icacls 把项目目录的写权限收掉，再配一条出站防火墙规则阻断该进程。",
+            "ACCEPTED",
+            None,
+        ),
+        # 9. Self-sealing unfalsifiable formula -> Must be REJECTED at L1
+        ("信则有不信则无", "REJECTED", "L1_HARD_CUT"),
+        # 10. Burden-of-proof inversion -> Must be REJECTED at L1
+        ("科学不能解释不代表没有", "REJECTED", "L1_HARD_CUT"),
+        # 11. Thought-terminating age gate -> Must be REJECTED at L1
+        ("等你长大了就知道了", "REJECTED", "L1_HARD_CUT"),
+        # 12. Hearsay marker with a named verification path -> Must NOT be flagged
+        (
+            "你没见过这种报错吧，我把堆栈贴上来，是 gRPC 超时参数没配。",
             "ACCEPTED",
             None,
         ),
@@ -258,6 +412,7 @@ def main() -> None:
         if result.status == "REJECTED":
             print(f"❌ Rejection Stage : {result.rejection_stage}")
             print(f"❌ Reason          : {result.rejection_reason}")
+            print(f"🚩 Flag            : {result.flag or '—'}")
             print(f"📄 Raw Snippet     : {result.raw_snippet}")
         else:
             print(f"✅ Status          : ACCEPTED (High Signal / Analyzable)")

@@ -98,10 +98,13 @@ Nassim Nicholas Taleb (*Skin in the Game*, 2018) analyzed the severe moral hazar
 
 | Dimension | Affective Cynical Armor: Laugh-Cry (😂/[捂脸]) | Intellectual Pseudo-Academic Armor: "In Theory" |
 | :--- | :--- | :--- |
-| **Sociological Profile** | Idle internet wanderers with zero opportunity cost, zero output, contextomy-driven. | Bureaucratic middle-managers, armchair theorists, dogmatists lacking frontline engineering operational skin. |
+| **Utterance-Level Feature (no speaker claims)** | Code-mockery shielding shell; effective signal content collapses to zero. | "In Theory" bidirectional shielding shell; unfalsifiable, zero skin in the game. |
 | **Rhetorical Goal** | Trivializes rigorous facts into absurdity; unilaterally disenfranchises counter-arguments. | Occupies theoretical high ground; secures dual escape hatch to blame reality upon failure. |
 | **Escape Routine** | *"I just sent an emoji joke, why take it so seriously? 😂"* | *"I explicitly said in theory; can you blame me if reality threw surprises?"* |
 | **Logical Fatal Flaw** | Ad Hominem variant; effective signal content collapses to zero. | Violates Popperian falsifiability; imposes frictionless fantasy upon high-entropy real systems. |
+
+> [!WARNING]
+> **The "Sociological Profile" row of this matrix has been rewritten at the utterance level.** The object of analysis is **utterance**, not **human beings** (see the Scope Restriction in [`RUBRIC.en.md`](../../skills/source-evaluator/RUBRIC.en.md)): judgement and handling are decided from the text alone, and producer profiles are unfalsifiable, unproven hypotheses that constitute no criterion.
 
 ---
 

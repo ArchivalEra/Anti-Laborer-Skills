@@ -75,6 +75,9 @@ David Hume (1739) famously severed the "Is" from the "Ought."
 
 ## 3. Crucial Sociological Axiom: The Plasticity of Youth
 
+> [!WARNING]
+> **The sociological claims in this section are a producer profile: an unfalsifiable, unproven hypothesis that constitutes no criterion.** The object of analysis is **utterance**, not **human beings** (see the Scope Restriction in [`RUBRIC.en.md`](../../skills/source-evaluator/RUBRIC.en.md)). What this section **may retain** is its **falsifiable behavioural-trajectory proposition**—whether a discourse form changes as a speaker acquires first-hand production practice. Claims about *who* emits this class of utterance—their identity, class, or psychology—must not enter a detection rule or a handling protocol.
+
 An unshakeable axiom must be recognized: **"A child becoming a Jiahao or Fujoshi is not a matter of a few days; it is the sin of the older generation."**
 - **The Older Generation**: Decades of complicity within bureaucratic despotism and patriarchal clans have irreversibly calcified their mental models, leaving virtually zero hope for moral renewal;
 - **Idle Cynics & Greenhouse Fujoshi (Youth)**: They are **the front-line casualties of generational abuse**. Their discourse reflects **temporary cognitive suspension outside material social production and trauma-induced defense mechanisms**.

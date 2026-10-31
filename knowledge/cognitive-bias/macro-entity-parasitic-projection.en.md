@@ -84,11 +84,14 @@ The market valuation of the champions Jiahao champions is produced by the physic
 
 ## 3. The Low-SNR Trinity Matrix
 
-| Tier | Discursive Weapon | Sociological Profile | Material Core | Rule |
+| Tier | Discursive Weapon | Utterance-Level Essence (carrier-independent) | Discursive Mechanism | Rule |
 | :--- | :--- | :--- | :--- | :--- |
-| **99% Base Noise** | **"Laugh-Cry / Facepalm" (😂/[捂脸])** | **Idle Cynic**<br>Zero opportunity cost of time, zero output, contextomy. | Masks attention deficits behind mockery; rogue motte-and-bailey armor. | **Direct Drop**<br>`FLAG_CYNICAL_EMOJI_SNR_COLLAPSE`<br>Zero compute wasted. |
-| **0.9% Mid Evasion** | **"In Theory..."** | **Pseudo-Academic Dogmatist**<br>Bureaucratic manager, armchair theorist lacking field skin. | Violates Popperian falsifiability; spherical cow dogmatism; zero skin in the game. | **Enforce Liability**<br>`FLAG_IN_THEORY_UNFALSIFIABLE_HEDGE`<br>Demand error budget. |
-| **0.1% Ultimate Pathology** | **"Nation / Mega-Corp / Industry"**<br>(Always tied to A-share limit-ups, equity trading) | **"Jiahao" Archetype**<br>Earns 8,000 RMB/mo + real stock profits, but confuses Beta with Alpha; drained by escalating elder marriage demands; lacks personal sovereignty. | Hoffer's *The True Believer*; jackpot confirmation bias; forced linkage; treating colossal entities as financial amulets. | **Absolute Zero Response**<br>`FLAG_MACRO_ENTITY_PARASITIC_PROJECTION`<br>Treated as alien radio noise; drop immediately. |
+| **99% Base Noise** | **"Laugh-Cry / Facepalm" (😂/[捂脸])** | **Zero-information code noise**<br>Shielding shell + unilateral competence verdict + zero evidentiary chain; carrier unconstrained. | Substitutes mockery for argument; unilaterally removes the interlocutor's standing. | **Direct Drop**<br>`FLAG_CYNICAL_EMOJI_SNR_COLLAPSE`<br>Zero compute wasted. |
+| **0.9% Mid Evasion** | **"In Theory..."** | **Unfalsifiable bidirectional shielding shell**<br>Carrier: a pre-installed escape hatch, "reality failed to meet the pure assumption". | Violates Popperian falsifiability; spherical cow dogmatism; zero skin in the game. | **Enforce Liability**<br>`FLAG_IN_THEORY_UNFALSIFIABLE_HEDGE`<br>Demand error budget. |
+| **0.1% Ultimate Pathology** | **"Nation / Mega-Corp / Industry"**<br>(Always tied to A-share limit-ups, equity trading) | **Macro-entity parasitic projection**<br>Mistakes cyclical Beta for personal Alpha; recruits a sacred entity to underwrite the claim. | Hoffer's *The True Believer*; jackpot confirmation bias; forced linkage; treating colossal entities as financial amulets. | **Absolute Zero Response**<br>`FLAG_MACRO_ENTITY_PARASITIC_PROJECTION`<br>Treated as alien radio noise; drop immediately. |
+
+> [!WARNING]
+> **This table has been rewritten at the utterance level, per the axiom that the object of analysis is utterance, not human.** Judgement and handling must be decided from the text alone and must not depend on inferences about a speaker's identity, class, or psychology (see the Scope Restriction in [`RUBRIC.en.md`](../../skills/source-evaluator/RUBRIC.en.md)). Any assertion involving a producer profile is an **unfalsifiable, unproven hypothesis** and constitutes no criterion.
 
 ---
 
