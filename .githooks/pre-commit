@@ -59,6 +59,12 @@ missing_pairs=0
 while IFS= read -r -d '' file; do
   [ -z "$file" ] && continue
 
+  # Vendored snapshots keep upstream naming (e.g. README.zh.md / README.de.md);
+  # this repo's bilingual pairing convention does not apply under vendor/.
+  if [[ "$file" == vendor/* ]]; then
+    continue
+  fi
+
   if [[ "$file" == *.en.md ]]; then
     # English doc -> base doc must exist
     base_file="${file%.en.md}.md"
