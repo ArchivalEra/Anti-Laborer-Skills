@@ -66,7 +66,7 @@ export async function parseGoogleSearch(page, query) {
         let src = cite.innerText.trim();
         if (!src) continue;
         // Normalize "domain › path › path" display form into a readable source.
-        const domainMatch = src.match(/https?:\/\/[^ ]+/);
+        const domainMatch = /https?:\/\/[^ ]+/.exec(src);
         const domain = domainMatch ? domainMatch[0].replace(/\/$/, '') : src.split(' › ')[0];
         if (seen.has(title + domain)) return;
         seen.add(title + domain);
@@ -82,17 +82,23 @@ export async function parseGoogleSearch(page, query) {
     !results.length &&
     (await stableEvaluate(page, () => document.body?.innerText?.slice(0, 500) || '', undefined, { attempts: 2 }).catch(() => ''));
 
-  return {
+  const harvest = {
     platform: 'google_search',
     category: 'search_results',
     query,
     title: `Google Search: "${query}"`,
-    content: results.length
-      ? results.map((r, idx) => `${idx + 1}. [${r.title}] (${r.cite || r.url})\n   ${r.snippet}`).join('\n\n')
-      : `(${results.length} organic results${blocked ? `; page says: ${String(blocked).slice(0, 200)}` : ''})`,
     results,
     tags: ['search'],
   };
+  if (!results.length) {
+    const blockedNote = blocked ? `; page says: ${String(blocked).slice(0, 200)}` : '';
+    harvest.content = `(${results.length} organic results${blockedNote})`;
+  } else {
+    harvest.content = results
+      .map((r, idx) => `${idx + 1}. [${r.title}] (${r.cite || r.url})\n   ${r.snippet}`)
+      .join('\n\n');
+  }
+  return harvest;
 }
 
 /**

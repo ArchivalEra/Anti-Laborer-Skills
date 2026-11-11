@@ -42,6 +42,7 @@ export async function stableEvaluate(page, fn, arg, { settleMs = 1200, attempts 
 }
 
 export async function autoDismissModals(page) {
+  const outcome = { clicked: 0, aborted: false };
   try {
     await page.evaluate(() => {
       const closeSelectors = [
@@ -79,15 +80,20 @@ export async function autoDismissModals(page) {
         els.forEach((el) => {
           try {
             el.click();
-          } catch (_) {
+            outcome.clicked += 1;
+          } catch (err) {
             // Best-effort dismissal: one dead selector must never abort a harvest.
+            console.debug(`[harvester] modal click failed for "${sel}": ${err?.message || err}`);
           }
         });
       }
     });
-  } catch (_) {
+  } catch (err) {
     // The page may navigate away mid-evaluation; dismissal is optional by design.
+    console.debug(`[harvester] modal dismissal aborted: ${err?.message || err}`);
+    outcome.aborted = true;
   }
+  return outcome;
 }
 
 export function formatHarvestOutput(result, isJson = false) {
