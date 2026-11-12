@@ -1,0 +1,164 @@
+# 本地版「代码质量评估」——GitHub Code Quality 官方版在个人账号上
+# 不可用（Team/Enterprise + 独立付费），这里用**本仓已有的判据**做等价替代：
+# 不新增 lint 规则，只把本仓已有的检查逐条跑一遍，产出可比的
+# PR/周报摘要（GITHUB_STEP_SUMMARY）+ 可下载的日志 artifact。
+# 失败如实记 rc，不伪装、不吞错。
+#
+# 与 .githooks 的分工：pre-commit/pre-push 是门禁（本地提交/推送时红 = 拦下）；
+# 本 workflow 是评估报表（同命令、同判据，只做呈现与留档）。
+#
+# 检查项与来源：
+#   md-pairing        = .githooks/pre-commit 第 2 节（双语 md 配对，vendor/ 豁免）
+#   gitignore-policy  = .githooks/pre-commit 第 1 节（严格绝对路径白名单、禁通配符）
+#   knowledge-matrix  = .githooks/pre-push（knowledge/ 概念变更必须同步双索引 + README）
+#   filter-selftest   = skills/source-evaluator/scripts/filter.py --test（13 项判据自测）
+#   node-syntax       = scripts/ 全部 .mjs 的 node --check（harvester 纯脚本，无构建）
+
+name: Code quality assessment
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 6 * * 1'
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  assess:
+    name: Assess ${{ github.repository }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Run checks
+        shell: bash
+        run: |
+          set +e
+          : > results.tsv
+          run_check() {
+            n="$1"; shift
+            printf '%s\t' "$n" >> results.tsv
+            "$@" > "/tmp/$n.log" 2>&1
+            rc=$?
+            printf '%s\n' "$rc" >> results.tsv
+            printf '  %s: rc=%s\n' "$n" "$rc"
+          }
+
+          # gitignore-policy + md-pairing：直接复用 pre-commit 的两节判据。
+          # 钩子第 3 节（skills/ 改动须同批 README）是暂存区语义，CI 全量
+          # checkout 下不适用，故按节拆跑而不是整跑钩子。
+          run_check gitignore-policy bash -c '
+            set -e
+            line_num=0
+            while IFS= read -r line || [ -n "$line" ]; do
+              line_num=$((line_num + 1))
+              trimmed="$(echo "$line" | sed -e "s/^[[:space:]]*//" -e "s/[[:space:]]*$//")"
+              if [ -z "$trimmed" ] || [[ "$trimmed" =~ ^# ]]; then continue; fi
+              if [ "$trimmed" = "*" ] || [ "$trimmed" = "/*" ] || [ "$trimmed" = "!*/" ]; then continue; fi
+              if [[ "$trimmed" =~ ^! ]]; then
+                if [[ ! "$trimmed" =~ ^!/ ]]; then
+                  echo "[.gitignore:$line_num] not absolute: $trimmed" >&2; exit 1
+                fi
+                path_part="${trimmed#!}"
+                if [[ "$path_part" == *\** ]] || [[ "$path_part" == *\?* ]]; then
+                  echo "[.gitignore:$line_num] wildcard in whitelist: $trimmed" >&2; exit 1
+                fi
+              else
+                echo "[.gitignore:$line_num] non-whitelist entry: $trimmed" >&2; exit 1
+              fi
+            done < .gitignore
+          '
+
+          run_check md-pairing bash -c '
+            set -e
+            missing=0
+            while IFS= read -r -d "" file; do
+              [ -z "$file" ] && continue
+              case "$file" in vendor/*) continue ;; esac
+              if [[ "$file" == *.en.md ]]; then
+                base_file="${file%.en.md}.md"
+                if ! git ls-files --error-unmatch -- "$base_file" >/dev/null 2>&1; then
+                  echo "missing base for $file: $base_file" >&2; missing=$((missing + 1))
+                fi
+              elif [[ "$file" == *.md ]]; then
+                en_file="${file%.md}.en.md"
+                if ! git ls-files --error-unmatch -- "$en_file" >/dev/null 2>&1; then
+                  echo "missing en for $file: $en_file" >&2; missing=$((missing + 1))
+                fi
+              fi
+            done < <(git ls-files -z "*.md")
+            [ "$missing" -eq 0 ]
+          '
+
+          run_check knowledge-matrix bash -c '
+            set -e
+            # 与 pre-push 同判据，但用全量树而非 push 事件差集（CI 无 push 上下文）：
+            # 每个概念文件必须在两份主索引的诊断矩阵中被点名，README 双语必须在。
+            concepts=$(git ls-files "knowledge/*/*.md" | grep -vE "index\.(en\.)?md$|log\.(en\.)?md$" || true)
+            [ -z "$concepts" ] && exit 0
+            fail=0
+            for f in $concepts; do
+              base="${f#knowledge/}"; base="${base%.en.md}"; base="${base%.md}"
+              name=$(basename "$base")
+              grep -q "$name" knowledge/index.md || { echo "$base not in knowledge/index.md" >&2; fail=1; }
+              grep -q "$name" knowledge/index.en.md || { echo "$base not in knowledge/index.en.md" >&2; fail=1; }
+            done
+            grep -q "言论症状与知识库靶点速查路由矩阵" knowledge/index.md || { echo "matrix section missing in index.md" >&2; fail=1; }
+            grep -q "Symptom-to-Knowledge Diagnostic Routing Matrix" knowledge/index.en.md || { echo "matrix section missing in index.en.md" >&2; fail=1; }
+            exit $fail
+          '
+
+          run_check filter-selftest python3 skills/source-evaluator/scripts/filter.py --test
+
+          run_check node-syntax bash -c '
+            set -e
+            fail=0
+            while IFS= read -r -d "" f; do
+              node --check "$f" 2>>"/tmp/node-syntax.log" || fail=1
+            done < <(find scripts -name "*.mjs" -type f | sort -z)
+            exit $fail
+          '
+
+      - name: Publish summary
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo "## Code quality assessment — Anti-Laborer-Skills"
+            echo ""
+            echo "| Check | Result |"
+            echo "|---|---|"
+          } >> "$GITHUB_STEP_SUMMARY"
+          if [ -f results.tsv ]; then
+            while IFS=$'\t' read -r n rc; do
+              badge=$([ "$rc" = "0" ] && echo PASS || echo "FAIL (rc=$rc)")
+              printf '| %s | %s |\n' "$n" "$badge" >> "$GITHUB_STEP_SUMMARY"
+            done < results.tsv
+          else
+            echo "| (no results) | — |" >> "$GITHUB_STEP_SUMMARY"
+          fi
+          {
+            echo ""
+            echo "Assessment uses this repository's existing gates (no new lint rules):"
+            echo ".githooks/pre-commit (whitelist + bilingual pairing), .githooks/pre-push"
+            echo "(knowledge matrix), filter.py --test, node --check on scripts/*.mjs."
+            echo "vendor/einfacht keeps upstream naming — bilingual pairing is waived there by design."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: quality-logs
+          path: /tmp/*.log
+          if-no-files-found: ignore
