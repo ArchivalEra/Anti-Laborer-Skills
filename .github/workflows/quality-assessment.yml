@@ -40,6 +40,9 @@ jobs:
         with:
           node-version: 22
 
+      - name: Install shellcheck
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq shellcheck
+
       - name: Run checks
         shell: bash
         run: |
@@ -129,6 +132,8 @@ jobs:
             exit $fail
           '
 
+          run_check shellcheck scripts/shellcheck-gate.sh
+
       - name: Publish summary
         if: always()
         shell: bash
@@ -151,7 +156,11 @@ jobs:
             echo ""
             echo "Assessment uses this repository's existing gates (no new lint rules):"
             echo ".githooks/pre-commit (whitelist + bilingual pairing), .githooks/pre-push"
-            echo "(knowledge matrix), filter.py --test, node --check on scripts/*.mjs."
+            echo "(knowledge matrix), filter.py --test, node --check on scripts/*.mjs,"
+            echo "shellcheck on all bash shells (external verification of existing"
+            echo "surfaces; documented exemptions in .shellcheck-allowlist — zero real"
+            echo "findings at adoption: git @{u} syntax, push stdin placeholders,"
+            echo "upstream CDPATH= idiom)."
             echo "vendor/einfacht keeps upstream naming — bilingual pairing is waived there by design."
           } >> "$GITHUB_STEP_SUMMARY"
 

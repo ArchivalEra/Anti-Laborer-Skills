@@ -1,0 +1,40 @@
+# shellcheck allowlist — Anti-Laborer-Skills（file=code 匹配，前缀通配）
+#
+# 本仓 bash 壳全量过 shellcheck（0.11.0，-S style）后的全部 finding 归档：
+# 零真 bug，全部为 git 语法 / 协议占位 / 上游刻意写法 / 风格偏好，逐条依据如下。
+# allowlist 只做「精确到规则 + 有依据」的豁免，不让检查失效。
+
+# ---- .githooks/pre-push ----
+
+# SC1083: '@{u}' 与 '@{u}..HEAD' 里的字面 '{ }' 是 git rev-parse 的
+# upstream 语法（refspec），不是 shell 花括号展开问题。shellcheck 不认识
+# git 的这一语法，4 处（L18×2、L19×2）均为同一形态。
+.githooks/pre-push:SC1083
+
+# SC2034: local_ref / remote_ref 是 git push 钩子 stdin 协议
+# （local_ref local_oid remote_ref remote_oid）中的位置占位变量——
+# 按位置读取以便取到 local_oid / remote_oid，名字本身就是协议文档。
+# 保留名字而非改 _，可读性优先。
+.githooks/pre-push:SC2034
+
+# SC2001: sed 's/^[[:space:]]*//' 属风格建议（可用 ${var//...} 替代），
+# 原写法与 pre-commit 钩子中的同款逻辑保持一致，统一保留。
+.githooks/pre-push:SC2001
+
+# ---- vendor/einfacht/**（上游原样快照，不在本仓直改）----
+
+# SC1007: '$(CDPATH= cd -- ...)' 是上游的可移植写法——CDPATH= 前缀用于
+# 压制 cd 对旧 shell 的输出，'=' 后无空格是有意为之，非赋值笔误。
+# vendor 快照不修改，见 vendor/einfacht/VENDOR.md。
+vendor/einfacht/reflect-hooks/einfacht-env.sh:SC1007
+vendor/einfacht/reflect-hooks/pre-commit:SC1007
+vendor/einfacht/reflect-hooks/pre-push:SC1007
+vendor/einfacht/gates-selftest.sh:SC1007
+
+# SC1090: '. "$_ENV_DIR/$_ENV_FILE"' 为插件设计核心（运行时决定 source
+# 哪个 Einfacht.env），本就是非恒定 source，shellcheck 无法跟随属预期。
+vendor/einfacht/reflect-hooks/einfacht-env.sh:SC1090
+
+# SC2016: 单引号字符串出现在生成测试夹具 printf 的正文里（讲解性文本），
+# 非实际需要展开的表达式。
+vendor/einfacht/reflect-hooks/einfacht-env.sh:SC2016
