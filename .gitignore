@@ -299,3 +299,5 @@
 
 # 12. CI 质量评估工作流（本地版 Code Quality 等价物，只跑本仓已有检查）
 !/.github/workflows/quality-assessment.yml
+!/scripts/shellcheck-gate.sh
+!/.shellcheck-allowlist
